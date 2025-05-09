@@ -1,13 +1,23 @@
 html {
- background:#0f0c48;
+ background: #0f0c48;
+ width: 100%;
+ overflow-x: hidden;
 }
 
 body {
  width: 100%;
+ max-width: 100%;
+ overflow-x: hidden;
  font-family: 'Poppins', sans-serif;
  background: #ffffff;
  color: #0f0c48;
  line-height: 1.6;
+}
+
+img {
+ max-width: 100%;
+ height: auto;
+ display: block;
 }
 
 header {
@@ -24,6 +34,7 @@ nav {
  display: flex;
  gap: 18px;
  flex-wrap: wrap;
+ overflow-x: auto;
 }
 
 nav a {
@@ -67,18 +78,19 @@ nav a {
  max-width: 90%;
  margin: 0 auto;
  text-align: left;
- 
+ padding: 0;
 }
 
 .inner img {
  max-width: 300px;
+ height: auto;
  border-radius: 8px;
  margin-bottom: 30px;
 }
 
 .inner ul {
  list-style: none;
- padding-left: 0;
+ padding-left: 20px;
  margin-bottom: 30px;
 }
 
@@ -100,7 +112,9 @@ nav a {
  margin-bottom: 20px;
  font-size: 1em;
  color: #333;
- 
+ white-space: normal;
+ word-wrap: break-word;
+ overflow-wrap: break-word;
 }
 
 .inner a {
@@ -148,16 +162,15 @@ footer a {
    padding-left: 20px;
  }
 
- footer {
-   font-size: 0.85em;
- }
-}
-@media (max-width: 768px) {
  .inner p {
-   font-size: 0.7em;
+   font-size: 0.85em;
    line-height: 1.6;
    white-space: normal;
    word-wrap: break-word;
    overflow-wrap: break-word;
+ }
+
+ footer {
+   font-size: 0.85em;
  }
 }

@@ -57,6 +57,8 @@
       animation: gradientShift 12s ease infinite;
       color: var(--white);
       padding: 60px 20px;
+      display: flex;
+      flex-direction: column;
     }
     @keyframes gradientShift {
       0% { background-position: 0% 50%; }
@@ -66,9 +68,11 @@
     .hero h1 {
       font-size: 2.8em;
       margin-bottom: 10px;
+      margin: auto;
     }
     .hero p {
       font-size: 1.2em;
+      margin: auto;
     }
     .features ul {
       list-style-type: none;
@@ -113,6 +117,12 @@
       font-size: 0.95em;
       color: #0f0c48;
     }
+    img {
+     max-width: 200px;
+     border: 1px solid black;
+     border-radius: 4px;
+     margin-bottom: 10px;
+   }
   </style>
 </head>
 <body>
@@ -127,12 +137,24 @@
     <a href="/quick-edit/">Quick Edit</a>
     <a href="/quick-seo/">Quick SEO</a>
     <a href="/quick-blog/">Quick Blog</a>
+<a href="/lite/">Lite</a>
   </nav>
 </header>
 
   <section class="hero">
     <h1>Quick Blog</h1>
     <p>Rapidly create optimized blog posts with meta and schema support—right inside WordPress.</p>
+  </section>
+
+  <section class="section scroll-fade" style="padding: 60px 20px; text-align: center;">
+    <h2 style="font-size: 2em; color: #0f0c48;">Quick Blog</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; align-items: center; margin-top: 30px;">
+      <img src="/assets/images/quickblog.png" alt="Quick Add Icon" style="max-width: 200px;">
+    </div>
+    <p style="font-size: 1.1em; margin: 30px 0;">Available Exclusively with Quick Woo Bundle</p>
+    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+      <a href="/checkout/" style="background: #6139F5; color: white; font-weight: bold; padding: 14px 28px; border-radius: 8px; text-decoration: none;">Purchase Now</a>
+    </div>
   </section>
 
  

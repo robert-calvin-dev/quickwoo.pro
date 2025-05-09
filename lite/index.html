@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickWoo Lite Downloads</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --purple: #6139F5;
+      --gold: #FFB900;
+      --deep-blue: #0f0c48;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--white);
+      color: var(--deep-blue);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--deep-blue);
+      padding: 14px 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(270deg, var(--purple), var(--gold), var(--purple));
+      background-size: 600% 600%;
+      animation: gradientShift 12s ease infinite;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .lite-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .lite-card {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 30px 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .lite-card img {
+      max-width: 120px;
+      margin-bottom: 20px;
+    }
+
+    .lite-card h3 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .lite-card a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: var(--purple);
+      color: var(--white);
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    footer {
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.15);
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.95em;
+      color: var(--deep-blue);
+    }
+
+    footer a {
+      color: var(--deep-blue);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .hero h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="font-size: 1.6em; font-weight: 700;">QuickWoo</div>
+    <nav>
+      <a href="/website/index.html">Home</a>
+      <a href="/website/pages/bundle.html">Bundle</a>
+      <a href="/website/pages/checkout.html">Checkout</a>
+      <a href="/website/pages/lite.html">Lite</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Download QuickWoo Lite Apps</h1>
+    <p>All free Lite versions of QuickWoo apps are available below.</p>
+  </section>
+
+  <section class="lite-grid">
+    <div class="lite-card">
+      <img src="/assets/images/quickaddlite.png" alt="Quick Add Lite">
+      <h3>Quick Add Lite</h3>
+      <a href="/assets/downloads/Quick-Add-Lite.zip">Download Lite</a>
+    </div>
+    <div class="lite-card">
+      <img src="/assets/images/quickeditlite.png" alt="Quick Edit Lite">
+      <h3>Quick Edit Lite</h3>
+      <a href="/assets/downloads/Quick-Edit-Lite.zip">Download Lite</a>
+    </div>
+    <div class="lite-card">
+      <img src="/assets/images/quickseolite.png" alt="Quick SEO Lite">
+      <h3>Quick SEO Lite</h3>
+      <a href="/assets/downloads/Quick-SEO-Lite.zip">Download Lite</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 QuickWoo Bundle. Built with 💜 by <strong>Robert Calvin</strong></p>
+    <p><a href="/website/pages/terms.html">Terms</a> | <a href="/website/pages/privacy.html">Privacy</a></p>
+  </footer>
+</body>
+</html>

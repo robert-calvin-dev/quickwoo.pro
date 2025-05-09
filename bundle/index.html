@@ -331,16 +331,19 @@
     <h2>Choose Your Plan</h2>
     <br>
     <div class="plan-grid">
-      <div class="plan bundle">
+      <a href="/checkout/"><div class="plan bundle">
         <h3>Bundle</h3>
-        <p>$157</p>
+        <p>$148</p>
         <p>One-time payment</p>
       </div>
+    </a>
+    <a href="/lite/">
       <div class="plan free">
         <h3>Lite Versions</h3>
         <p>Free</p>
         <p>Limited features</p>
       </div>
+    </a>
     </div>
   </section>
 
@@ -515,10 +518,10 @@
   <h2 style="margin-bottom: 20px;">Flexible Pricing</h2>
   <label style="font-weight: bold;">Choose Plan Type: </label>
   <select id="plan-toggle" style="padding: 8px 16px; font-size: 1em; margin-bottom: 30px;">
-    <option value="monthly">Monthly</option>
-    <option value="yearly" selected>Yearly (Save 20%)</option>
+    <option value="year">12 Months (Save 30%)</option>
+    <option value="life" selected>Lifetime (Save 50%)</option>
   </select>
-  <div id="pricing-display" style="font-size: 1.3em; font-weight: bold;">$157/year <br>(One-time payment)</div>
+  <div id="pricing-display" style="font-size: 1.3em; font-weight: bold;">$148 <br>(One-time payment)</div>
 </section>
 
 <section class="section social-proof" style="background: #fff4d0; padding: 40px 20px; text-align: center;">
@@ -541,7 +544,7 @@
 
 <footer style="backdrop-filter: blur(12px); background: rgba(255, 255, 255, 0.15); border-top: 1px solid rgba(255, 255, 255, 0.2); text-align: center; padding: 30px 20px; font-size: 0.95em; color: #0f0c48;">
   <p>© 2025 QuickWoo Bundle. Built with 💜 by <strong>Robert Calvin</strong></p>
-  <p><a href="/terms" style="color:#0f0c48; margin-right: 10px;">Terms</a> | <a href="/privacy" style="color:#0f0c48;">Privacy</a></p>
+  <p><a href="/terms/" style="color:#0f0c48; margin-right: 10px;">Terms</a> | <a href="/privacy/" style="color:#0f0c48;">Privacy</a></p>
 </footer>
 
 
@@ -558,9 +561,9 @@
     const toggle = document.getElementById("plan-toggle");
     const display = document.getElementById("pricing-display");
     toggle.addEventListener("change", () => {
-      display.textContent = toggle.value === "monthly"
-        ? "$15/month (Billed monthly)"
-        : "$157/year (One-time payment)";
+      display.textContent = toggle.value === "year"
+        ? "$119 (One-time payment)"
+        : "$148 (One-time payment)";
     });
   });
 </script>

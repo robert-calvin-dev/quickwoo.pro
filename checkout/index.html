@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout – QuickWoo</title>
+  <link rel="stylesheet" href="/assets/css/blog.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    .checkout-container {
+      max-width: 600px;
+      margin: 60px auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .checkout-container h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .checkout-form label {
+      display: block;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+
+    .checkout-form input,
+    .checkout-form select {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .checkout-form button {
+      margin-top: 30px;
+      width: 100%;
+      padding: 14px;
+      font-weight: bold;
+      font-size: 1.1em;
+      background-color: #6139F5;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .checkout-form button:hover {
+      background-color: #4b2dc6;
+    }
+  </style>
+</head>
+<body>
+ <header>
+  <div style="font-size: 1.6em; font-weight: 700;">QuickWoo</div>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/blog/">Woo Blog</a>
+    <a href="/bundle/">Bundle</a>
+    <a href="/quick-add/">Quick Add</a>
+    <a href="/quick-edit/">Quick Edit</a>
+    <a href="/quick-seo/">Quick SEO</a>
+    <a href="/quick-blog/">Quick Blog</a>
+  </nav>
+</header>
+
+  <section class="hero">
+    <h1>Checkout</h1>
+    <p>Complete your purchase and receive your license instantly.</p>
+  </section>
+
+  <section class="section">
+    <div class="checkout-container">
+      <h2>Secure Checkout</h2>
+      <form class="checkout-form">
+        <label for="product">Choose Product</label>
+        <select id="product" name="product">
+          <option value="quick-add">Quick Add 12 Months – $59</option>
+          <option value="quick-add-life">Quick Add Lifetime – $99</option>
+          <option value="quick-edit">Quick Edit 12 Months – $59</option>
+          <option value="quick-edit-life">Quick Edit Lifetime – $99</option>
+          <option value="quick-seo">Quick SEO 12 Months – $59</option>
+          <option value="quick-seo-life">Quick SEO Lifetime – $99</option>
+          <option value="bundle">QuickWoo Bundle 12 Months – $119</option>
+          <option value="bundle-life">QuickWoo Bundle Lifetime – $146</option>
+        </select>
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="card">Card Details</label>
+        <input type="text" id="card" name="card" placeholder="Card Number" required>
+
+        <button type="submit">Complete Purchase</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 QuickWoo Bundle. Built with 💜 by <strong>Robert Calvin</strong></p>
+    <p><a href="/terms/">Terms</a> | <a href="/privacy/">Privacy</a></p>
+  </footer>
+</body>
+</html>

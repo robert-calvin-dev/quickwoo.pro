@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quick SEO – QuickWoo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --purple: #6139F5;
+      --gold: #FFB900;
+      --deep-blue: #0f0c48;
+      --white: #ffffff;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--white);
+      color: #222;
+      line-height: 1.5;
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero {
+      background: linear-gradient(270deg, var(--purple), var(--gold), var(--purple));
+      background-size: 600% 600%;
+      animation: gradientShift 12s ease infinite;
+      color: var(--white);
+      padding: 60px 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .hero h1 {
+      font-size: 2.8em;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin: auto;
+    }
+    .features ul {
+      list-style-type: none;
+      padding: 0;
+      max-width: 600px;
+      margin: auto;
+      text-align: left;
+    }
+    .features ul li {
+      background: #f3f3f3;
+      padding: 12px 18px;
+      border-radius: 10px;
+      margin: 8px 0;
+      font-size: 1.1em;
+    }
+    .cta {
+      background: #0f0c48;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .cta a {
+      background: var(--gold);
+      color: #0f0c48;
+      font-weight: bold;
+      padding: 14px 26px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+    .imagetag img {
+      max-width: 350px;
+      margin: 30px auto;
+      display: block;
+    }
+    footer {
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.15);
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.95em;
+      color: #0f0c48;
+    }
+  </style>
+</head>
+<body>
+
+ <header style="background: #0f0c48; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+  <div style="color: white; font-size: 1.6em; font-weight: 700;">
+    QuickWoo
+  </div>
+  <nav style="display: flex; gap: 18px; flex-wrap: wrap; margin-top: 10px;">
+    <a href="/website/index.html" style="color: white; text-decoration: none; font-weight: bold;">Home</a>
+    <a href="/website/pages/bundle.html" style="color: white; text-decoration: none; font-weight: bold;">Bundle</a>
+    <a href="/website/pages/quick-add.html" style="color: white; text-decoration: none; font-weight: bold;">Quick Add</a>
+    <a href="/website/pages/quick-edit.html" style="color: white; text-decoration: none; font-weight: bold;">Quick Edit</a>
+    <a href="/website/pages/quick-seo.html" style="color: white; text-decoration: none; font-weight: bold;">Quick SEO</a>
+    <a href="/website/pages/quick-blog.html" style="color: white; text-decoration: none; font-weight: bold;">Quick Blog</a>
+  </nav>
+</header>
+
+  <section class="hero">
+    <h1>Quick SEO</h1>
+    <p>Bulk edit SEO fields, inject schema, and dominate rankings—no SEO knowledge required.</p>
+  </section>
+
+  <section class="section scroll-fade" style="padding: 60px 20px; text-align: center;">
+   <h2 style="font-size: 2em; color: #0f0c48;">Quick SEO</h2>
+   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; align-items: center; margin-top: 30px;">
+     <img src="/website/assets/images/quickseo.png" alt="Quick SEO Icon" style="max-width: 200px;">
+     <img src="/website/assets/images/quickseolite.png" alt="Quick SEO Lite Icon" style="max-width: 200px;">
+   </div>
+   <p style="font-size: 1.1em; margin: 30px 0;">$59 for 12 Months or $99 for Lifetime Access</p>
+   <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+     <a href="/checkout?plugin=[appname]" style="background: #6139F5; color: white; font-weight: bold; padding: 14px 28px; border-radius: 8px; text-decoration: none;">Purchase Now</a>
+     <a href="/downloads/[appname]-lite.zip" style="background: #FFB900; color: #0f0c48; font-weight: bold; padding: 14px 28px; border-radius: 8px; text-decoration: none;">Download Lite</a>
+   </div>
+ </section>
+
+
+
+  <section id="features" class="section features">
+    <h2 style="color: var(--deep-blue); margin-bottom: 30px;">Pro Features</h2>
+    <ul>
+      <li>Bulk Edit SEO Titles & Meta Descriptions</li>
+      <li>Focus Keyword & Density Tracking</li>
+      <li>OG Title, Description, and Image Control</li>
+      <li>WooCommerce Product Schema Injection</li>
+      <li>Push SEO Fields to &lt;head&gt; Automatically</li>
+      <li>Google Search Console Integration</li>
+      <li>AJAX Saving, No Page Reload</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 style="color: var(--deep-blue); margin-bottom: 20px;">Lite vs Pro Comparison</h2>
+    <table style="margin: auto; border-collapse: collapse; font-size: 1.1em;">
+      <thead>
+        <tr style="background: var(--purple); color: white;">
+          <th style="padding: 14px 20px; border: 1px solid #ccc;">Feature</th>
+          <th style="padding: 14px 20px; border: 1px solid #ccc;">Lite</th>
+          <th style="padding: 14px 20px; border: 1px solid #ccc;">Pro</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td style="border: 1px solid #ccc; padding: 10px;">Focus Keyword</td><td>✅</td><td>✅</td></tr>
+        <tr><td style="border: 1px solid #ccc; padding: 10px;">SEO Title / Meta Description</td><td>✅</td><td>✅</td></tr>
+        <tr><td style="border: 1px solid #ccc; padding: 10px;">OG Fields</td><td>❌</td><td>✅</td></tr>
+        <tr><td style="border: 1px solid #ccc; padding: 10px;">Woo Schema Output</td><td>❌</td><td>✅</td></tr>
+        <tr><td style="border: 1px solid #ccc; padding: 10px;">Push to &lt;head&gt;</td><td>✅</td><td>✅</td></tr>
+        <tr><td style="border: 1px solid #ccc; padding: 10px;">Search Console Sync</td><td>❌</td><td>✅</td></tr>
+        <tr><td style="border: 1px solid #ccc; padding: 10px;">Keyword Suggestions</td><td>❌</td><td>✅</td></tr>
+        <tr><td style="border: 1px solid #ccc; padding: 10px;">Lifetime Updates</td><td>❌</td><td>✅</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="imagetag">
+   <img src="/website/assets/images/quickseo-screenshot.png" alt="Quick SEO Screenshot">
+ </section>
+
+  <section class="cta">
+    <h2>Finally, SEO Made Simple for WooCommerce</h2>
+    <p style="margin-bottom: 20px;">Upgrade to Quick SEO Pro and start optimizing like the pros—without ever touching code.</p>
+    <a href="/checkout">Buy Quick SEO Pro</a>
+  </section>
+
+  <footer>
+    <p>© 2025 QuickWoo Bundle. Built with 💜 by <strong>Robert Calvin</strong></p>
+    <p><a href="/terms" style="color:#0f0c48; margin-right: 10px;">Terms</a> | <a href="/privacy" style="color:#0f0c48;">Privacy</a></p>
+  </footer>
+
+</body>
+</html>

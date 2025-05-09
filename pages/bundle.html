@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickWoo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --purple: #6139F5;
+      --gold: #FFB900;
+      --deep-blue: #0f0c48;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--white);
+      color: #222;
+      line-height: 1.5;
+    }
+
+    #hero {
+      background: linear-gradient(270deg, var(--purple), var(--gold), var(--purple));
+      background-size: 600% 600%;
+      animation: gradientShift 12s ease infinite;
+      color: var(--white);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .hero h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .imagetag {
+      margin:auto;
+      display:flex;
+      flex-direction:column;
+    }
+
+    .imagetag img {
+      max-width:350px;
+      margin:auto;
+
+    }
+
+    #includes {
+      background-color: var(--deep-blue);
+      color: var(--white);
+    }
+
+    #includes h2 {
+      font-size: 2em;
+      margin-bottom: 70px;
+    }
+
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .app-card {
+      background: var(--purple);
+      backdrop-filter: blur(10px);
+      border: 2px solid rgba(255, 255, 255, 0.576);
+      border-radius: 20px;
+      padding: 20px;
+      color: var(--white);
+      font-weight: bold;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .app-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 35px rgba(255, 185, 0, 0.45);
+    }
+
+    .app-card h3 {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+    }
+
+    .app-card ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    .app-card ul li {
+      background: rgba(251, 251, 251, 0.473);
+      padding: 6px;
+      border-radius: 8px;
+      margin: 5px 0;
+      color: #000000;
+    }
+
+    .plans h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+      color: var(--deep-blue);
+    }
+
+    .plan-grid {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .plan {
+  transform: scale(1.1);
+  font-size: 1.2em;
+
+      padding: 30px;
+      border-radius: 20px;
+      width: 250px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      font-weight: bold;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .plan:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .plan.bundle {
+      background: var(--purple);
+      color: var(--white);
+    }
+
+    .plan.free {
+      background: var(--gold);
+      color: var(--deep-blue);
+    }
+
+    .plan h3 {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+    }
+
+    .plan p {
+      font-size: 1.1em;
+    }
+
+    #testimonials {
+      background: var(--deep-blue);
+      color: var(--white);
+    }
+
+    .testimonials h2 {
+      margin-bottom: 40px;
+      font-size: 2em;
+    }
+
+    .testimonial-box {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--white);
+      color: var(--deep-blue);
+      border-radius: 16px;
+      padding: 20px;
+      font-size: 1.1em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 1024px) {
+      .app-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .app-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+<style>
+  .scroll-fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  .scroll-fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll(".scroll-fade").forEach(el => observer.observe(el));
+  });
+</script>
+
+
+<style>
+ @media (max-width: 600px) {
+   .hero {
+     position: sticky;
+     top: 0;
+     z-index: 999;
+     padding: 30px 20px;
+   }
+ }
+</style>
+
+</head>
+<body>
+
+  <section class="section scroll-fade" id="hero">
+    <h1>QuickWoo Bundle</h1>
+    <p>Save 50% on our suite of powerful WooCommerce applications</p>
+  </section>
+
+  <section class="imagetag">
+    <img src="/website/assets/images/QuickWooBundle.png">
+  </section>
+
+  <section class="section scroll-fade" id="includes">
+    <h2>Includes</h2>
+    <div class="app-grid">
+      <div class="app-card">
+        <h3>Quick Add+</h3>
+        <ul>
+          <li>Bulk Product Adding</li>
+          <li>All Product Types Supported</li>
+          <li>Custom Attributes</li>
+        </ul>
+      </div>
+      <div class="app-card">
+        <h3>Quick Edit</h3>
+        <ul>
+          <li>Bulk Inline Product Editing</li>
+          <li>Spreadsheet Style Inputs</li>
+          <li>Schedule Mass Sales Events</li>
+        </ul>
+      </div>
+      <div class="app-card">
+        <h3>Quick SEO</h3>
+        <ul>
+          <li>Bulk Meta Data Editing</li>
+          <li>Multiple Keywords</li>
+          <li>Schema Injection</li>
+        </ul>
+      </div>
+      <div class="app-card">
+        <h3>Quick Blog</h3>
+        <ul>
+          <li>Bulk Post Adding</li>
+          <li>Post SEO Meta Data</li>
+          <li>Only Available in the Bundle</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section scroll-fade" class="section plans">
+    <h2>Choose Your Plan</h2>
+    <br>
+    <div class="plan-grid">
+      <div class="plan bundle">
+        <h3>Bundle</h3>
+        <p>$157</p>
+        <p>One-time payment</p>
+      </div>
+      <div class="plan free">
+        <h3>Lite Versions</h3>
+        <p>Free</p>
+        <p>Limited features</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section scroll-fade" id="testimonials">
+    <h2>Testimonials</h2>
+    <br>
+    <br>
+    <div class="testimonial-box">
+      <p class="testimonial-text">“QuickWoo apps have transformed the way I manage my store. Highly recommend!”</p>
+    </div>
+  </section>
+
+  <script>
+    const testimonials = [
+      "“QuickWoo saved me hours a day in bulk edits.”",
+      "“The SEO tool helped my traffic triple.”",
+      "“I recommend QuickWoo to every WooCommerce dev I know.”"
+    ];
+    let current = 0;
+    setInterval(() => {
+      document.querySelector(".testimonial-text").textContent = testimonials[current];
+      current = (current + 1) % testimonials.length;
+    }, 4000);
+  </script>
+
+
+<section class="section features-table scroll-fade" style="padding: 80px 20px; background-color: #ffffff; text-align: center;">
+  <h2 style="font-size: 2.5em; margin-bottom: 40px; color: #0f0c48;">Product Features</h2>
+
+  <!-- Desktop Table (visible >= 780px) -->
+  <div class="feature-table-desktop" style="overflow-x:auto;">
+    <table style="margin: 0 auto; font-size: 1.15em; border-collapse: collapse; width: 95%; max-width: 1100px;">
+      <thead>
+        <tr style="background-color: #6139F5; color: white;">
+          <th style="padding: 16px 24px; border: 1px solid #ddd;">Feature</th>
+          <th style="padding: 16px 24px; border: 1px solid #ddd;">Quick Add+</th>
+          <th style="padding: 16px 24px; border: 1px solid #ddd;">Quick Edit</th>
+          <th style="padding: 16px 24px; border: 1px solid #ddd;">Quick SEO</th>
+          <th style="padding: 16px 24px; border: 1px solid #ddd;">Quick Blog</th>
+          <th style="padding: 16px 24px; border: 1px solid #ddd;">Bundle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td style="text-align:center; padding: 14px 20px; border: 1px solid #ddd;">Bulk Product Adding</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td></tr>
+        <tr><td style="text-align:center; padding: 14px 20px; border: 1px solid #ddd;">Inline Spreadsheet Product Editing</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td>✅</td></tr>
+        <tr><td style="text-align:center; padding: 14px 20px; border: 1px solid #ddd;">Sale Scheduling</td><td>✅</td><td>✅</td><td>❌</td><td>❌</td><td>✅</td></tr>
+        <tr><td style="text-align:center; padding: 14px 20px; border: 1px solid #ddd;">Bulk Meta Data Editing</td><td>✅</td><td>✅</td><td>✅</td><td>❌</td><td>✅</td></tr>
+        <tr><td style="text-align:center; padding: 14px 20px; border: 1px solid #ddd;">Bulk Product Gallery Creation</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td></tr>
+        <tr><td style="text-align:center; padding: 14px 20px; border: 1px solid #ddd;">Schema Injector</td><td>❌</td><td>✅</td><td>✅</td><td>❌</td><td>✅</td></tr>
+        <tr><td style="text-align:center; padding: 14px 20px; border: 1px solid #ddd;">Bulk Post Creation</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td></tr>
+        <tr><td style="text-align:center; padding: 14px 20px; border: 1px solid #ddd;">Easy Post Meta Data</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td style="text-align:center; padding: 14px 20px; border: 1px solid #ddd;">Social Media SEO</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td style="text-align:center; padding: 14px 20px; border: 1px solid #ddd;">AJAX Saving</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td style="text-align:center; padding: 14px 20px; border: 1px solid #ddd;">Multiple Keywords</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td></tr>
+        <tr><td style="text-align:center; padding: 14px 20px; border: 1px solid #ddd;">Pushes Meta to WP Head</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td style="text-align:center; padding: 14px 20px; border: 1px solid #ddd;">Lifetime Product Updates</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td style="text-align:center; padding: 14px 20px; border: 1px solid #ddd;">Priority Customer Support</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Mobile List (visible < 780px) -->
+  <div class="feature-list-mobile" style="display: none; text-align: left; max-width: 500px; margin: 30px auto 0;">
+    <ul style="list-style-type: disc; padding-left: 20px; font-size: 1.1em;">
+      <li>Bulk Product Adding</li>
+      <li>Inline Spreadsheet Product Editing</li>
+      <li>Sale Scheduling</li>
+      <li>Bulk Meta Data Editing</li>
+      <li>Bulk Product Gallery Creation</li>
+      <li>Schema Injector</li>
+      <li>Bulk Post Creation</li>
+      <li>Easy Post Meta Data</li>
+      <li>Social Media SEO</li>
+      <li>AJAX Saving</li>
+      <li>Multiple Keywords</li>
+      <li>Pushes Meta to WP Head</li>
+      <li>Lifetime Product Updates</li>
+      <li>Priority Customer Support</li>
+    </ul>
+  </div>
+
+  <style>
+    @media (max-width: 780px) {
+      .feature-table-desktop { display: none !important; }
+      .feature-list-mobile { display: block !important; }
+    }
+  </style>
+</section>
+
+
+
+<section class="section scroll-fade" class="cta-bar" style="background: linear-gradient(to right, #6139F5, #FFB900); color: white; padding: 40px 20px; text-align: center;">
+  <h2 style="font-size: 2em; margin-bottom: 10px;">Ready to Transform Your WooCommerce Store?</h2>
+  <p style="font-size: 1.2em; margin-bottom: 20px;">Upgrade to the QuickWoo Bundle today and start saving time immediately.</p>
+  <a href="/bundle" style="background: #0f0c48; color: #fff; font-weight: bold; padding: 12px 24px; border-radius: 10px; text-decoration: none; font-size: 1.1em;">Get the Bundle</a>
+</section>
+
+
+<section class="section scroll-fade" style="padding: 60px 20px; text-align: left; max-width: 800px; margin: auto;">
+  <h2 style="text-align: center; font-size: 2em; margin-bottom: 30px;">Frequently Asked Questions</h2>
+
+  <details style="margin-bottom: 20px;">
+    <summary style="font-weight: bold; font-size: 1.1em; cursor: pointer;">What’s included in the QuickWoo Bundle?</summary>
+    <p style="margin-top: 10px;">You get full versions of Quick Add+, Quick Edit, Quick SEO, and Quick Blog—unlocked and regularly updated.</p>
+  </details>
+
+  <details style="margin-bottom: 20px;">
+    <summary style="font-weight: bold; font-size: 1.1em; cursor: pointer;">Can I upgrade from a Free version later?</summary>
+    <p style="margin-top: 10px;">Yes. You can upgrade anytime, and your settings will carry over automatically.</p>
+  </details>
+
+  <details style="margin-bottom: 20px;">
+    <summary style="font-weight: bold; font-size: 1.1em; cursor: pointer;">Are plugin updates included?</summary>
+    <p style="margin-top: 10px;">Absolutely. Your bundle includes updates for one full year.</p>
+  </details>
+
+  <details style="margin-bottom: 20px;">
+    <summary style="font-weight: bold; font-size: 1.1em; cursor: pointer;">Do I get customer support?</summary>
+    <p style="margin-top: 10px;">Yes, bundle users receive priority support from our QuickWoo experts.</p>
+  </details>
+
+  <details style="margin-bottom: 20px;">
+    <summary style="font-weight: bold; font-size: 1.1em; cursor: pointer;">Does this work with all WooCommerce themes?</summary>
+    <p style="margin-top: 10px;">Yes. QuickWoo apps are fully compatible with most modern WooCommerce-compatible themes, including Astra, Flatsome, and Kadence.</p>
+  </details>
+
+  <details style="margin-bottom: 20px;">
+    <summary style="font-weight: bold; font-size: 1.1em; cursor: pointer;">Is there a money-back guarantee?</summary>
+    <p style="margin-top: 10px;">Yes. We offer a 14-day no-questions-asked refund if you're not satisfied with your purchase.</p>
+  </details>
+
+  <details style="margin-bottom: 20px;">
+    <summary style="font-weight: bold; font-size: 1.1em; cursor: pointer;">Can I use the apps on multiple sites?</summary>
+    <p style="margin-top: 10px;">Each license is valid for one site. Additional site licenses can be purchased at a discounted rate.</p>
+  </details>
+
+  <details style="margin-bottom: 20px;">
+    <summary style="font-weight: bold; font-size: 1.1em; cursor: pointer;">Do I need any coding skills to use these tools?</summary>
+    <p style="margin-top: 10px;">Nope. All QuickWoo apps are beginner-friendly and require zero coding knowledge to set up or operate.</p>
+  </details>
+</section>
+
+
+
+<section class="section scroll-fade" class="section trust" style="background: #0a0039; padding: 40px 20px; text-align: center;">
+  <h2 style="color: white; font-size: 1.8em; margin-bottom: 20px;">Trusted by WooCommerce Professionals</h2>
+
+</section>
+
+
+<section class="section scroll-fade" class="section newsletter" style="background: #fff4d0; text-align: center; padding: 60px 20px;">
+  <h2 style="font-size: 2em; margin-bottom: 20px;">Get Our Free Guide</h2>
+  <p style="font-size: 1.1em; margin-bottom: 30px;">Not ready to buy? Grab our 10-Point Guide to WooCommerce Growth.</p>
+  <input type="email" placeholder="Enter your email" style="border: 2px solid #6139F5; padding: 12px 18px; font-size: 1em; border-radius: 8px; border: 1px solid #ccc; width: 280px;">
+  <button style="margin-top: 20px; padding: 12px 24px; background-color: #6139F5; color: white; font-weight: bold; border: none; border-radius: 8px; margin-left: 10px;">Send Guide</button>
+</section>
+
+
+<section class="section scroll-fade" class="section video-demo" style="padding: 60px 20px; text-align: center; background: #6139F5;">
+  <h2 style="color: white; font-size: 2em; margin-bottom: 20px;">See QuickWoo in Action</h2>
+  <p style="color: white; margin-bottom: 30px;">Watch how QuickWoo apps streamline your workflow in real time.</p>
+  <video controls style="max-width: 400px; border-radius: 12px;">
+    <source src="website/assets/videos/0430.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+<section class="section pricing-toggle scroll-fade">
+  <section class="imagetag">
+    <img src="/website/assets/images/QuickWooBundle.png">
+  </section>
+  <h2 style="margin-bottom: 20px;">Flexible Pricing</h2>
+  <label style="font-weight: bold;">Choose Plan Type: </label>
+  <select id="plan-toggle" style="padding: 8px 16px; font-size: 1em; margin-bottom: 30px;">
+    <option value="monthly">Monthly</option>
+    <option value="yearly" selected>Yearly (Save 20%)</option>
+  </select>
+  <div id="pricing-display" style="font-size: 1.3em; font-weight: bold;">$157/year <br>(One-time payment)</div>
+</section>
+
+<section class="section social-proof" style="background: #fff4d0; padding: 40px 20px; text-align: center;">
+  <h2 style="font-size: 1.8em; margin-bottom: 20px;">Loved by Woo Users</h2>
+  <p style="max-width: 700px; margin: 0 auto 30px;">Join all the stores who trust QuickWoo to save hours, boost performance, and simplify their workflow.</p>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; font-weight: bold;">
+    <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@PluginHut</span>
+    <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@MegaGoods</span>
+    <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@DevStacks</span>
+    <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@Elementora</span>
+    <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@StoreFlow</span>
+  </div>
+</section>
+
+
+<section class="section whats-new" style="background: #090027; color: white; padding: 30px 20px; text-align: center;">
+  <p style="font-size: 1.1em;">✨ Now with Woo 8.x support, new SEO insights module, and lightning-fast batch editing.</p>
+</section>
+
+
+<footer style="backdrop-filter: blur(12px); background: rgba(255, 255, 255, 0.15); border-top: 1px solid rgba(255, 255, 255, 0.2); text-align: center; padding: 30px 20px; font-size: 0.95em; color: #0f0c48;">
+  <p>© 2025 QuickWoo Bundle. Built with 💜 by <strong>Robert Calvin</strong></p>
+  <p><a href="/terms" style="color:#0f0c48; margin-right: 10px;">Terms</a> | <a href="/privacy" style="color:#0f0c48;">Privacy</a></p>
+</footer>
+
+
+<div style="position: fixed; bottom: 30px; right: 30px; z-index: 999;">
+  <a href="mailto:support@quickwoo.pro" style="background: linear-gradient(to right, #6139F5, #FFB900); color: white; padding: 16px 22px; border-radius: 50px; font-weight: bold; box-shadow: 0 8px 24px rgba(0,0,0,0.2); text-decoration: none; display: inline-block;">
+    💬 Need help choosing?
+  </a>
+</div>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("plan-toggle");
+    const display = document.getElementById("pricing-display");
+    toggle.addEventListener("change", () => {
+      display.textContent = toggle.value === "monthly"
+        ? "$15/month (Billed monthly)"
+        : "$157/year (One-time payment)";
+    });
+  });
+</script>
+
+
+
+
+
+<div id="exit-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:1000; align-items:center; justify-content:center;">
+  <div style="background:white; padding:40px; border-radius:16px; max-width:500px; text-align:center;">
+    <h2>Wait! Before You Go…</h2>
+    <p>Here’s 15% off the QuickWoo Bundle — today only.</p>
+    <a href="/bundle" style="display:inline-block; margin-top:20px; padding:12px 20px; background:#6139F5; color:white; text-decoration:none; font-weight:bold; border-radius:8px;">Claim Discount</a>
+    <br><br>
+    <button onclick="document.getElementById('exit-modal').style.display='none'" style="background:none; border:none; color:#aaa; margin-top:15px;">No thanks</button>
+  </div>
+</div>
+<script>
+  let exitShown = false;
+  document.addEventListener("mouseleave", (e) => {
+    if (!exitShown && e.clientY < 50) {
+      document.getElementById("exit-modal").style.display = "flex";
+      exitShown = true;
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -26,6 +26,29 @@
       line-height: 1.5;
     }
 
+    header {
+      background: #0f0c48;
+      padding: 14px 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+
     #hero {
       background: linear-gradient(270deg, var(--purple), var(--gold), var(--purple));
       background-size: 600% 600%;
@@ -244,13 +267,26 @@
 </head>
 <body>
 
+  <header>
+    <div style="font-size: 1.6em; font-weight: 700;">QuickWoo</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blog/index.html">Woo Blog</a>
+      <a href="bundle/index.html">Bundle</a>
+      <a href="quick-add/index.html">Quick Add</a>
+      <a href="quick-edit/index.html">Quick Edit</a>
+      <a href="quick-seo/index.html">Quick SEO</a>
+      <a href="quick-blog/index.html">Quick Blog</a>
+    </nav>
+  </header>
+
   <section class="section scroll-fade" id="hero">
     <h1>QuickWoo Bundle</h1>
     <p>Save 50% on our suite of powerful WooCommerce applications</p>
   </section>
 
   <section class="imagetag">
-    <img src="/website/assets/images/QuickWooBundle.png">
+    <img src="assets/images/QuickWooBundle.png">
   </section>
 
   <section class="section scroll-fade" id="includes">
@@ -474,7 +510,7 @@
 
 <section class="section pricing-toggle scroll-fade">
   <section class="imagetag">
-    <img src="/website/assets/images/QuickWooBundle.png">
+    <img src="assets/images/QuickWooBundle.png">
   </section>
   <h2 style="margin-bottom: 20px;">Flexible Pricing</h2>
   <label style="font-weight: bold;">Choose Plan Type: </label>

@@ -23,6 +23,30 @@
       color: #222;
       line-height: 1.5;
     }
+
+    header {
+      background: #0f0c48;
+      padding: 14px 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    
     .section {
       padding: 60px 20px;
       text-align: center;
@@ -93,19 +117,18 @@
 </head>
 <body>
 
- <header style="background: #0f0c48; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
-  <div style="color: white; font-size: 1.6em; font-weight: 700;">
-    QuickWoo
-  </div>
-  <nav style="display: flex; gap: 18px; flex-wrap: wrap; margin-top: 10px;">
-    <a href="/website/index.html" style="color: white; text-decoration: none; font-weight: bold;">Home</a>
-    <a href="/website/pages/bundle.html" style="color: white; text-decoration: none; font-weight: bold;">Bundle</a>
-    <a href="/website/pages/quick-add.html" style="color: white; text-decoration: none; font-weight: bold;">Quick Add</a>
-    <a href="/website/pages/quick-edit.html" style="color: white; text-decoration: none; font-weight: bold;">Quick Edit</a>
-    <a href="/website/pages/quick-seo.html" style="color: white; text-decoration: none; font-weight: bold;">Quick SEO</a>
-    <a href="/website/pages/quick-blog.html" style="color: white; text-decoration: none; font-weight: bold;">Quick Blog</a>
-  </nav>
-</header>
+  <header>
+    <div style="font-size: 1.6em; font-weight: 700;">QuickWoo</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blog/index.html">Woo Blog</a>
+      <a href="bundle/index.html">Bundle</a>
+      <a href="quick-add/index.html">Quick Add</a>
+      <a href="quick-edit/index.html">Quick Edit</a>
+      <a href="quick-seo/index.html">Quick SEO</a>
+      <a href="quick-blog/index.html">Quick Blog</a>
+    </nav>
+  </header>
 
   <section class="hero">
     <h1>Quick Blog</h1>
@@ -113,7 +136,7 @@
   </section>
 
   <section class="imagetag">
-    <img src="/website/assets/images/quickblog-screenshot.png" alt="Quick Blog Screenshot">
+    <img src="assets/images/quickblog-screenshot.png" alt="Quick Blog Screenshot">
   </section>
 
   <section class="section features">

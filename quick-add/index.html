@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quick Add – QuickWoo</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
@@ -12,11 +13,13 @@
       --deep-blue: #0f0c48;
       --white: #ffffff;
     }
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: 'Poppins', sans-serif;
       background: var(--white);
@@ -24,81 +27,82 @@
       line-height: 1.5;
     }
 
-header {
-  background: #0f0c48;
-  padding: 14px 20px;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 1000;
-}
+    header {
+      background: #0f0c48;
+      padding: 14px 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1000;
+    }
 
-header .logo {
-  font-size: 1.6em;
-  font-weight: 700;
-}
+    header .logo {
+      font-size: 1.6em;
+      font-weight: 700;
+    }
 
-nav {
-  display: flex;
-  gap: 18px;
-}
+    nav {
+      display: flex;
+      gap: 18px;
+    }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 8px 0;
-}
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 0;
+    }
 
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  cursor: pointer;
-  width: 30px;
-  height: 24px;
-  gap: 5px;
-}
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+      width: 30px;
+      height: 24px;
+      gap: 5px;
+    }
 
-.menu-toggle span {
-  height: 3px;
-  background: white;
-  width: 100%;
-  border-radius: 2px;
-}
+    .menu-toggle span {
+      height: 3px;
+      background: white;
+      width: 100%;
+      border-radius: 2px;
+    }
 
-/* Responsive - Tablet & Mobile */
-@media (max-width: 992px) {
-  .menu-toggle {
-    display: flex;
-  }
+    /* Responsive - Tablet & Mobile */
+    @media (max-width: 992px) {
+      .menu-toggle {
+        display: flex;
+      }
 
-  nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #0f0c48;
-    flex-direction: column;
-    align-items: center;
-    display: none;
-    padding: 10px 0;
-    border-top: 1px solid #222;
-  }
+      nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #0f0c48;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 10px 0;
+        border-top: 1px solid #222;
+      }
 
-  input[type="checkbox"].nav-toggle:checked + .menu-toggle + nav {
-    display: flex;
-  }
-}
+      input[type="checkbox"].nav-toggle:checked+.menu-toggle+nav {
+        display: flex;
+      }
+    }
 
 
     .section {
       padding: 60px 20px;
       text-align: center;
     }
+
     .hero {
       background: linear-gradient(270deg, var(--purple), var(--gold), var(--purple));
       background-size: 600% 600%;
@@ -108,22 +112,34 @@ nav a {
       display: flex;
       flex-direction: column;
     }
+
     @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
     }
+
     .hero h1 {
       font-size: 2.8em;
       margin: auto;
       margin-bottom: 10px;
     }
+
     .hero p {
       font-size: 1.2em;
       margin: auto;
     }
+
     #features {
-     background-color: var(--deep-blue);
+      background-color: var(--deep-blue);
     }
 
     .features ul {
@@ -133,6 +149,7 @@ nav a {
       margin: auto;
       text-align: left;
     }
+
     .features ul li {
       background: #f3f3f3;
       padding: 12px 18px;
@@ -140,12 +157,14 @@ nav a {
       margin: 8px 0;
       font-size: 1.1em;
     }
+
     .cta {
       background: #0f0c48;
       color: white;
       padding: 50px 20px;
       text-align: center;
     }
+
     .cta a {
       background: var(--gold);
       color: #0f0c48;
@@ -155,11 +174,13 @@ nav a {
       text-decoration: none;
       font-size: 1.2em;
     }
+
     .imagetag img {
       max-width: 350px;
       margin: 30px auto;
       display: block;
     }
+
     footer {
       backdrop-filter: blur(12px);
       background: rgba(255, 255, 255, 0.15);
@@ -169,54 +190,57 @@ nav a {
       font-size: 0.95em;
       color: #0f0c48;
     }
+
     @media (max-width: 768px) {
-    #menu-toggle {
-      display: block;
+      #menu-toggle {
+        display: block;
+      }
+
+      #main-nav {
+        flex-direction: column;
+        display: none;
+        margin-top: 10px;
+      }
+
+      #main-nav a {
+        padding: 8px 0;
+      }
+
+      #main-nav.active {
+        display: flex;
+      }
     }
 
-    #main-nav {
-      flex-direction: column;
-      display: none;
-      margin-top: 10px;
+    img {
+      max-width: 200px;
+      border: 1px solid black;
+      border-radius: 4px;
+      margin-bottom: 10px;
     }
-
-    #main-nav a {
-      padding: 8px 0;
-    }
-
-    #main-nav.active {
-      display: flex;
-    }
-  }
-  img {
-     max-width: 200px;
-     border: 1px solid black;
-     border-radius: 4px;
-     margin-bottom: 10px;
-   }
   </style>
 </head>
+
 <body>
 
-<header>
-  <div class="logo">QuickWoo</div>
-  <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
-  <label for="nav-toggle" class="menu-toggle">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/blog/">Woo Blog</a>
-    <a href="/bundle/">Bundle</a>
-    <a href="/quick-add/">Quick Add</a>
-    <a href="/quick-edit/">Quick Edit</a>
-    <a href="/quick-seo/">Quick SEO</a>
-    <a href="/quick-blog/">Quick Blog</a>
-    <a href="/lite/">Lite</a>
-  </nav>
-</header>
+  <header>
+    <div class="logo">QuickWoo</div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+    <label for="nav-toggle" class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/blog/">Woo Blog</a>
+      <a href="/bundle/">Bundle</a>
+      <a href="/quick-add/">Quick Add</a>
+      <a href="/quick-edit/">Quick Edit</a>
+      <a href="/quick-seo/">Quick SEO</a>
+      <a href="/quick-blog/">Quick Blog</a>
+      <a href="/lite/">Lite</a>
+    </nav>
+  </header>
 
   <section class="hero">
     <h1>Quick Add</h1>
@@ -224,17 +248,22 @@ nav a {
   </section>
 
   <section class="section scroll-fade" style="padding: 60px 20px; text-align: center;">
-   <h2 style="font-size: 2em; color: #0f0c48;">Quick Add</h2>
-   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; align-items: center; margin-top: 30px;">
-     <img src="/assets/images/quickadd.png" alt="Quick Add Icon" style="max-width: 200px;">
-     <img src="/assets/images/quickaddlite.png" alt="Quick Add Lite Icon" style="max-width: 200px;">
-   </div>
-   <p style="font-size: 1.1em; margin: 30px 0;">$59 for 12 Months or $99 for Lifetime Access</p>
-   <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-     <a href="/checkout/" style="background: #6139F5; color: white; font-weight: bold; padding: 14px 28px; border-radius: 8px; text-decoration: none;">Purchase Now</a>
-     <a href="/assets/downloads/Quick-Add-Lite.zip" style="background: #FFB900; color: #0f0c48; font-weight: bold; padding: 14px 28px; border-radius: 8px; text-decoration: none;">Download Lite</a>
-   </div>
- </section>
+    <h2 style="font-size: 2em; color: #0f0c48;">Quick Add</h2>
+    <div
+      style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; align-items: center; margin-top: 30px;">
+      <img src="/assets/images/quickadd.png" alt="Quick Add Icon" style="max-width: 200px;">
+      <img src="/assets/images/quickaddlite.png" alt="Quick Add Lite Icon" style="max-width: 200px;">
+    </div>
+    <p style="font-size: 1.1em; margin: 30px 0;">$59 for 12 Months or $99 for Lifetime Access</p>
+    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+      <a href="/checkout/"
+        style="background: #6139F5; color: white; font-weight: bold; padding: 14px 28px; border-radius: 8px; text-decoration: none;">Purchase
+        Now</a>
+      <a href="/assets/downloads/Quick-Add-Lite.zip"
+        style="background: #FFB900; color: #0f0c48; font-weight: bold; padding: 14px 28px; border-radius: 8px; text-decoration: none;">Download
+        Lite</a>
+    </div>
+  </section>
 
   <section id="features" class="section features">
     <h2 style="color: var(--white); margin-bottom: 30px;">Pro Features</h2>
@@ -262,13 +291,41 @@ nav a {
         </tr>
       </thead>
       <tbody>
-        <tr><td style="border: 1px solid #ccc; padding: 10px;">Products per Submission</td><td>2</td><td>Unlimited</td></tr>
-        <tr><td style="border: 1px solid #ccc; padding: 10px;">Product Types</td><td>All types</td><td>All types</td></tr>
-        <tr><td style="border: 1px solid #ccc; padding: 10px;">Custom Fields</td><td>✅</td><td>✅</td></tr>
-        <tr><td style="border: 1px solid #ccc; padding: 10px;">Image Gallery</td><td>✅</td><td>✅</td></tr>
-        <tr><td style="border: 1px solid #ccc; padding: 10px;">Sale Scheduling</td><td>✅</td><td>✅</td></tr>
-        <tr><td style="border: 1px solid #ccc; padding: 10px;">Lifetime Updates</td><td>✅</td><td>✅</td></tr>
-        <tr><td style="border: 1px solid #ccc; padding: 10px;">Priority Support</td><td>✅</td><td>✅</td></tr>
+        <tr>
+          <td style="border: 1px solid #ccc; padding: 10px;">Products per Submission</td>
+          <td>2</td>
+          <td>Unlimited</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #ccc; padding: 10px;">Product Types</td>
+          <td>All types</td>
+          <td>All types</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #ccc; padding: 10px;">Custom Fields</td>
+          <td>✅</td>
+          <td>✅</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #ccc; padding: 10px;">Image Gallery</td>
+          <td>✅</td>
+          <td>✅</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #ccc; padding: 10px;">Sale Scheduling</td>
+          <td>✅</td>
+          <td>✅</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #ccc; padding: 10px;">Lifetime Updates</td>
+          <td>✅</td>
+          <td>✅</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #ccc; padding: 10px;">Priority Support</td>
+          <td>✅</td>
+          <td>✅</td>
+        </tr>
       </tbody>
     </table>
   </section>
@@ -290,19 +347,21 @@ nav a {
 
   <footer>
     <p>© 2025 QuickWoo Bundle. Built with 💜 by <strong>Robert Calvin</strong></p>
-   <p><a href="/terms/" style="color:#0f0c48; margin-right: 10px;">Terms</a> | <a href="/privacy/" style="color:#0f0c48;">Privacy</a></p>
+    <p><a href="/terms/" style="color:#0f0c48; margin-right: 10px;">Terms</a> | <a href="/privacy/"
+        style="color:#0f0c48;">Privacy</a></p>
   </footer>
 
   <script>
-   document.addEventListener("DOMContentLoaded", function () {
-     const toggle = document.getElementById("menu-toggle");
-     const nav = document.getElementById("main-nav");
- 
-     toggle.addEventListener("click", () => {
-       nav.classList.toggle("active");
-     });
-   });
- </script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.getElementById("menu-toggle");
+      const nav = document.getElementById("main-nav");
+
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    });
+  </script>
 
 </body>
+
 </html>

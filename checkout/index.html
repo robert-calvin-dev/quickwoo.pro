@@ -1,244 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Checkout – QuickWoo</title>
-  <link rel="stylesheet" href="/assets/css/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    .checkout-container {
-      max-width: 600px;
-      margin: 60px auto;
-      background: #ffffff;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Checkout – QuickWoo</title>
+ <link rel="stylesheet" href="/assets/css/blog.css">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+ <style>
+  .checkout-container {
+   max-width: 600px;
+   margin: 60px auto;
+   background: #ffffff;
+   padding: 40px;
+   border-radius: 12px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
 
-    .checkout-container h2 {
-      font-size: 1.8em;
-      margin-bottom: 20px;
-      text-align: center;
-    }
+  .checkout-container h2 {
+   font-size: 1.8em;
+   margin-bottom: 20px;
+   text-align: center;
+  }
 
-    .checkout-form label {
-      display: block;
-      font-weight: 600;
-      margin-top: 20px;
-    }
+  .checkout-form label {
+   display: block;
+   font-weight: 600;
+   margin-top: 20px;
+  }
 
-    .checkout-form input,
-    .checkout-form select {
-      width: 100%;
-      padding: 12px;
-      margin-top: 8px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
+  .checkout-form input,
+  .checkout-form select {
+   width: 100%;
+   padding: 12px;
+   margin-top: 8px;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+  }
 
-    .checkout-form button {
-      margin-top: 30px;
-      width: 100%;
-      padding: 14px;
-      font-weight: bold;
-      font-size: 1.1em;
-      background-color: #6139F5;
-      color: white;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-    }
+  .checkout-form button {
+   margin-top: 30px;
+   width: 100%;
+   padding: 14px;
+   font-weight: bold;
+   font-size: 1.1em;
+   background-color: #6139F5;
+   color: white;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+  }
 
-    .checkout-form button:hover {
-      background-color: #4b2dc6;
-    }
-    :root {
-     --purple: #6139F5;
-     --gold: #FFB900;
-     --deep-blue: #0f0c48;
-     --white: #ffffff;
+  .checkout-form button:hover {
+   background-color: #4b2dc6;
+  }
+
+  :root {
+   --purple: #6139F5;
+   --gold: #FFB900;
+   --deep-blue: #0f0c48;
+   --white: #ffffff;
+  }
+
+  * {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+  }
+
+  body {
+   font-family: 'Poppins', sans-serif;
+   background: var(--white);
+   color: var(--deep-blue);
+   line-height: 1.6;
+  }
+
+
+  section {
+   width: 100%;
+  }
+
+  .hero {
+   background: linear-gradient(270deg, var(--purple), var(--gold), var(--purple));
+   background-size: 600% 600%;
+   animation: gradientShift 12s ease infinite;
+   color: white;
+   text-align: center;
+   padding: 60px 20px;
+  }
+
+  @keyframes gradientShift {
+   0% {
+    background-position: 0% 50%;
    }
 
-   * {
-     box-sizing: border-box;
-     margin: 0;
-     padding: 0;
+   50% {
+    background-position: 100% 50%;
    }
 
-   body {
-     font-family: 'Poppins', sans-serif;
-     background: var(--white);
-     color: var(--deep-blue);
-     line-height: 1.6;
+   100% {
+    background-position: 0% 50%;
    }
+  }
 
+  .bundle-promo {
+   background: var(--deep-blue);
+   color: white;
+   text-align: center;
+   padding: 40px 20px;
+  }
 
-   section {
-     width: 100%;
-   }
+  .bundle-promo a {
+   background: var(--gold);
+   color: var(--deep-blue);
+   font-weight: bold;
+   padding: 12px 24px;
+   border-radius: 8px;
+   text-decoration: none;
+  }
 
-   .hero {
-     background: linear-gradient(270deg, var(--purple), var(--gold), var(--purple));
-     background-size: 600% 600%;
-     animation: gradientShift 12s ease infinite;
-     color: white;
-     text-align: center;
-     padding: 60px 20px;
-   }
+  .section {
+   padding: 60px 20px;
+  }
 
-   @keyframes gradientShift {
-     0% { background-position: 0% 50%; }
-     50% { background-position: 100% 50%; }
-     100% { background-position: 0% 50%; }
-   }
+  .section>.inner {
+   max-width: 1200px;
+   margin: auto;
+  }
 
-   .bundle-promo {
-     background: var(--deep-blue);
-     color: white;
-     text-align: center;
-     padding: 40px 20px;
-   }
+  .blog-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   gap: 30px;
+  }
 
-   .bundle-promo a {
-     background: var(--gold);
-     color: var(--deep-blue);
-     font-weight: bold;
-     padding: 12px 24px;
-     border-radius: 8px;
-     text-decoration: none;
-   }
+  .blog-card {
+   border: 1px solid #ddd;
+   border-radius: 12px;
+   overflow: hidden;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   background: white;
+  }
 
-   .section {
-     padding: 60px 20px;
-   }
+  .blog-card img {
+   width: 100%;
+   height: auto;
+   object-fit: contain;
+   display: block;
+  }
 
-   .section > .inner {
-     max-width: 1200px;
-     margin: auto;
-   }
+  .blog-card .content {
+   padding: 20px;
+  }
 
-   .blog-grid {
-     display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-     gap: 30px;
-   }
+  .blog-card h3 {
+   font-size: 1.2em;
+   margin-bottom: 10px;
+  }
 
-   .blog-card {
-     border: 1px solid #ddd;
-     border-radius: 12px;
-     overflow: hidden;
-     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-     background: white;
-   }
+  .blog-card p {
+   font-size: 0.95em;
+   margin-bottom: 10px;
+  }
 
-   .blog-card img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  display: block;
-}
+  .blog-card .meta {
+   font-size: 0.85em;
+   color: gray;
+   margin-bottom: 10px;
+  }
 
-   .blog-card .content {
-     padding: 20px;
-   }
+  .blog-card a {
+   font-weight: bold;
+   color: var(--purple);
+   text-decoration: none;
+  }
 
-   .blog-card h3 {
-     font-size: 1.2em;
-     margin-bottom: 10px;
-   }
+  .app-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+   gap: 40px;
+   text-align: center;
+  }
 
-   .blog-card p {
-     font-size: 0.95em;
-     margin-bottom: 10px;
-   }
-
-   .blog-card .meta {
-     font-size: 0.85em;
-     color: gray;
-     margin-bottom: 10px;
-   }
-
-   .blog-card a {
-     font-weight: bold;
-     color: var(--purple);
-     text-decoration: none;
-   }
-
-   .app-grid {
-     display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-     gap: 40px;
-     text-align: center;
-   }
-
-   .app-grid img {
-     max-width: 200px;
-     border: 1px solid black;
-     border-radius: 4px;
-     margin-bottom: 10px;
-   }
-  </style>
+  .app-grid img {
+   max-width: 200px;
+   border: 1px solid black;
+   border-radius: 4px;
+   margin-bottom: 10px;
+  }
+ </style>
 </head>
+
 <body>
  <header>
   <div class="logo">QuickWoo</div>
   <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
   <label for="nav-toggle" class="menu-toggle">
-    <span></span>
-    <span></span>
-    <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
   </label>
   <nav>
-    <a href="/">Home</a>
-    <a href="/blog/">Woo Blog</a>
-    <a href="/bundle/">Bundle</a>
-    <a href="/quick-add/">Quick Add</a>
-    <a href="/quick-edit/">Quick Edit</a>
-    <a href="/quick-seo/">Quick SEO</a>
-    <a href="/quick-blog/">Quick Blog</a>
-    <a href="/lite/">Lite</a>
+   <a href="/">Home</a>
+   <a href="/blog/">Woo Blog</a>
+   <a href="/bundle/">Bundle</a>
+   <a href="/quick-add/">Quick Add</a>
+   <a href="/quick-edit/">Quick Edit</a>
+   <a href="/quick-seo/">Quick SEO</a>
+   <a href="/quick-blog/">Quick Blog</a>
+   <a href="/lite/">Lite</a>
   </nav>
-</header>
+ </header>
 
-  <section class="hero">
-    <h1>Checkout</h1>
-    <p>Complete your purchase and receive your license instantly.</p>
-  </section>
+ <section class="hero">
+  <h1>Checkout</h1>
+  <p>Complete your purchase and receive your license instantly.</p>
+ </section>
 
-  <section class="section">
-    <div class="checkout-container">
-      <h2>Secure Checkout</h2>
-      <form class="checkout-form">
-        <label for="product">Choose Product</label>
-        <select id="product" name="product">
-          <option value="quick-add">Quick Add 12 Months – $59</option>
-          <option value="quick-add-life">Quick Add Lifetime – $99</option>
-          <option value="quick-edit">Quick Edit 12 Months – $59</option>
-          <option value="quick-edit-life">Quick Edit Lifetime – $99</option>
-          <option value="quick-seo">Quick SEO 12 Months – $59</option>
-          <option value="quick-seo-life">Quick SEO Lifetime – $99</option>
-          <option value="bundle">QuickWoo Bundle 12 Months – $119</option>
-          <option value="bundle-life">QuickWoo Bundle Lifetime – $146</option>
-        </select>
+ <section class="section">
+  <div class="checkout-container">
+   <h2>Secure Checkout</h2>
+   <form class="checkout-form">
+    <label for="product">Choose Product</label>
+    <select id="product" name="product">
+     <option value="quick-add">Quick Add 12 Months – $59</option>
+     <option value="quick-add-life">Quick Add Lifetime – $99</option>
+     <option value="quick-edit">Quick Edit 12 Months – $59</option>
+     <option value="quick-edit-life">Quick Edit Lifetime – $99</option>
+     <option value="quick-seo">Quick SEO 12 Months – $59</option>
+     <option value="quick-seo-life">Quick SEO Lifetime – $99</option>
+     <option value="bundle">QuickWoo Bundle 12 Months – $119</option>
+     <option value="bundle-life">QuickWoo Bundle Lifetime – $146</option>
+    </select>
 
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Jane Doe" required>
 
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required>
 
-        <label for="card">Card Details</label>
-        <input type="text" id="card" name="card" placeholder="Card Number" required>
+    <label for="card">Card Details</label>
+    <input type="text" id="card" name="card" placeholder="Card Number" required>
 
-        <button type="submit">Complete Purchase</button>
-      </form>
-    </div>
-  </section>
+    <button type="submit">Complete Purchase</button>
+   </form>
+  </div>
+ </section>
 
-  <footer>
-    <p>© 2025 QuickWoo Bundle. Built with 💜 by <strong>Robert Calvin</strong></p>
-    <p><a href="/terms/">Terms</a> | <a href="/privacy/">Privacy</a></p>
-  </footer>
+ <footer>
+  <p>© 2025 QuickWoo Bundle. Built with 💜 by <strong>Robert Calvin</strong></p>
+  <p><a href="/terms/">Terms</a> | <a href="/privacy/">Privacy</a></p>
+ </footer>
 </body>
+
 </html>

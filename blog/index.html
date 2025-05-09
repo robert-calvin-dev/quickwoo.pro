@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,94 +13,94 @@
       --deep-blue: #0f0c48;
       --white: #ffffff;
     }
- 
+
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
- 
+
     body {
       font-family: 'Poppins', sans-serif;
       background: var(--white);
       color: var(--deep-blue);
       line-height: 1.6;
     }
- 
+
     header {
-  background: #0f0c48;
-  padding: 14px 20px;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 1000;
-}
+      background: #0f0c48;
+      padding: 14px 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1000;
+    }
 
-header .logo {
-  font-size: 1.6em;
-  font-weight: 700;
-}
+    header .logo {
+      font-size: 1.6em;
+      font-weight: 700;
+    }
 
-nav {
-  display: flex;
-  gap: 18px;
-}
+    nav {
+      display: flex;
+      gap: 18px;
+    }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 8px 0;
-}
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 0;
+    }
 
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  cursor: pointer;
-  width: 30px;
-  height: 24px;
-  gap: 5px;
-}
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+      width: 30px;
+      height: 24px;
+      gap: 5px;
+    }
 
-.menu-toggle span {
-  height: 3px;
-  background: white;
-  width: 100%;
-  border-radius: 2px;
-}
+    .menu-toggle span {
+      height: 3px;
+      background: white;
+      width: 100%;
+      border-radius: 2px;
+    }
 
-/* Responsive - Tablet & Mobile */
-@media (max-width: 992px) {
-  .menu-toggle {
-    display: flex;
-  }
+    /* Responsive - Tablet & Mobile */
+    @media (max-width: 992px) {
+      .menu-toggle {
+        display: flex;
+      }
 
-  nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #0f0c48;
-    flex-direction: column;
-    align-items: center;
-    display: none;
-    padding: 10px 0;
-    border-top: 1px solid #222;
-  }
+      nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #0f0c48;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 10px 0;
+        border-top: 1px solid #222;
+      }
 
-  input[type="checkbox"].nav-toggle:checked + .menu-toggle + nav {
-    display: flex;
-  }
-}
- 
+      input[type="checkbox"].nav-toggle:checked+.menu-toggle+nav {
+        display: flex;
+      }
+    }
+
     section {
       width: 100%;
     }
- 
+
     .hero {
       background: linear-gradient(270deg, var(--purple), var(--gold), var(--purple));
       background-size: 600% 600%;
@@ -108,20 +109,28 @@ nav a {
       text-align: center;
       padding: 60px 20px;
     }
- 
+
     @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
     }
- 
+
     .bundle-promo {
       background: var(--deep-blue);
       color: white;
       text-align: center;
       padding: 40px 20px;
     }
- 
+
     .bundle-promo a {
       background: var(--gold);
       color: var(--deep-blue);
@@ -130,22 +139,22 @@ nav a {
       border-radius: 8px;
       text-decoration: none;
     }
- 
+
     .section {
       padding: 60px 20px;
     }
- 
-    .section > .inner {
+
+    .section>.inner {
       max-width: 1200px;
       margin: auto;
     }
- 
+
     .blog-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
     }
- 
+
     .blog-card {
       border: 1px solid #ddd;
       border-radius: 12px;
@@ -153,47 +162,47 @@ nav a {
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       background: white;
     }
- 
+
     .blog-card img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  display: block;
-}
- 
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+
     .blog-card .content {
       padding: 20px;
     }
- 
+
     .blog-card h3 {
       font-size: 1.2em;
       margin-bottom: 10px;
     }
- 
+
     .blog-card p {
       font-size: 0.95em;
       margin-bottom: 10px;
     }
- 
+
     .blog-card .meta {
       font-size: 0.85em;
       color: gray;
       margin-bottom: 10px;
     }
- 
+
     .blog-card a {
       font-weight: bold;
       color: var(--purple);
       text-decoration: none;
     }
- 
+
     .app-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 40px;
       text-align: center;
     }
- 
+
     .app-grid img {
       max-width: 200px;
       border: 1px solid black;
@@ -202,26 +211,27 @@ nav a {
     }
   </style>
 </head>
+
 <body>
-<header>
-  <div class="logo">QuickWoo</div>
-  <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
-  <label for="nav-toggle" class="menu-toggle">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/blog/">Woo Blog</a>
-    <a href="/bundle/">Bundle</a>
-    <a href="/quick-add/">Quick Add</a>
-    <a href="/quick-edit/">Quick Edit</a>
-    <a href="/quick-seo/">Quick SEO</a>
-    <a href="/quick-blog/">Quick Blog</a>
-    <a href="/lite/">Lite</a>
-  </nav>
-</header>
+  <header>
+    <div class="logo">QuickWoo</div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+    <label for="nav-toggle" class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/blog/">Woo Blog</a>
+      <a href="/bundle/">Bundle</a>
+      <a href="/quick-add/">Quick Add</a>
+      <a href="/quick-edit/">Quick Edit</a>
+      <a href="/quick-seo/">Quick SEO</a>
+      <a href="/quick-blog/">Quick Blog</a>
+      <a href="/lite/">Lite</a>
+    </nav>
+  </header>
 
   <section class="hero">
     <h1>QuickWoo Blog</h1>
@@ -241,7 +251,7 @@ nav a {
           <a href="/blog/seo-checklist-2025/">Read More →</a>
         </div>
       </div>
-      
+
       <div class="blog-card">
         <img src="/assets/images/sitespeed.png" alt="Store Speed" />
         <div class="content">
@@ -251,7 +261,7 @@ nav a {
           <a href="/blog/store-speed/">Read More →</a>
         </div>
       </div>
-      
+
       <div class="blog-card">
         <img src="/assets/images/blogtools.png" alt="Blog Tools" />
         <div class="content">
@@ -261,7 +271,7 @@ nav a {
           <a href="/blog/quick-blog/">Read More →</a>
         </div>
       </div>
-      
+
       <div class="blog-card">
         <img src="/assets/images/seasonalseo.png" alt="Seasonal Strategy" />
         <div class="content">
@@ -274,35 +284,32 @@ nav a {
       <!-- Add more blog-card entries below -->
     </div>
   </section>
-  <section class="section scroll-fade" class="section trust" style="display: flex; flex-direction: column; background: #0a0039; padding: 40px 20px; text-align: center;">
+  <section class="section scroll-fade" class="section trust"
+    style="display: flex; flex-direction: column; background: #0a0039; padding: 40px 20px; text-align: center;">
     <h2 style="color: white; font-size: 1.8em; margin-bottom: 20px;">Trusted by WooCommerce Professionals</h2>
     <img style="max-width: 400px; margin: auto;" src="/assets/videos/screenshots.gif">
-  
+
   </section>
-  
-  
-  
+
+
+
   <section class="section scroll-fade newsletter" style="background: #fff4d0; text-align: center; padding: 60px 20px;">
     <h2 style="font-size: 2em; margin-bottom: 20px;">Get Our Free Guide</h2>
-    <p style="font-size: 1.1em; margin-bottom: 30px;">Not ready to buy? Grab our 10-Point Guide to WooCommerce Growth.</p>
-    
+    <p style="font-size: 1.1em; margin-bottom: 30px;">Not ready to buy? Grab our 10-Point Guide to WooCommerce Growth.
+    </p>
+
     <form action="https://formspree.io/f/xldbljjp" method="POST" onsubmit="return sendGuideAlert(event)">
-      <input 
-        type="email" 
-        name="email" 
-        required 
-        placeholder="Enter your email" 
+      <input type="email" name="email" required placeholder="Enter your email"
         style="border: 2px solid #6139F5; padding: 12px 18px; font-size: 1em; border-radius: 8px; width: 280px;">
-      
-      <button 
-        type="submit" 
+
+      <button type="submit"
         style="margin-top: 20px; padding: 12px 24px; background-color: #6139F5; color: white; font-weight: bold; border: none; border-radius: 8px; margin-left: 10px;">
         Send Guide
       </button>
     </form>
   </section>
-  
-  
+
+
   <section class="section scroll-fade" class="section video-demo" style="text-align: center; background: #6139F5;">
     <h2 style="color: white; font-size: 2em; margin-bottom: 20px;">See QuickWoo in Action</h2>
     <p style="color: white; margin-bottom: 30px;">Watch how QuickWoo apps streamline your workflow in real time.</p>
@@ -311,35 +318,40 @@ nav a {
       Your browser does not support the video tag.
     </video>
   </section>
-  
-    <section class="section social-proof" style="background: #fff4d0; padding: 40px 20px; text-align: center;">
-     <h2 style="font-size: 1.8em; margin-bottom: 20px;">Loved by Woo Users</h2>
-     <p style="max-width: 700px; margin: 0 auto 30px;">Join all the stores who trust QuickWoo to save hours, boost performance, and simplify their workflow.</p>
-     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; font-weight: bold;">
-       <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@PluginHut</span>
-       <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@MegaGoods</span>
-       <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@DevStacks</span>
-       <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@Elementora</span>
-       <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@StoreFlow</span>
-     </div>
-   </section>
-   
-   
-   <section class="section whats-new" style="background: #090027; color: white; padding: 30px 20px; text-align: center;">
-     <p style="font-size: 1.1em;">✨ Now with Woo 8.x support, new SEO insights module, and lightning-fast batch editing.</p>
-   </section>
-   
-   
-   <footer style="backdrop-filter: blur(12px); background: rgba(255, 255, 255, 0.15); border-top: 1px solid rgba(255, 255, 255, 0.2); text-align: center; padding: 30px 20px; font-size: 0.95em; color: #0f0c48;">
-     <p>© 2025 QuickWoo Bundle. Built with 💜 by <strong>Robert Calvin</strong></p>
-     <p><a href="/terms/" style="color:#0f0c48; margin-right: 10px;">Terms</a> | <a href="/privacy/" style="color:#0f0c48;">Privacy</a></p>
-   </footer>
 
-   <script>
+  <section class="section social-proof" style="background: #fff4d0; padding: 40px 20px; text-align: center;">
+    <h2 style="font-size: 1.8em; margin-bottom: 20px;">Loved by Woo Users</h2>
+    <p style="max-width: 700px; margin: 0 auto 30px;">Join all the stores who trust QuickWoo to save hours, boost
+      performance, and simplify their workflow.</p>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; font-weight: bold;">
+      <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@PluginHut</span>
+      <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@MegaGoods</span>
+      <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@DevStacks</span>
+      <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@Elementora</span>
+      <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@StoreFlow</span>
+    </div>
+  </section>
+
+
+  <section class="section whats-new" style="background: #090027; color: white; padding: 30px 20px; text-align: center;">
+    <p style="font-size: 1.1em;">✨ Now with Woo 8.x support, new SEO insights module, and lightning-fast batch editing.
+    </p>
+  </section>
+
+
+  <footer
+    style="backdrop-filter: blur(12px); background: rgba(255, 255, 255, 0.15); border-top: 1px solid rgba(255, 255, 255, 0.2); text-align: center; padding: 30px 20px; font-size: 0.95em; color: #0f0c48;">
+    <p>© 2025 QuickWoo Bundle. Built with 💜 by <strong>Robert Calvin</strong></p>
+    <p><a href="/terms/" style="color:#0f0c48; margin-right: 10px;">Terms</a> | <a href="/privacy/"
+        style="color:#0f0c48;">Privacy</a></p>
+  </footer>
+
+  <script>
     function sendGuideAlert(event) {
       alert("Thank You! Your guide will arrive in your e-mail within the next 2 business days.");
       return true; // allow form submission
     }
   </script>
 </body>
+
 </html>

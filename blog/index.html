@@ -12,20 +12,20 @@
       --deep-blue: #0f0c48;
       --white: #ffffff;
     }
-
+ 
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-
+ 
     body {
       font-family: 'Poppins', sans-serif;
       background: var(--white);
       color: var(--deep-blue);
       line-height: 1.6;
     }
-
+ 
     header {
       background: #0f0c48;
       padding: 14px 20px;
@@ -35,19 +35,23 @@
       align-items: center;
       flex-wrap: wrap;
     }
-
+ 
     nav {
       display: flex;
       gap: 18px;
       flex-wrap: wrap;
     }
-
+ 
     nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
     }
-
+ 
+    section {
+      width: 100%;
+    }
+ 
     .hero {
       background: linear-gradient(270deg, var(--purple), var(--gold), var(--purple));
       background-size: 600% 600%;
@@ -56,25 +60,44 @@
       text-align: center;
       padding: 60px 20px;
     }
-
+ 
     @keyframes gradientShift {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
-
+ 
+    .bundle-promo {
+      background: var(--deep-blue);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+ 
+    .bundle-promo a {
+      background: var(--gold);
+      color: var(--deep-blue);
+      font-weight: bold;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+ 
     .section {
       padding: 60px 20px;
+    }
+ 
+    .section > .inner {
       max-width: 1200px;
       margin: auto;
     }
-
+ 
     .blog-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
     }
-
+ 
     .blog-card {
       border: 1px solid #ddd;
       border-radius: 12px;
@@ -82,37 +105,51 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       background: white;
     }
-
+ 
     .blog-card img {
       width: 100%;
       height: 180px;
       object-fit: cover;
     }
-
+ 
     .blog-card .content {
       padding: 20px;
     }
-
+ 
     .blog-card h3 {
       font-size: 1.2em;
       margin-bottom: 10px;
     }
-
+ 
     .blog-card p {
       font-size: 0.95em;
       margin-bottom: 10px;
     }
-
+ 
     .blog-card .meta {
       font-size: 0.85em;
       color: gray;
       margin-bottom: 10px;
     }
-
+ 
     .blog-card a {
       font-weight: bold;
       color: var(--purple);
       text-decoration: none;
+    }
+ 
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 40px;
+      text-align: center;
+    }
+ 
+    .app-grid img {
+      max-width: 200px;
+      border: 1px solid black;
+      border-radius: 4px;
+      margin-bottom: 10px;
     }
   </style>
 </head>
@@ -140,88 +177,91 @@
     <div class="blog-grid">
       <!-- Repeat this .blog-card for each blog post -->
       <div class="blog-card">
-        <img src="assets/images/sample-blog.jpg" alt="Blog Thumbnail" />
+        <img src="assets/images/seo-checklist.jpg" alt="SEO Checklist" />
         <div class="content">
-          <h3>Optimize WooCommerce in Minutes</h3>
-          <div class="meta">Published: May 1, 2025</div>
-          <p>Discover how QuickWoo helped stores increase SEO scores and load speed in under a week.</p>
-          <a href="#">Read More →</a>
+          <h3>The WooCommerce SEO Checklist for 2025</h3>
+          <div class="meta">Published: April 15, 2025</div>
+          <p>Everything you should be optimizing right now—plus how Quick SEO automates most of it.</p>
+          <a href="/blog/seo-checklist-2025/">Read More →</a>
         </div>
       </div>
+      
       <div class="blog-card">
-       <img src="assets/images/sample-blog.jpg" alt="Blog Thumbnail" />
-       <div class="content">
-         <h3>Optimize WooCommerce in Minutes</h3>
-         <div class="meta">Published: May 1, 2025</div>
-         <p>Discover how QuickWoo helped stores increase SEO scores and load speed in under a week.</p>
-         <a href="#">Read More →</a>
-       </div>
-     </div>
-     <div class="blog-card">
-      <img src="assets/images/sample-blog.jpg" alt="Blog Thumbnail" />
-      <div class="content">
-        <h3>Optimize WooCommerce in Minutes</h3>
-        <div class="meta">Published: May 1, 2025</div>
-        <p>Discover how QuickWoo helped stores increase SEO scores and load speed in under a week.</p>
-        <a href="#">Read More →</a>
+        <img src="assets/images/store-speed.jpg" alt="Store Speed" />
+        <div class="content">
+          <h3>Improve Store Speed with QuickWoo</h3>
+          <div class="meta">Published: April 10, 2025</div>
+          <p>Slow WooCommerce site? This guide breaks down how our plugins reduce backend bloat.</p>
+          <a href="/blog/store-speed/">Read More →</a>
+        </div>
       </div>
-    </div>
-    <div class="blog-card">
-     <img src="assets/images/sample-blog.jpg" alt="Blog Thumbnail" />
-     <div class="content">
-       <h3>Optimize WooCommerce in Minutes</h3>
-       <div class="meta">Published: May 1, 2025</div>
-       <p>Discover how QuickWoo helped stores increase SEO scores and load speed in under a week.</p>
-       <a href="#">Read More →</a>
-     </div>
-   </div>
-   <div class="blog-card">
-    <img src="assets/images/sample-blog.jpg" alt="Blog Thumbnail" />
-    <div class="content">
-      <h3>Optimize WooCommerce in Minutes</h3>
-      <div class="meta">Published: May 1, 2025</div>
-      <p>Discover how QuickWoo helped stores increase SEO scores and load speed in under a week.</p>
-      <a href="#">Read More →</a>
-    </div>
-  </div>
-  <div class="blog-card">
-   <img src="assets/images/sample-blog.jpg" alt="Blog Thumbnail" />
-   <div class="content">
-     <h3>Optimize WooCommerce in Minutes</h3>
-     <div class="meta">Published: May 1, 2025</div>
-     <p>Discover how QuickWoo helped stores increase SEO scores and load speed in under a week.</p>
-     <a href="#">Read More →</a>
-   </div>
- </div>
- <div class="blog-card">
-  <img src="assets/images/sample-blog.jpg" alt="Blog Thumbnail" />
-  <div class="content">
-    <h3>Optimize WooCommerce in Minutes</h3>
-    <div class="meta">Published: May 1, 2025</div>
-    <p>Discover how QuickWoo helped stores increase SEO scores and load speed in under a week.</p>
-    <a href="#">Read More →</a>
-  </div>
-</div>
-<div class="blog-card">
- <img src="assets/images/sample-blog.jpg" alt="Blog Thumbnail" />
- <div class="content">
-   <h3>Optimize WooCommerce in Minutes</h3>
-   <div class="meta">Published: May 1, 2025</div>
-   <p>Discover how QuickWoo helped stores increase SEO scores and load speed in under a week.</p>
-   <a href="#">Read More →</a>
- </div>
-</div>
-<div class="blog-card">
- <img src="assets/images/sample-blog.jpg" alt="Blog Thumbnail" />
- <div class="content">
-   <h3>Optimize WooCommerce in Minutes</h3>
-   <div class="meta">Published: May 1, 2025</div>
-   <p>Discover how QuickWoo helped stores increase SEO scores and load speed in under a week.</p>
-   <a href="#">Read More →</a>
- </div>
-</div>
+      
+      <div class="blog-card">
+        <img src="assets/images/blog-tools.jpg" alt="Blog Tools" />
+        <div class="content">
+          <h3>Writing Product Blogs with Quick Blog</h3>
+          <div class="meta">Published: April 2, 2025</div>
+          <p>If content drives traffic, Quick Blog is your engine. Create, optimize, and publish in bulk.</p>
+          <a href="/blog/quick-blog/">Read More →</a>
+        </div>
+      </div>
+      
+      <div class="blog-card">
+        <img src="assets/images/seasonal-strategy.jpg" alt="Seasonal Strategy" />
+        <div class="content">
+          <h3>Seasonal SEO & Pricing Strategies</h3>
+          <div class="meta">Published: March 19, 2025</div>
+          <p>How to use Quick Edit and Quick SEO to optimize prices and visibility for seasonal traffic.</p>
+          <a href="/blog/seasonal-strategy/">Read More →</a>
+        </div>
+      </div>
       <!-- Add more blog-card entries below -->
     </div>
   </section>
+  <section class="section scroll-fade" class="section trust" style="background: #0a0039; padding: 40px 20px; text-align: center;">
+    <h2 style="color: white; font-size: 1.8em; margin-bottom: 20px;">Trusted by WooCommerce Professionals</h2>
+  
+  </section>
+  
+  
+  <section class="section scroll-fade" class="section newsletter" style="background: #fff4d0; text-align: center; padding: 60px 20px;">
+    <h2 style="font-size: 2em; margin-bottom: 20px;">Get Our Free Guide</h2>
+    <p style="font-size: 1.1em; margin-bottom: 30px;">Not ready to buy? Grab our 10-Point Guide to WooCommerce Growth.</p>
+    <input type="email" placeholder="Enter your email" style="border: 2px solid #6139F5; padding: 12px 18px; font-size: 1em; border-radius: 8px; border: 1px solid #ccc; width: 280px;">
+    <button style="margin-top: 20px; padding: 12px 24px; background-color: #6139F5; color: white; font-weight: bold; border: none; border-radius: 8px; margin-left: 10px;">Send Guide</button>
+  </section>
+  
+  
+  <section class="section scroll-fade" class="section video-demo" style="text-align: center; background: #6139F5;">
+    <h2 style="color: white; font-size: 2em; margin-bottom: 20px;">See QuickWoo in Action</h2>
+    <p style="color: white; margin-bottom: 30px;">Watch how QuickWoo apps streamline your workflow in real time.</p>
+    <video controls style="max-width: 400px; border-radius: 12px;">
+      <source src="assets/videos/0430.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+  
+    <section class="section social-proof" style="background: #fff4d0; padding: 40px 20px; text-align: center;">
+     <h2 style="font-size: 1.8em; margin-bottom: 20px;">Loved by Woo Users</h2>
+     <p style="max-width: 700px; margin: 0 auto 30px;">Join all the stores who trust QuickWoo to save hours, boost performance, and simplify their workflow.</p>
+     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; font-weight: bold;">
+       <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@PluginHut</span>
+       <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@MegaGoods</span>
+       <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@DevStacks</span>
+       <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@Elementora</span>
+       <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@StoreFlow</span>
+     </div>
+   </section>
+   
+   
+   <section class="section whats-new" style="background: #090027; color: white; padding: 30px 20px; text-align: center;">
+     <p style="font-size: 1.1em;">✨ Now with Woo 8.x support, new SEO insights module, and lightning-fast batch editing.</p>
+   </section>
+   
+   
+   <footer style="backdrop-filter: blur(12px); background: rgba(255, 255, 255, 0.15); border-top: 1px solid rgba(255, 255, 255, 0.2); text-align: center; padding: 30px 20px; font-size: 0.95em; color: #0f0c48;">
+     <p>© 2025 QuickWoo Bundle. Built with 💜 by <strong>Robert Calvin</strong></p>
+     <p><a href="/terms/" style="color:#0f0c48; margin-right: 10px;">Terms</a> | <a href="/privacy/" style="color:#0f0c48;">Privacy</a></p>
+   </footer>
 </body>
 </html>

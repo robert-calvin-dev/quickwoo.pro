@@ -64,13 +64,14 @@ nav a {
 }
 
 .inner {
- max-width: 800px;
+ max-width: 90%;
  margin: 0 auto;
  text-align: left;
+ 
 }
 
 .inner img {
- width: 100%;
+ width: 50%;
  border-radius: 8px;
  margin-bottom: 30px;
 }
@@ -99,6 +100,7 @@ nav a {
  margin-bottom: 20px;
  font-size: 1.05em;
  color: #333;
+ 
 }
 
 .inner a {
@@ -121,4 +123,32 @@ footer a {
  color: #0f0c48;
  font-weight: bold;
  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+ header {
+   flex-direction: column;
+   align-items: flex-start;
+ }
+
+ .hero h1 {
+   font-size: 2em;
+ }
+
+ .inner {
+   padding: 0 10px;
+ }
+
+ .inner img {
+   border-radius: 6px;
+   max-width: 300px;
+ }
+
+ .inner ul {
+   padding-left: 20px;
+ }
+
+ footer {
+   font-size: 0.85em;
+ }
 }

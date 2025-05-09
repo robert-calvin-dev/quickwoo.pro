@@ -174,3 +174,149 @@ footer a {
    font-size: 0.85em;
  }
 }
+:root {
+ --purple: #6139F5;
+ --gold: #FFB900;
+ --deep-blue: #0f0c48;
+ --white: #ffffff;
+}
+
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ font-family: 'Poppins', sans-serif;
+ background: var(--white);
+ color: var(--deep-blue);
+ line-height: 1.6;
+}
+
+header {
+ background: #0f0c48;
+ padding: 14px 20px;
+ color: white;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap;
+}
+
+nav {
+ display: flex;
+ gap: 18px;
+ flex-wrap: wrap;
+}
+
+nav a {
+ color: white;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+section {
+ width: 100%;
+}
+
+.hero {
+ background: linear-gradient(270deg, var(--purple), var(--gold), var(--purple));
+ background-size: 600% 600%;
+ animation: gradientShift 12s ease infinite;
+ color: white;
+ text-align: center;
+ padding: 60px 20px;
+}
+
+@keyframes gradientShift {
+ 0% { background-position: 0% 50%; }
+ 50% { background-position: 100% 50%; }
+ 100% { background-position: 0% 50%; }
+}
+
+.bundle-promo {
+ background: var(--deep-blue);
+ color: white;
+ text-align: center;
+ padding: 40px 20px;
+}
+
+.bundle-promo a {
+ background: var(--gold);
+ color: var(--deep-blue);
+ font-weight: bold;
+ padding: 12px 24px;
+ border-radius: 8px;
+ text-decoration: none;
+}
+
+.section {
+ padding: 60px 20px;
+}
+
+.section > .inner {
+ max-width: 1200px;
+ margin: auto;
+}
+
+.blog-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: 30px;
+}
+
+.blog-card {
+ border: 1px solid #ddd;
+ border-radius: 12px;
+ overflow: hidden;
+ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+ background: white;
+}
+
+.blog-card img {
+width: 100%;
+height: auto;
+object-fit: contain;
+display: block;
+}
+
+.blog-card .content {
+ padding: 20px;
+}
+
+.blog-card h3 {
+ font-size: 1.2em;
+ margin-bottom: 10px;
+}
+
+.blog-card p {
+ font-size: 0.95em;
+ margin-bottom: 10px;
+}
+
+.blog-card .meta {
+ font-size: 0.85em;
+ color: gray;
+ margin-bottom: 10px;
+}
+
+.blog-card a {
+ font-weight: bold;
+ color: var(--purple);
+ text-decoration: none;
+}
+
+.app-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+ gap: 40px;
+ text-align: center;
+}
+
+.app-grid img {
+ max-width: 200px;
+ border: 1px solid black;
+ border-radius: 4px;
+ margin-bottom: 10px;
+}

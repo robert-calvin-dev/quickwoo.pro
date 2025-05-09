@@ -228,11 +228,24 @@
   
   
   
-  <section class="section scroll-fade" class="section newsletter" style="background: #fff4d0; text-align: center; padding: 60px 20px;">
+  <section class="section scroll-fade newsletter" style="background: #fff4d0; text-align: center; padding: 60px 20px;">
     <h2 style="font-size: 2em; margin-bottom: 20px;">Get Our Free Guide</h2>
     <p style="font-size: 1.1em; margin-bottom: 30px;">Not ready to buy? Grab our 10-Point Guide to WooCommerce Growth.</p>
-    <input type="email" placeholder="Enter your email" style="border: 2px solid #6139F5; padding: 12px 18px; font-size: 1em; border-radius: 8px; border: 1px solid #ccc; width: 280px;">
-    <button style="margin-top: 20px; padding: 12px 24px; background-color: #6139F5; color: white; font-weight: bold; border: none; border-radius: 8px; margin-left: 10px;">Send Guide</button>
+    
+    <form action="https://formspree.io/f/xldbljjp" method="POST" onsubmit="return sendGuideAlert(event)">
+      <input 
+        type="email" 
+        name="email" 
+        required 
+        placeholder="Enter your email" 
+        style="border: 2px solid #6139F5; padding: 12px 18px; font-size: 1em; border-radius: 8px; width: 280px;">
+      
+      <button 
+        type="submit" 
+        style="margin-top: 20px; padding: 12px 24px; background-color: #6139F5; color: white; font-weight: bold; border: none; border-radius: 8px; margin-left: 10px;">
+        Send Guide
+      </button>
+    </form>
   </section>
   
   
@@ -267,5 +280,12 @@
      <p>© 2025 QuickWoo Bundle. Built with 💜 by <strong>Robert Calvin</strong></p>
      <p><a href="/terms/" style="color:#0f0c48; margin-right: 10px;">Terms</a> | <a href="/privacy/" style="color:#0f0c48;">Privacy</a></p>
    </footer>
+
+   <script>
+    function sendGuideAlert(event) {
+      alert("Thank You! Your guide will arrive in your e-mail within the next 2 business days.");
+      return true; // allow form submission
+    }
+  </script>
 </body>
 </html>

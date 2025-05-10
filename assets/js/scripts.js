@@ -208,3 +208,13 @@ function insertFooter() {
   alert("Thank You! Your guide will arrive in your e-mail within the next 2 business days.");
   return true; 
 }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.getElementById("plan-toggle");
+      const display = document.getElementById("pricing-display");
+      toggle.addEventListener("change", () => {
+        display.textContent = toggle.value === "year"
+          ? "$119 (One-time payment)"
+          : "$148 (One-time payment)";
+      });
+    });

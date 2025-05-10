@@ -124,6 +124,71 @@ function insertBlogCards() {
       </div>
     </div>
 
+    <div class="blog-card" style="background: white; border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
+  <img src="/assets/images/webdesign-color-theory.png" alt="Web Design Color Theory" style="display: block; margin: 20px auto 0; width: 90%; height: auto;">
+  <div class="content" style="padding: 20px;">
+    <h3>Web Design Color Theory</h3>
+    <div class="meta">Published: May 1, 2025</div>
+    <p>Why does blue feel trustworthy? Why do red buttons convert better? This post breaks down color psychology for web design—and how to apply it to your store's layout and CTAs.</p>
+    <a href="/blog/web-design-color-theory/">Read More →</a>
+  </div>
+</div>
+
+<div class="blog-card" style="background: white; border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
+  <img src="/assets/images/glitterqueen-spotlight.png" alt="GlitterQueenCreative Spotlight" style="display: block; margin: 20px auto 0; width: 90%; height: auto;">
+  <div class="content" style="padding: 20px;">
+    <h3>Store Spotlight: GlitterQueenCreative.ca</h3>
+    <div class="meta">Published: April 26, 2025</div>
+    <p>How one bold Canadian brand turned vibrant colors and WooCommerce into a slick, high-performance storefront. A visual deep dive into GlitterQueenCreative.ca.</p>
+    <a href="/blog/glitterqueen-spotlight/">Read More →</a>
+  </div>
+</div>
+
+
+<div class="blog-card" style="background: white; border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
+  <img src="/assets/images/seo-mistakes.png" alt="SEO Mistakes" style="display: block; margin: 20px auto 0; width: 90%; height: auto;">
+  <div class="content" style="padding: 20px;">
+    <h3>Ten Easy Mistakes to Make with SEO</h3>
+    <div class="meta">Published: April 21, 2025</div>
+    <p>Missed alt tags? Reused titles? Here's a quick rundown of 10 common SEO errors that hold WooCommerce stores back—and how to fix them without plugins or drama.</p>
+    <a href="/blog/seo-mistakes/">Read More →</a>
+  </div>
+</div>
+
+
+<div class="blog-card" style="background: white; border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
+  <img src="/assets/images/github.png" alt="GitHub Pages Guide" style="display: block; margin: 20px auto 0; width: 90%; height: auto;">
+  <div class="content" style="padding: 20px;">
+    <h3>Using Git and GitHub Pages</h3>
+    <div class="meta">Published: April 16, 2025</div>
+    <p>Want to back up your store code or publish a free landing page? This beginner’s guide shows how Git and GitHub Pages can level up your WooCommerce workflow.</p>
+    <a href="/blog/github-pages/">Read More →</a>
+  </div>
+</div>
+
+
+<div class="blog-card" style="background: white; border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
+  <img src="/assets/images/css-shimmer.png" alt="CSS Shimmer" style="display: block; margin: 20px auto 0; width: 90%; height: auto;">
+  <div class="content" style="padding: 20px;">
+    <h3>CSS: Shimmer</h3>
+    <div class="meta">Published: April 11, 2025</div>
+    <p>Learn how to build a shimmer loading effect in pure CSS—perfect for product grids, skeleton screens, and elegant UI states in your WooCommerce theme.</p>
+    <a href="/blog/css-shimmer/">Read More →</a>
+  </div>
+</div>
+
+
+<div class="blog-card" style="background: white; border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
+  <img src="/assets/images/2468gradient.png" alt="CSS Gradients" style="display: block; margin: 20px auto 0; width: 90%; height: auto;">
+  <div class="content" style="padding: 20px;">
+    <h3>2, 4, 6, 8: Gradients to Appreciate!</h3>
+    <div class="meta">Published: April 6, 2025</div>
+    <p>Gradients are back. Here are four stunning combos—with CSS code included—you can copy straight into your headers, blocks, or buttons.</p>
+    <a href="/blog/gradients-to-appreciate/">Read More →</a>
+  </div>
+</div>
+
+
   </div>
 </section>
 

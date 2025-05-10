@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>CSS: Shimmer – QuickWoo Blog</title>
+ <meta name="description" content="Learn how to create shimmer loading animations with CSS for WooCommerce product cards, grids, and placeholders. Speed up the feel of your site and polish your UI.">
+ <meta name="keywords" content="CSS shimmer effect, loading animation, WooCommerce shimmer, product grid loader, css tricks, skeleton screen, UI polish, frontend performance, quickwoo blog">
+ <meta name="author" content="Robert Calvin">
+ <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/quickwoofavicon.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/quickwoofavicon.png">
+ <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/quickwoofavicon.png">
+ <meta name="theme-color" content="#6139F5">
+ <meta property="og:title" content="CSS: Shimmer – QuickWoo Blog">
+ <meta property="og:description" content="Learn how to create shimmer loading animations with CSS for WooCommerce product cards, grids, and placeholders. Speed up the feel of your site and polish your UI.">
+ <meta property="og:url" content="https://www.quickwoo.pro/blog/css-shimmer/">
+ <meta property="og:type" content="article">
+ <meta property="og:image" content="https://www.quickwoo.pro/assets/images/css-shimmer.png">
+ <meta name="twitter:card" content="summary_large_image">
+ <meta name="twitter:title" content="CSS: Shimmer – QuickWoo Blog">
+ <meta name="twitter:description" content="Learn how to create shimmer loading animations with CSS for WooCommerce product cards, grids, and placeholders. Speed up the feel of your site and polish your UI.">
+ <meta name="twitter:image" content="https://www.quickwoo.pro/assets/images/css-shimmer.png">
+ <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "CSS: Shimmer",
+  "description": "Learn how to create shimmer loading animations with CSS for WooCommerce product cards, grids, and placeholders. Speed up the feel of your site and polish your UI.",
+  "author": { "@type": "Person", "name": "Robert Calvin" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "QuickWoo",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.quickwoo.pro/assets/images/quickwooog.png"
+    }
+  },
+  "image": "https://www.quickwoo.pro/assets/images/css-shimmer.png",
+  "datePublished": "2025-04-11",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.quickwoo.pro/blog/css-shimmer/"
+  }
+ }</script>
+ <link rel="stylesheet" href="/assets/css/style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <header>
+  <div class="logo">QuickWoo</div>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+  <label for="nav-toggle" class="menu-toggle">
+   <span></span>
+   <span></span>
+   <span></span>
+  </label>
+  <nav>
+   <a href="/">Home</a>
+   <a href="/blog/">Woo Blog</a>
+   <a href="/bundle/">Bundle</a>
+   <a href="/quick-add/">Quick Add</a>
+   <a href="/quick-edit/">Quick Edit</a>
+   <a href="/quick-seo/">Quick SEO</a>
+   <a href="/quick-blog/">Quick Blog</a>
+   <a href="/lite/">Lite</a>
+  </nav>
+ </header>
+
+ <section id="hero">
+  <h1>CSS: Shimmer</h1>
+  <p>Published: April 11, 2025</p>
+ </section>
+
+ <section class="section">
+  <div class="inner">
+   <img src="/assets/images/css-shimmer.png" alt="CSS shimmer effect example" style="width: 100%; border-radius: 8px; margin-bottom: 30px;">
+
+   <p>Want to make your WooCommerce store feel faster without changing your hosting or plugins? Add shimmer effects. They give users the sense that content is loading—even when it’s just delayed by the DOM or API.</p>
+
+   <h2>What’s a Shimmer Effect?</h2>
+   <p>Shimmer is a CSS animation that creates a moving light gradient. It’s used to simulate loading content before actual data appears—great for product grids, cards, or blog previews.</p>
+
+   <h2>How to Code It</h2>
+   <p>Add this CSS:</p>
+<pre><code>.shimmer {
+  background: linear-gradient(90deg, #eee 25%, #f5f5f5 50%, #eee 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}</code></pre>
+   <p>Apply it to placeholders like:</p>
+<pre><code>&lt;div class="product-placeholder shimmer" style="height: 180px; border-radius: 8px"&gt;&lt;/div&gt;</code></pre>
+
+   <p><strong>Pro Tip:</strong> Use different shades for dark mode, and layer multiple shimmer blocks with varied animation delays to make it feel organic.</p>
+
+   <p>Don’t just load fast—look fast.</p>
+  </div>
+ </section>
+
+ <footer>
+  <p>© 2025 QuickWoo Bundle. Built with 💜 by <strong>Robert Calvin</strong></p>
+  <p><a href="/terms/" style="color:#0f0c48; margin-right: 10px;">Terms</a> | <a href="/privacy/" style="color:#0f0c48;">Privacy</a></p>
+ </footer>
+</body>
+
+</html>

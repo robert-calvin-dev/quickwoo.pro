@@ -80,53 +80,53 @@ function insertAppCards() {
  })};
 function insertBlogCards() {
  const blogCardHTML = `
-   <section class="section">
-    <h2 style="text-align:center; margin-bottom: 40px;">Latest Blog Posts</h2>
-    <div class="blog-grid">
+<section class="section">
+  <h2 style="text-align:center; margin-bottom: 40px;">Latest Blog Posts</h2>
+  <div class="blog-grid" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
 
-      <div class="blog-card">
-        <img src="assets/images/seasonalseo.png" alt="SEO Checklist" />
-        <div class="content">
-          <h3>The WooCommerce SEO Checklist for 2025</h3>
-          <div class="meta">Published: April 15, 2025</div>
-          <p>Everything you should be optimizing right now—plus how Quick SEO automates most of it.</p>
-          <a href="/blog/seo-checklist-2025/">Read More →</a>
-        </div>
+    <div class="blog-card" style="background: white; border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
+      <img src="/assets/images/seasonalseo.png" alt="SEO Checklist" style="display: block; margin: 20px auto 0; width: 90%; height: auto;">
+      <div class="content" style="padding: 20px;">
+        <h3>The WooCommerce SEO Checklist for 2025</h3>
+        <div class="meta">Published: April 15, 2025</div>
+        <p>Everything you should be optimizing right now—plus how Quick SEO automates most of it.</p>
+        <a href="/blog/seo-checklist-2025/">Read More →</a>
       </div>
-
-      <div class="blog-card">
-        <img src="assets/images/sitespeed.png" alt="Store Speed" />
-        <div class="content">
-          <h3>Improve Store Speed with QuickWoo</h3>
-          <div class="meta">Published: April 10, 2025</div>
-          <p>Slow WooCommerce site? This guide breaks down how our plugins reduce backend bloat.</p>
-          <a href="/blog/store-speed/">Read More →</a>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <img src="assets/images/blogtools.png" alt="Blog Tools" />
-        <div class="content">
-          <h3>Writing Product Blogs with Quick Blog</h3>
-          <div class="meta">Published: April 2, 2025</div>
-          <p>If content drives traffic, Quick Blog is your engine. Create, optimize, and publish in bulk.</p>
-          <a href="/blog/quick-blog/">Read More →</a>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <img src="assets/images/seasonalseo.png" alt="Seasonal Strategy" />
-        <div class="content">
-          <h3>Seasonal SEO & Pricing Strategies</h3>
-          <div class="meta">Published: March 19, 2025</div>
-          <p>How to use Quick Edit and Quick SEO to optimize prices and visibility for seasonal traffic.</p>
-          <a href="/blog/seasonal-strategy/">Read More →</a>
-        </div>
-      </div>
-
-      <!-- Repeat above for 8 more cards -->
     </div>
-  </section>
+
+    <div class="blog-card" style="background: white; border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
+      <img src="/assets/images/sitespeed.png" alt="Store Speed" style="display: block; margin: 20px auto 0; width: 90%; height: auto;">
+      <div class="content" style="padding: 20px;">
+        <h3>Improve Store Speed with QuickWoo</h3>
+        <div class="meta">Published: April 10, 2025</div>
+        <p>Slow WooCommerce site? This guide breaks down how our plugins reduce backend bloat.</p>
+        <a href="/blog/store-speed/">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog-card" style="background: white; border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
+      <img src="/assets/images/blogtools.png" alt="Blog Tools" style="display: block; margin: 20px auto 0; width: 90%; height: auto;">
+      <div class="content" style="padding: 20px;">
+        <h3>Writing Product Blogs with Quick Blog</h3>
+        <div class="meta">Published: April 2, 2025</div>
+        <p>If content drives traffic, Quick Blog is your engine. Create, optimize, and publish in bulk.</p>
+        <a href="/blog/quick-blog/">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog-card" style="background: white; border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
+      <img src="/assets/images/seasonalseo.png" alt="Seasonal Strategy" style="display: block; margin: 20px auto 0; width: 90%; height: auto;">
+      <div class="content" style="padding: 20px;">
+        <h3>Seasonal SEO & Pricing Strategies</h3>
+        <div class="meta">Published: March 19, 2025</div>
+        <p>How to use Quick Edit and Quick SEO to optimize prices and visibility for seasonal traffic.</p>
+        <a href="/blog/seasonal-strategy/">Read More →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
  `;
  document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('blogCards').innerHTML = blogCardHTML;

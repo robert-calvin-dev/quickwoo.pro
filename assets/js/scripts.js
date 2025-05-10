@@ -33,7 +33,7 @@ function insertAppCards() {
     <!-- Quick Add -->
     <a href="/quick-add/">
       <div class="app-card">
-        <img src="/assets/images/quickadd.png" style="width: 80%; margin: 0 auto 20px; display: block;">
+        <img src="assets/images/quickadd.png" style="width: 80%; margin: 0 auto 20px; display: block;">
         <h3>Quick Add</h3>
         <p>Quick Add lets you create WooCommerce products in bulk with unmatched speed and precision. Add simple, variable, grouped, or downloadable products in seconds. Customize every field—including title, pricing, inventory, attributes, and product images—all from one streamlined interface. No imports, no spreadsheets. Just instant creation inside WordPress.</p>
         <div style="margin-top: 20px; font-size: 0.95em; font-weight: bold; color: #FFB900;">$59/year or $99 lifetime</div>
@@ -43,7 +43,7 @@ function insertAppCards() {
     <!-- Quick Edit -->
     <a href="/quick-edit/">
       <div class="app-card">
-        <img src="/assets/images/quickedit.png" style="width: 80%; margin: 0 auto 20px; display: block;">
+        <img src="assets/images/quickedit.png" style="width: 80%; margin: 0 auto 20px; display: block;">
         <h3>Quick Edit</h3>
         <p>Quick Edit turns your WooCommerce catalog into a live spreadsheet. Update prices, stock, categories, tags, sale dates, and more—inline, without reloading the page. Perfect for stores with frequent inventory changes or seasonal pricing. Make hundreds of edits in minutes and schedule mass sales events with one click.</p>
         <div style="margin-top: 20px; font-size: 0.95em; font-weight: bold; color: #FFB900;">$59/year or $99 lifetime</div>
@@ -53,7 +53,7 @@ function insertAppCards() {
     <!-- Quick SEO -->
     <a href="/quick-seo/">
       <div class="app-card">
-        <img src="/assets/images/quickseo.png" style="width: 80%; margin: 0 auto 20px; display: block;">
+        <img src="assets/images/quickseo.png" style="width: 80%; margin: 0 auto 20px; display: block;">
         <h3>Quick SEO</h3>
         <p>Quick SEO gives you total control over your product metadata. Bulk edit SEO titles, meta descriptions, focus keywords, and schema in one clean dashboard. Push all fields directly to the page <code>&lt;head&gt;</code>, integrate OG data for social sharing, and rank faster with multiple keyword support. SEO doesn’t get easier than this.</p>
         <div style="margin-top: 20px; font-size: 0.95em; font-weight: bold; color: #FFB900;">$59/year or $99 lifetime</div>
@@ -63,7 +63,7 @@ function insertAppCards() {
     <!-- Quick Blog -->
     <a href="/quick-blog/">
       <div class="app-card">
-        <img src="/assets/images/quickblog.png" style="width: 80%; margin: 0 auto 20px; display: block;">
+        <img src="assets/images/quickblog.png" style="width: 80%; margin: 0 auto 20px; display: block;">
         <h3>Quick Blog</h3>
         <p>Quick Blog is the easiest way to bulk-publish content to your WooCommerce blog. Add multiple posts at once, each with their own SEO data, featured images, and categories. It’s perfect for product roundups, seasonal campaigns, or SEO-optimized content at scale. <strong>Available exclusively in the QuickWoo Bundle.</strong></p>
         <div style="margin-top: 20px; font-size: 0.95em; font-weight: bold; color: #888;">Included with Bundle only</div>

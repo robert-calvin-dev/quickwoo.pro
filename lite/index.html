@@ -4,237 +4,28 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <!-- ✅ BASIC META TAGS -->
 <title>QuickWoo Lite – Free Tools for WooCommerce Beginners</title>
 <meta name="description" content="Download the free versions of QuickWoo's plugins: Quick Add Lite, Quick Edit Lite, and Quick SEO Lite. Perfect for WooCommerce beginners and stores just getting started.">
 <meta name="keywords" content="QuickWoo Lite, free WooCommerce plugin, WooCommerce starter tools, Quick Add Lite, Quick Edit Lite, Quick SEO Lite, WooCommerce beginner plugin, WooCommerce lite plugin">
 <meta name="author" content="Robert Calvin">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
-
-<!-- ✅ FAVICON & TOUCH ICONS -->
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/quickwoofavicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/quickwoofavicon.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/quickwoofavicon.png">
 <meta name="theme-color" content="#6139F5">
-
-<!-- ✅ OPEN GRAPH / FACEBOOK -->
 <meta property="og:title" content="QuickWoo Lite – Free Tools for WooCommerce Beginners">
 <meta property="og:description" content="Download free WooCommerce plugins: Quick Add Lite, Quick Edit Lite, and Quick SEO Lite. Built for stores that need lean, effective tools to get started.">
 <meta property="og:url" content="https://www.quickwoo.pro/lite/">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://www.quickwoo.pro/assets/images/quickwooog.png">
-
-<!-- ✅ TWITTER -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="QuickWoo Lite – Free Tools for WooCommerce Beginners">
 <meta name="twitter:description" content="Download free WooCommerce plugins: Quick Add Lite, Quick Edit Lite, and Quick SEO Lite. Built for stores that need lean, effective tools to get started.">
 <meta name="twitter:image" content="https://www.quickwoo.pro/assets/images/quickwooog.png">
-
-<!-- ✅ STRUCTURED DATA – FREE SOFTWARE -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "QuickWoo Lite",
-  "url": "https://www.quickwoo.pro/lite/",
-  "applicationCategory": "BusinessApplication",
-  "operatingSystem": "All",
-  "description": "QuickWoo Lite offers free WooCommerce tools including Quick Add Lite, Quick Edit Lite, and Quick SEO Lite—perfect for beginners and small shops just getting started.",
-  "offers": {
-    "@type": "Offer",
-    "price": "0.00",
-    "priceCurrency": "CAD",
-    "availability": "https://schema.org/InStock",
-    "url": "https://www.quickwoo.pro/lite/"
-  }
-}
-</script>
-
- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
- <style>
-  :root {
-   --purple: #6139F5;
-   --gold: #FFB900;
-   --deep-blue: #0f0c48;
-   --white: #ffffff;
-  }
-
-  * {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-  }
-
-  body {
-   font-family: 'Poppins', sans-serif;
-   background: var(--white);
-   color: var(--deep-blue);
-   line-height: 1.6;
-  }
-
-  header {
-   background: #0f0c48;
-   padding: 14px 20px;
-   color: white;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   flex-wrap: wrap;
-   position: relative;
-   z-index: 1000;
-  }
-
-  header .logo {
-   font-size: 1.6em;
-   font-weight: 700;
-  }
-
-  nav {
-   display: flex;
-   gap: 18px;
-  }
-
-  nav a {
-   color: white;
-   text-decoration: none;
-   font-weight: bold;
-   padding: 8px 0;
-  }
-
-  .menu-toggle {
-   display: none;
-   flex-direction: column;
-   justify-content: center;
-   cursor: pointer;
-   width: 30px;
-   height: 24px;
-   gap: 5px;
-  }
-
-  .menu-toggle span {
-   height: 3px;
-   background: white;
-   width: 100%;
-   border-radius: 2px;
-  }
-
-  /* Responsive - Tablet & Mobile */
-  @media (max-width: 992px) {
-   .menu-toggle {
-    display: flex;
-   }
-
-   nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #0f0c48;
-    flex-direction: column;
-    align-items: center;
-    display: none;
-    padding: 10px 0;
-    border-top: 1px solid #222;
-   }
-
-   input[type="checkbox"].nav-toggle:checked+.menu-toggle+nav {
-    display: flex;
-   }
-  }
-
-  .hero {
-   background: linear-gradient(270deg, var(--purple), var(--gold), var(--purple));
-   background-size: 600% 600%;
-   animation: gradientShift 12s ease infinite;
-   color: white;
-   text-align: center;
-   padding: 60px 20px;
-  }
-
-  @keyframes gradientShift {
-   0% {
-    background-position: 0% 50%;
-   }
-
-   50% {
-    background-position: 100% 50%;
-   }
-
-   100% {
-    background-position: 0% 50%;
-   }
-  }
-
-  .lite-grid {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-   gap: 30px;
-   max-width: 1000px;
-   margin: 60px auto;
-   padding: 0 20px;
-   text-align: center;
-  }
-
-  .lite-card {
-   background: #ffffff;
-   border: 1px solid #ddd;
-   border-radius: 12px;
-   padding: 30px 20px;
-   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  }
-
-  .lite-card img {
-   max-width: 120px;
-   margin-bottom: 20px;
-  }
-
-  .lite-card h3 {
-   font-size: 1.2em;
-   margin-bottom: 10px;
-  }
-
-  .lite-card a {
-   display: inline-block;
-   margin-top: 15px;
-   padding: 10px 20px;
-   background: var(--purple);
-   color: var(--white);
-   font-weight: bold;
-   border-radius: 8px;
-   text-decoration: none;
-  }
-
-  footer {
-   backdrop-filter: blur(12px);
-   background: rgba(255, 255, 255, 0.15);
-   border-top: 1px solid rgba(255, 255, 255, 0.2);
-   text-align: center;
-   padding: 30px 20px;
-   font-size: 0.95em;
-   color: var(--deep-blue);
-  }
-
-  footer a {
-   color: var(--deep-blue);
-   font-weight: bold;
-   text-decoration: none;
-  }
-
-  @media (max-width: 768px) {
-
-   .hero h1 {
-    font-size: 2em;
-   }
-  }
-
-  img {
-   max-width: 200px;
-   border: 1px solid black;
-   border-radius: 4px;
-   margin-bottom: 10px;
-  }
- </style>
+<script type="application/ld+json">{ "@context": "https://schema.org", "@type": "SoftwareApplication", "name": "QuickWoo Lite", "url": "https://www.quickwoo.pro/lite/", "applicationCategory": "BusinessApplication", "operatingSystem": "All", "description": "QuickWoo Lite offers free WooCommerce tools including Quick Add Lite, Quick Edit Lite, and Quick SEO Lite—perfect for beginners and small shops just getting started.", "offers":{ "@type": "Offer", "price": "0.00", "priceCurrency": "CAD", "availability": "https://schema.org/InStock", "url": "https://www.quickwoo.pro/lite/"}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
@@ -258,7 +49,7 @@
   </nav>
  </header>
 
- <section class="hero">
+ <section id="hero">
   <h1>Download QuickWoo Lite Apps</h1>
   <p>All free Lite versions of QuickWoo apps are available below.</p>
  </section>

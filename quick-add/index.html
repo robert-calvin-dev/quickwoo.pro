@@ -2,270 +2,31 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- ✅ BASIC META TAGS -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Quick Add – Add WooCommerce Products Fast With One Form</title>
 <meta name="description" content="Quick Add helps you create WooCommerce products instantly using a single admin screen. Title, SKU, price, inventory, tags, categories, image, and meta fields—all in one shot.">
 <meta name="keywords" content="Quick Add, WooCommerce product adder, bulk product WooCommerce, quick WooCommerce entry, WooCommerce admin tools, add products fast WooCommerce, product upload Woo plugin">
 <meta name="author" content="Robert Calvin">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
-
-<!-- ✅ FAVICON & TOUCH ICONS -->
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/quickwoofavicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/quickwoofavicon.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/quickwoofavicon.png">
 <meta name="theme-color" content="#6139F5">
-
-<!-- ✅ OPEN GRAPH / FACEBOOK -->
 <meta property="og:title" content="Quick Add – Add WooCommerce Products Fast With One Form">
 <meta property="og:description" content="Quick Add lets you enter all WooCommerce product fields on one page: title, SKU, price, inventory, tags, categories, and images. Save hours of work.">
 <meta property="og:url" content="https://www.quickwoo.pro/quick-add/">
 <meta property="og:type" content="product">
 <meta property="og:image" content="https://www.quickwoo.pro/assets/images/quickaddog.png">
-
-<!-- ✅ TWITTER -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Quick Add – Add WooCommerce Products Fast With One Form">
 <meta name="twitter:description" content="Quick Add lets you enter all WooCommerce product fields on one page: title, SKU, price, inventory, tags, categories, and images. Save hours of work.">
 <meta name="twitter:image" content="https://www.quickwoo.pro/assets/images/quickaddog.png">
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://quickwoo.pro/sitemap.xml" />
-
-
-<!-- ✅ STRUCTURED DATA – PRODUCT OFFER, CAD -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Quick Add",
-  "url": "https://www.quickwoo.pro/quick-add/",
-  "applicationCategory": "BusinessApplication",
-  "operatingSystem": "All",
-  "description": "Quick Add is a WooCommerce plugin that lets users create products quickly with a single form including title, SKU, price, image, stock, categories, tags, and meta fields.",
-  "offers": {
-    "@type": "Offer",
-    "price": "99.00",
-    "priceCurrency": "CAD",
-    "availability": "https://schema.org/InStock",
-    "url": "https://www.quickwoo.pro/quick-add/"
-  }
-}
-</script>
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --purple: #6139F5;
-      --gold: #FFB900;
-      --deep-blue: #0f0c48;
-      --white: #ffffff;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: var(--white);
-      color: #222;
-      line-height: 1.5;
-    }
-
-    header {
-      background: #0f0c48;
-      padding: 14px 20px;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      position: relative;
-      z-index: 1000;
-    }
-
-    header .logo {
-      font-size: 1.6em;
-      font-weight: 700;
-    }
-
-    nav {
-      display: flex;
-      gap: 18px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 8px 0;
-    }
-
-    .menu-toggle {
-      display: none;
-      flex-direction: column;
-      justify-content: center;
-      cursor: pointer;
-      width: 30px;
-      height: 24px;
-      gap: 5px;
-    }
-
-    .menu-toggle span {
-      height: 3px;
-      background: white;
-      width: 100%;
-      border-radius: 2px;
-    }
-
-    /* Responsive - Tablet & Mobile */
-    @media (max-width: 992px) {
-      .menu-toggle {
-        display: flex;
-      }
-
-      nav {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #0f0c48;
-        flex-direction: column;
-        align-items: center;
-        display: none;
-        padding: 10px 0;
-        border-top: 1px solid #222;
-      }
-
-      input[type="checkbox"].nav-toggle:checked+.menu-toggle+nav {
-        display: flex;
-      }
-    }
-
-
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .hero {
-      background: linear-gradient(270deg, var(--purple), var(--gold), var(--purple));
-      background-size: 600% 600%;
-      animation: gradientShift 12s ease infinite;
-      color: var(--white);
-      padding: 60px 20px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    @keyframes gradientShift {
-      0% {
-        background-position: 0% 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-
-    .hero h1 {
-      font-size: 2.8em;
-      margin: auto;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 1.2em;
-      margin: auto;
-    }
-
-    #features {
-      background-color: var(--deep-blue);
-    }
-
-    .features ul {
-      list-style-type: none;
-      padding: 0;
-      max-width: 600px;
-      margin: auto;
-      text-align: left;
-    }
-
-    .features ul li {
-      background: #f3f3f3;
-      padding: 12px 18px;
-      border-radius: 10px;
-      margin: 8px 0;
-      font-size: 1.1em;
-    }
-
-    .cta {
-      background: #0f0c48;
-      color: white;
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    .cta a {
-      background: var(--gold);
-      color: #0f0c48;
-      font-weight: bold;
-      padding: 14px 26px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 1.2em;
-    }
-
-    .imagetag img {
-      max-width: 350px;
-      margin: 30px auto;
-      display: block;
-    }
-
-    footer {
-      backdrop-filter: blur(12px);
-      background: rgba(255, 255, 255, 0.15);
-      border-top: 1px solid rgba(255, 255, 255, 0.2);
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 0.95em;
-      color: #0f0c48;
-    }
-
-    @media (max-width: 768px) {
-      #menu-toggle {
-        display: block;
-      }
-
-      #main-nav {
-        flex-direction: column;
-        display: none;
-        margin-top: 10px;
-      }
-
-      #main-nav a {
-        padding: 8px 0;
-      }
-
-      #main-nav.active {
-        display: flex;
-      }
-    }
-
-    img {
-      max-width: 200px;
-      border: 1px solid black;
-      border-radius: 4px;
-      margin-bottom: 10px;
-    }
-  </style>
+<link rel="sitemap" type="application/xml" title="Sitemap" href="https://quickwoo.pro/sitemap.xml" />
+<script type="application/ld+json">{ "@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Quick Add", "url": "https://www.quickwoo.pro/quick-add/", "applicationCategory": "BusinessApplication", "operatingSystem": "All", "description": "Quick Add is a WooCommerce plugin that lets users create products quickly with a single form including title, SKU, price, image, stock, categories, tags, and meta fields.", "offers":{ "@type": "Offer", "price": "99.00", "priceCurrency": "CAD", "availability": "https://schema.org/InStock", "url": "https://www.quickwoo.pro/quick-add/"}}</script>
+<link rel="stylesheet" href="/assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -290,7 +51,7 @@
     </nav>
   </header>
 
-  <section class="hero">
+  <section id="hero">
     <h1>Quick Add</h1>
     <p>The fastest way to bulk-create WooCommerce products with SEO power built in.</p>
   </section>

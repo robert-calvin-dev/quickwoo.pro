@@ -2,256 +2,30 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- ✅ BASIC META TAGS -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>QuickWoo Blog – WooCommerce Tips, SEO Guides & Plugin Updates</title>
 <meta name="description" content="Read expert articles on WooCommerce growth, SEO strategies, and plugin updates. The QuickWoo blog helps you build a better store with real-world insights.">
 <meta name="keywords" content="QuickWoo blog, WooCommerce tips, SEO WooCommerce, WooCommerce plugin news, eCommerce strategies, Quick Add tips, Quick Edit tutorials, WooCommerce SEO, plugin updates">
 <meta name="author" content="Robert Calvin">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
-
-<!-- ✅ FAVICON & TOUCH ICONS -->
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/quickwoofavicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/quickwoofavicon.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/quickwoofavicon.png">
 <meta name="theme-color" content="#6139F5">
-
-<!-- ✅ OPEN GRAPH / FACEBOOK -->
 <meta property="og:title" content="QuickWoo Blog – WooCommerce Tips, SEO Guides & Plugin Updates">
 <meta property="og:description" content="Explore our blog to discover WooCommerce tutorials, plugin release notes, SEO strategies, and eCommerce growth hacks.">
 <meta property="og:url" content="https://www.quickwoo.pro/blog/">
 <meta property="og:type" content="blog">
 <meta property="og:image" content="https://www.quickwoo.pro/assets/images/quickwooog.png">
-
-<!-- ✅ TWITTER -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="QuickWoo Blog – WooCommerce Tips, SEO Guides & Plugin Updates">
 <meta name="twitter:description" content="Explore our blog to discover WooCommerce tutorials, plugin release notes, SEO strategies, and eCommerce growth hacks.">
 <meta name="twitter:image" content="https://www.quickwoo.pro/assets/images/quickwooog.png">
-
-<!-- ✅ STRUCTURED DATA – BLOG OVERVIEW PAGE -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "QuickWoo Blog",
-  "url": "https://www.quickwoo.pro/blog/",
-  "description": "The QuickWoo Blog delivers expert WooCommerce content, SEO guides, plugin tips, and actionable insights for eCommerce success.",
-  "publisher": {
-    "@type": "Organization",
-    "name": "QuickWoo",
-    "url": "https://www.quickwoo.pro/"
-  }
-}
-</script>
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --purple: #6139F5;
-      --gold: #FFB900;
-      --deep-blue: #0f0c48;
-      --white: #ffffff;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: var(--white);
-      color: var(--deep-blue);
-      line-height: 1.6;
-    }
-
-    header {
-      background: #0f0c48;
-      padding: 14px 20px;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      position: relative;
-      z-index: 1000;
-    }
-
-    header .logo {
-      font-size: 1.6em;
-      font-weight: 700;
-    }
-
-    nav {
-      display: flex;
-      gap: 18px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 8px 0;
-    }
-
-    .menu-toggle {
-      display: none;
-      flex-direction: column;
-      justify-content: center;
-      cursor: pointer;
-      width: 30px;
-      height: 24px;
-      gap: 5px;
-    }
-
-    .menu-toggle span {
-      height: 3px;
-      background: white;
-      width: 100%;
-      border-radius: 2px;
-    }
-
-    /* Responsive - Tablet & Mobile */
-    @media (max-width: 992px) {
-      .menu-toggle {
-        display: flex;
-      }
-
-      nav {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #0f0c48;
-        flex-direction: column;
-        align-items: center;
-        display: none;
-        padding: 10px 0;
-        border-top: 1px solid #222;
-      }
-
-      input[type="checkbox"].nav-toggle:checked+.menu-toggle+nav {
-        display: flex;
-      }
-    }
-
-    section {
-      width: 100%;
-    }
-
-    .hero {
-      background: linear-gradient(270deg, var(--purple), var(--gold), var(--purple));
-      background-size: 600% 600%;
-      animation: gradientShift 12s ease infinite;
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    @keyframes gradientShift {
-      0% {
-        background-position: 0% 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-
-    .bundle-promo {
-      background: var(--deep-blue);
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    .bundle-promo a {
-      background: var(--gold);
-      color: var(--deep-blue);
-      font-weight: bold;
-      padding: 12px 24px;
-      border-radius: 8px;
-      text-decoration: none;
-    }
-
-    .section {
-      padding: 60px 20px;
-    }
-
-    .section>.inner {
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
-
-    .blog-card {
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      background: white;
-    }
-
-    .blog-card img {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      display: block;
-    }
-
-    .blog-card .content {
-      padding: 20px;
-    }
-
-    .blog-card h3 {
-      font-size: 1.2em;
-      margin-bottom: 10px;
-    }
-
-    .blog-card p {
-      font-size: 0.95em;
-      margin-bottom: 10px;
-    }
-
-    .blog-card .meta {
-      font-size: 0.85em;
-      color: gray;
-      margin-bottom: 10px;
-    }
-
-    .blog-card a {
-      font-weight: bold;
-      color: var(--purple);
-      text-decoration: none;
-    }
-
-    .app-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 40px;
-      text-align: center;
-    }
-
-    .app-grid img {
-      max-width: 200px;
-      border: 1px solid black;
-      border-radius: 4px;
-      margin-bottom: 10px;
-    }
-  </style>
+<script type="application/ld+json">{ "@context": "https://schema.org", "@type": "Blog", "name": "QuickWoo Blog", "url": "https://www.quickwoo.pro/blog/", "description": "The QuickWoo Blog delivers expert WooCommerce content, SEO guides, plugin tips, and actionable insights for eCommerce success.", "publisher":{ "@type": "Organization", "name": "QuickWoo", "url": "https://www.quickwoo.pro/"}}</script>
+<link rel="stylesheet" href="/assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -275,7 +49,7 @@
     </nav>
   </header>
 
-  <section class="hero">
+  <section id="hero">
     <h1>QuickWoo Blog</h1>
     <p>Tips, updates, and insights from the QuickWoo team</p>
   </section>

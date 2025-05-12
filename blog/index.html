@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,97 +26,16 @@
 <link rel="stylesheet" href="/assets/css/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header>
-    <div class="logo">QuickWoo</div>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
-    <label for="nav-toggle" class="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/blog/">Woo Blog</a>
-      <a href="/bundle/">Bundle</a>
-      <a href="/quick-add/">Quick Add</a>
-      <a href="/quick-edit/">Quick Edit</a>
-      <a href="/quick-seo/">Quick SEO</a>
-      <a href="/quick-blog/">Quick Blog</a>
-      <a href="/lite/">Lite</a>
-    </nav>
-  </header>
-
+<div id="header"></div>
   <section id="hero">
     <h1>QuickWoo Blog</h1>
     <p>Tips, updates, and insights from the QuickWoo team</p>
   </section>
-
 <div id="blogCards"></div>
-
-  <section class="section scroll-fade" class="section trust"
-    style="display: flex; flex-direction: column; background: #0a0039; padding: 40px 20px; text-align: center;">
-    <h2 style="color: white; font-size: 1.8em; margin-bottom: 20px;">Trusted by WooCommerce Professionals</h2>
-    <img style="max-width: 400px; margin: auto;" src="/assets/videos/screenshots.gif">
-
-  </section>
-
-
-
-  <section class="section scroll-fade newsletter" style="background: #fff4d0; text-align: center; padding: 60px 20px;">
-    <h2 style="font-size: 2em; margin-bottom: 20px;">Get Our Free Guide</h2>
-    <p style="font-size: 1.1em; margin-bottom: 30px;">Not ready to buy? Grab our 10-Point Guide to WooCommerce Growth.
-    </p>
-
-    <form action="https://formspree.io/f/xldbljjp" method="POST" onsubmit="return sendGuideAlert(event)">
-      <input type="email" name="email" required placeholder="Enter your email"
-        style="border: 2px solid #6139F5; padding: 12px 18px; font-size: 1em; border-radius: 8px; width: 280px;">
-
-      <button type="submit"
-        style="margin-top: 20px; padding: 12px 24px; background-color: #6139F5; color: white; font-weight: bold; border: none; border-radius: 8px; margin-left: 10px;">
-        Send Guide
-      </button>
-    </form>
-  </section>
-
-
-  <section class="section scroll-fade" class="section video-demo" style="text-align: center; background: #6139F5;">
-    <h2 style="color: white; font-size: 2em; margin-bottom: 20px;">See QuickWoo in Action</h2>
-    <p style="color: white; margin-bottom: 30px;">Watch how QuickWoo apps streamline your workflow in real time.</p>
-    <video controls style="max-width: 400px; border-radius: 12px;">
-      <source src="/assets/videos/0430.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </section>
-
-  <section class="section social-proof" style="background: #fff4d0; padding: 40px 20px; text-align: center;">
-    <h2 style="font-size: 1.8em; margin-bottom: 20px;">Loved by Woo Users</h2>
-    <p style="max-width: 700px; margin: 0 auto 30px;">Join all the stores who trust QuickWoo to save hours, boost
-      performance, and simplify their workflow.</p>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; font-weight: bold;">
-      <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@PluginHut</span>
-      <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@MegaGoods</span>
-      <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@DevStacks</span>
-      <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@Elementora</span>
-      <span style="color: white; background: #7104e6; padding: 10px 20px; border-radius: 20px;">@StoreFlow</span>
-    </div>
-  </section>
-
-
-  <section class="section whats-new" style="background: #090027; color: white; padding: 30px 20px; text-align: center;">
-    <p style="font-size: 1.1em;">✨ Now with Woo 8.x support, new SEO insights module, and lightning-fast batch editing.
-    </p>
-  </section>
-
-
-  <footer
-    style="backdrop-filter: blur(12px); background: rgba(255, 255, 255, 0.15); border-top: 1px solid rgba(255, 255, 255, 0.2); text-align: center; padding: 30px 20px; font-size: 0.95em; color: #0f0c48;">
-    <p>© 2025 QuickWoo Bundle. Built with 💜 by <strong>Robert Calvin</strong></p>
-    <p><a href="/terms/" style="color:#0f0c48; margin-right: 10px;">Terms</a> | <a href="/privacy/"
-        style="color:#0f0c48;">Privacy</a></p>
-  </footer>
+<div id="form"></div>
+<div id="demo2"></div>
+<div id="footer"></div>
 <script src="/assets/js/scripts.js"></script>
 </body>
-
 </html>

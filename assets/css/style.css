@@ -1,14 +1,19 @@
 :root {
- --purple: #6139F5;
- --gold: #FFB900;
- --deep-blue: #0f0c48;
+ --blue: #00093d;
+ --blue1: #001ec7;
+ --blue2: #005eff;
+ --blue3: #008cff;
+ --blue4: #00d9ff;
+ --blue5: #7be8fb;
+ --blue6: #dbfaff;
+ --black: #171717;
  --white: #ffffff;}
  * {
  margin: 0;
  padding: 0;
  box-sizing: border-box;}
  html {
-  background: #0f0c48;
+  background: #000000;
   width: 100%;
   overflow-x: hidden;}
  a {
@@ -20,14 +25,14 @@
  justify-content: center;
  align-items: stretch;}
  .app-card {
- background: var(--purple);
+  background: linear-gradient(200deg, var(--blue), var(--blue1), var(--blue2), var(--blue3), var(--blue3), var(--blue2), var(--blue1), var(--blue));
  backdrop-filter: blur(10px);
  border: 2px solid rgba(255, 255, 255, 0.576);
  border-radius: 20px;
  padding: 20px;
  color: var(--white);
  font-weight: bold;
- box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+ box-shadow: 0 6px 18px rgba(2, 95, 255, 0.498);
  transition: all 0.3s ease-in-out;
  display: flex;
  flex-direction: column;
@@ -37,7 +42,7 @@
  max-width: 300px;}
  .app-card:hover {
  transform: translateY(-6px);
- box-shadow: 0 10px 35px rgba(255, 185, 0, 0.45);}
+ box-shadow: 0 10px 35px rgb(204, 222, 255);}
  .app-card h3 {
  font-size: 1.3em;
  margin-bottom: 10px;}
@@ -86,15 +91,33 @@
   font-weight: bold;
   color: var(--purple);
   text-decoration: none;}
+  .blogtop {
+    background: linear-gradient(200deg, var(--blue), var(--blue1), var(--blue2), var(--blue3), var(--blue3), var(--blue2), var(--blue1), var(--blue));
+padding: 60px;
+    color:white;
+    text-align:center;
+    backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+  }
  body {
  font-family: 'Poppins', sans-serif;
- background: var(--white);
- color: #222;
+ background: var(--black);
+ color: #000000;
+ margin: auto;
+ backdrop-filter: blur(12px);
+border: 1px solid rgba(255, 255, 255, 0.15);
+ max-width: 1600px;
+ box-shadow: 0 6px 18px rgba(144, 185, 255, 0.931);
  line-height: 1.5;}
  .bundle-promo {
- background: var(--deep-blue);
- color: white;
+  background: linear-gradient(200deg, var(--blue), var(--blue1), var(--blue2), var(--blue3), var(--blue3), var(--blue2), var(--blue1), var(--blue));
+  color: white;
+  font-size: 1.5rem;
  text-align: center;
+ backdrop-filter: blur(12px);
+ border-top: 1px solid rgba(255, 255, 255, 0.15);
  padding: 40px 20px;}
  .bundle-promo a {
  background: var(--gold);
@@ -131,18 +154,29 @@
  text-decoration: none;}
  .checkout-buttons a:hover {background-color: #4b2dc6;}
  .cta {
-  background: #0f0c48;
+  background: linear-gradient(200deg, var(--blue), var(--blue1), var(--blue2), var(--blue3), var(--blue3), var(--blue2), var(--blue1), var(--blue));
+
   color: white;
   padding: 50px 20px;
   text-align: center;}
  .cta a {
-  background: var(--gold);
+  background: var(--white);
   color: #0f0c48;
   font-weight: bold;
   padding: 14px 26px;
   border-radius: 10px;
   text-decoration: none;
   font-size: 1.2em;}
+  #explore {
+   color:  white; 
+  }
+  #features {
+    font-size: 1.4 rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background: var(--black);
+
+  }
  .features ul {
  list-style-type: none;
  padding: 0;
@@ -153,8 +187,7 @@
  background: #f3f3f3;
  padding: 12px 18px;
  border-radius: 10px;
- margin: 8px 0;
- font-size: 1.1em;}
+ margin: 8px 0;}
  footer {
  backdrop-filter: blur(12px);
  background: #f5f5f5;
@@ -176,9 +209,9 @@
   font-size: 0.95em;
   color: #0f0c48;}
  header {
-  background: #0f0c48;
+  background: #000000;
   padding: 14px 20px;
-  color: white;
+  color: rgb(0, 179, 255);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -189,7 +222,7 @@
   font-size: 1.6em;
   font-weight: 700;}
  #hero {
-  background: linear-gradient(270deg, var(--purple), var(--gold), var(--purple));
+  background: var(--blue);
   background-size: 600% 600%;
   animation: gradientShift 12s ease infinite;
   color: var(--white);
@@ -211,21 +244,37 @@
   flex-direction: column;}
  .imagetag img {
   max-width: 350px;
-  margin: auto;}
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: auto;
+ margin-bottom: 15px;}
  #includes {
+  text-align: center;
+  padding: 80px;
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   background-color: var(--deep-blue);
   color: var(--white);}
  #includes h2 {
   font-size: 2em;
   margin-bottom: 70px;}
+  #why-quickwoo {
+   background: linear-gradient(200deg, var(--blue), var(--blue1), var(--blue2), var(--blue3), var(--blue3), var(--blue2), var(--blue1), var(--blue));
+   padding: 80px 20px; 
+   text-align: center;
+
+  }
  .inner {
    max-width: 90%;
    margin: 0 auto;
    text-align: left;
+   display: flex;
+   flex-direction:column;
    padding: 0;}
  .inner img {
    max-width: 300px;
    height: auto;
+   margin: auto;
    border-radius: 8px;
    margin-bottom: 30px;}
  .inner ul {
@@ -299,7 +348,7 @@
  display: flex;
  gap: 18px;}
  nav a {
- color: white;
+ color: rgb(255, 255, 255);
  text-decoration: none;
  font-weight: bold;
  padding: 8px 0;}
@@ -326,18 +375,31 @@
   transform: scale(1.05);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);}
  .plan.bundle {
-  background: var(--purple);
-  color: var(--white);}
+  background: var(--white);
+  color: var(--blue3);}
  .plan.free {
-  background: var(--gold);
-  color: var(--deep-blue);}
+  background: var(--blue5);
+  color: var(--black);}
  .plan h3 {
   font-size: 1.4em;
   margin-bottom: 10px;}
  .plan p {
   font-size: 1.1em;}
+  .post {
+  background: white;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 8px;
+  display: flex;
+  flex-direction:column;
+
+ 
+  }
+  .post img {
+    margin: auto;
+  }
  #testimonials {
-  background: var(--deep-blue);
+  background: linear-gradient(200deg, var(--blue), var(--blue1), var(--blue2), var(--blue3), var(--blue3), var(--blue2), var(--blue1), var(--blue));
   color: var(--white);}
  .testimonials h2 {
   margin-bottom: 40px;
@@ -352,6 +414,8 @@
   font-size: 1.1em;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);}
  .section {
+  background: linear-gradient(200deg, var(--blue), var(--blue1), var(--blue2), var(--blue3), var(--blue3), var(--blue2), var(--blue1), var(--blue));
+
    padding: 60px 20px;
    text-align: center;}
  section {
@@ -359,6 +423,10 @@
  .section>.inner {
    max-width: 1200px;
    margin: auto;}
+
+   #tablesapp {
+    background: var(--black);
+   }
  @keyframes gradientShift {
  0% {
  background-position: 0% 50%;}

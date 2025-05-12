@@ -30,259 +30,224 @@
 </head>
 
 <body>
-
-  <header>
-    <div class="logo">QuickWoo</div>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
-    <label for="nav-toggle" class="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/blog/">Woo Blog</a>
-      <a href="/bundle/">Bundle</a>
-      <a href="/quick-add/">Quick Add</a>
-      <a href="/quick-edit/">Quick Edit</a>
-      <a href="/quick-seo/">Quick SEO</a>
-      <a href="/quick-blog/">Quick Blog</a>
-      <a href="/lite/">Lite</a>
-    </nav>
-  </header>
-
-  <section id="hero">
-    <h1>Quick Add</h1>
-    <p>The fastest way to bulk-create WooCommerce products with SEO power built in.</p>
-  </section>
-  <section class="section scroll-fade" style="padding: 80px 20px; background: #ffffff; text-align: left; max-width: 800px; margin: auto;">
-    <h2 style="font-size: 2em; color: #0f0c48; margin-bottom: 20px;">The Problem: Adding Products in WooCommerce Is Slow and Brutal</h2>
-    <p style="font-size: 1.1em; color: #333; line-height: 1.7;">
-      If you've ever tried adding multiple products in WooCommerce, you already know the pain. The default product editor is bloated, click-heavy, and completely inefficient for anyone managing more than a handful of SKUs. You’re jumping between tabs, waiting on page reloads, filling out endless fields—just to publish a single product. Need to create 50 items? You're wasting hours. Need to import variations? Hope you enjoy spreadsheets and debugging CSVs.
-    </p>
-    <p style="font-size: 1.1em; color: #333; margin-top: 20px;">
-      Quick Add solves this by giving you a real-time product creation panel that works like a spreadsheet—but smarter. You can enter multiple products in a single session, define all the key details (titles, prices, categories, downloadable links, etc.), and publish them instantly without ever leaving the page.
-    </p>
-  </section>
+  <div id="header"></div>
+    <section id="hero" style="  background: linear-gradient(200deg, var(--blue), var(--blue1), var(--blue2), var(--blue3), var(--blue3), var(--blue2), var(--blue1), var(--blue));
+  ">
+      <h1>Quick Add</h1>
+      <p>The fastest way to bulk-create WooCommerce products with SEO power built in.</p>
+    </section>
+    <section class="section scroll-fade" style="padding: 80px 20px; background: var(--black); text-align: left; max-width: 800px; margin: auto;">
+      <h2 style="font-size: 2em; color: #00ffe1; margin-bottom: 20px;">The Problem: Adding Products in WooCommerce Is Slow and Brutal</h2>
+      <p style="font-size: 1.1em; color: #ffffff; line-height: 1.7;">
+        If you've ever tried adding multiple products in WooCommerce, you already know the pain. The default product editor is bloated, click-heavy, and completely inefficient for anyone managing more than a handful of SKUs. You’re jumping between tabs, waiting on page reloads, filling out endless fields—just to publish a single product. Need to create 50 items? You're wasting hours. Need to import variations? Hope you enjoy spreadsheets and debugging CSVs.
+      </p>
+      <p style="font-size: 1.1em; color: #ffffff; margin-top: 20px;">
+        Quick Add solves this by giving you a real-time product creation panel that works like a spreadsheet—but smarter. You can enter multiple products in a single session, define all the key details (titles, prices, categories, downloadable links, etc.), and publish them instantly without ever leaving the page.
+      </p>
+    </section>
+    
+  
+    <section class="section scroll-fade" style="padding: 60px 20px; text-align: center;">
+      <h2 style="font-size: 2em; color: #ffffff;">Quick Add</h2>
+      <div
+        style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; align-items: center; margin-top: 30px;">
+        <img src="/assets/images/quickadd.png" alt="Quick Add Icon" style="max-width: 200px;">
+        <img src="/assets/images/quickaddlite.png" alt="Quick Add Lite Icon" style="max-width: 200px;">
+      </div>
+      <p style="color: white;font-size: 1.1em; margin: 30px 0;">$59 for 12 Months or $99 for Lifetime Access</p>
+      <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+        <a href="/checkout/"
+          style="background: #ffffff; color: rgb(0, 0, 0); font-weight: bold; padding: 14px 28px; border-radius: 8px; text-decoration: none;">Purchase
+          Now</a>
+        <a href="/assets/downloads/Quick-Add-Lite.zip"
+          style="background: #000000; color: #ffffff; font-weight: bold; padding: 14px 28px; border-radius: 8px; text-decoration: none;">Download
+          Lite</a>
+      </div>
+    </section>
+  
+    <section id="features" class="section features">
+      <h2 style="color: var(--white); margin-bottom: 30px;">Pro Features</h2>
+      <ul>
+        <li>Bulk Product Adding</li>
+        <li>Supports All Product Types</li>
+        <li>Custom Fields and Attributes</li>
+        <li>Sale Scheduling</li>
+        <li>Bulk Gallery Creation</li>
+        <li>AJAX Saving</li>
+        <li>Lifetime Updates</li>
+      </ul>
+    </section>
+  
+    <section class="section scroll-fade" style="padding: 80px 20px; background: var(--black); text-align: left; max-width: 800px; margin: auto;">
+      <h2 style="font-size: 2em; color: #ffffff; margin-bottom: 30px;">How to Use Quick Add</h2>
+    
+      <ol style="font-size: 1.1em; color: #ffffff; line-height: 1.7; padding-left: 20px;">
+        <li style="margin-bottom: 15px;"><strong>Step 1:</strong> Open Quick Add from your WordPress admin menu under “Products → Quick Add.”</li>
+        <li style="margin-bottom: 15px;"><strong>Step 2:</strong> Fill in product fields like name, price, SKU, description, categories, and image URL. Add as many product rows as you need.</li>
+        <li style="margin-bottom: 15px;"><strong>Step 3:</strong> Choose your product type (Simple, Variable, Downloadable, etc.) from the dropdown menu for each row.</li>
+        <li style="margin-bottom: 15px;"><strong>Step 4:</strong> Click “Add All Products” and watch them appear in your store—no refresh, no import files, no drama.</li>
+      </ol>
+    
+      <p style="font-size: 1em; color: #00ffe5; margin-top: 20px;">That’s it. You just replaced hours of product creation with a five-minute process. Quick Add is built for people who value time, control, and clean execution.</p>
+    </section>
+  <br>
+  <br>
+    <section class="cta">
+      <h2>Ready to Add Products in Seconds?</h2>
+      <p style="margin-bottom: 20px;">Start with the free version or upgrade to Pro for full power.</p>
+      <br><br>
+      
+      <a href="/checkout">Buy Quick Add+</a>
+    </section>
+  
+  
+  
+    <section style="background-color: var(--black);" class="section" id="tablesapp">
+      <h2 style="color: #00ffe5; margin-bottom: 20px;">Lite vs Pro Comparison</h2>
+      <table style="margin: auto; border-collapse: collapse; font-size: 1.1em;">
+        <thead>
+          <tr style="background: var(--blue3); color: white;">
+            <th style="padding: 14px 20px; border: 1px solid #ccc;">Feature</th>
+            <th style="padding: 14px 20px; border: 1px solid #ccc;">Lite</th>
+            <th style="padding: 14px 20px; border: 1px solid #ccc;">Pro</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="border: 1px solid black; background-color: #ffffff; padding: 10px;">Products per Submission</td>
+            <td style="background-color: white;">2</td>
+            <td style="background-color: white;">Unlimited</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; background-color: #98fcfb; padding: 10px;">Product Types</td>
+            <td style="background-color: white;">All types</td>
+            <td style="background-color: white;">All types</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; background-color: #ffffff; padding: 10px;">Custom Fields</td>
+            <td style="background-color: white;">✅</td>
+            <td style="background-color: white;">✅</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; background-color: #98fcfb; padding: 10px;">Image Gallery</td>
+            <td style="background-color: white;">✅</td>
+            <td style="background-color: white;">✅</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; background-color: #ffffff; padding: 10px;">Sale Scheduling</td>
+            <td style="background-color: white;">✅</td>
+            <td style="background-color: white;">✅</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; background-color: #98fcfb; padding: 10px;">Lifetime Updates</td>
+            <td style="background-color: white;">✅</td>
+            <td style="background-color: white;">✅</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; background-color: #ffffff; padding: 10px;">Priority Support</td>
+            <td style="background-color: white;">✅</td>
+            <td style="background-color: white;">✅</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   
 
-  <section class="section scroll-fade" style="padding: 60px 20px; text-align: center;">
-    <h2 style="font-size: 2em; color: #0f0c48;">Quick Add</h2>
-    <div
-      style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; align-items: center; margin-top: 30px;">
-      <img src="/assets/images/quickadd.png" alt="Quick Add Icon" style="max-width: 200px;">
-      <img src="/assets/images/quickaddlite.png" alt="Quick Add Lite Icon" style="max-width: 200px;">
-    </div>
-    <p style="font-size: 1.1em; margin: 30px 0;">$59 for 12 Months or $99 for Lifetime Access</p>
-    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-      <a href="/checkout/"
-        style="background: #6139F5; color: white; font-weight: bold; padding: 14px 28px; border-radius: 8px; text-decoration: none;">Purchase
-        Now</a>
-      <a href="/assets/downloads/Quick-Add-Lite.zip"
-        style="background: #FFB900; color: #0f0c48; font-weight: bold; padding: 14px 28px; border-radius: 8px; text-decoration: none;">Download
-        Lite</a>
-    </div>
-  </section>
-
-  <section id="features" class="section features">
-    <h2 style="color: var(--white); margin-bottom: 30px;">Pro Features</h2>
-    <ul>
-      <li>Bulk Product Adding</li>
-      <li>Supports All Product Types</li>
-      <li>Custom Fields and Attributes</li>
-      <li>Sale Scheduling</li>
-      <li>Bulk Gallery Creation</li>
-      <li>AJAX Saving</li>
-      <li>Lifetime Updates</li>
-    </ul>
-  </section>
-
-  <section class="section scroll-fade" style="padding: 80px 20px; background: #f4f1ff; text-align: left; max-width: 800px; margin: auto;">
-    <h2 style="font-size: 2em; color: #0f0c48; margin-bottom: 30px;">How to Use Quick Add</h2>
   
-    <ol style="font-size: 1.1em; color: #333; line-height: 1.7; padding-left: 20px;">
-      <li style="margin-bottom: 15px;"><strong>Step 1:</strong> Open Quick Add from your WordPress admin menu under “Products → Quick Add.”</li>
-      <li style="margin-bottom: 15px;"><strong>Step 2:</strong> Fill in product fields like name, price, SKU, description, categories, and image URL. Add as many product rows as you need.</li>
-      <li style="margin-bottom: 15px;"><strong>Step 3:</strong> Choose your product type (Simple, Variable, Downloadable, etc.) from the dropdown menu for each row.</li>
-      <li style="margin-bottom: 15px;"><strong>Step 4:</strong> Click “Add All Products” and watch them appear in your store—no refresh, no import files, no drama.</li>
-    </ol>
+   <div id="demo2"></div>
   
-    <p style="font-size: 1em; color: #555; margin-top: 20px;">That’s it. You just replaced hours of product creation with a five-minute process. Quick Add is built for people who value time, control, and clean execution.</p>
-  </section>
-<br>
-<br>
-  <section class="cta">
-    <h2>Ready to Add Products in Seconds?</h2>
-    <p style="margin-bottom: 20px;">Start with the free version or upgrade to Pro for full power.</p>
-    <a href="/checkout">Buy Quick Add+</a>
-  </section>
-
-
-
-  <section class="section">
-    <h2 style="color: var(--deep-blue); margin-bottom: 20px;">Lite vs Pro Comparison</h2>
-    <table style="margin: auto; border-collapse: collapse; font-size: 1.1em;">
-      <thead>
-        <tr style="background: var(--purple); color: white;">
-          <th style="padding: 14px 20px; border: 1px solid #ccc;">Feature</th>
-          <th style="padding: 14px 20px; border: 1px solid #ccc;">Lite</th>
-          <th style="padding: 14px 20px; border: 1px solid #ccc;">Pro</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td style="border: 1px solid #ccc; padding: 10px;">Products per Submission</td>
-          <td>2</td>
-          <td>Unlimited</td>
-        </tr>
-        <tr>
-          <td style="border: 1px solid #ccc; padding: 10px;">Product Types</td>
-          <td>All types</td>
-          <td>All types</td>
-        </tr>
-        <tr>
-          <td style="border: 1px solid #ccc; padding: 10px;">Custom Fields</td>
-          <td>✅</td>
-          <td>✅</td>
-        </tr>
-        <tr>
-          <td style="border: 1px solid #ccc; padding: 10px;">Image Gallery</td>
-          <td>✅</td>
-          <td>✅</td>
-        </tr>
-        <tr>
-          <td style="border: 1px solid #ccc; padding: 10px;">Sale Scheduling</td>
-          <td>✅</td>
-          <td>✅</td>
-        </tr>
-        <tr>
-          <td style="border: 1px solid #ccc; padding: 10px;">Lifetime Updates</td>
-          <td>✅</td>
-          <td>✅</td>
-        </tr>
-        <tr>
-          <td style="border: 1px solid #ccc; padding: 10px;">Priority Support</td>
-          <td>✅</td>
-          <td>✅</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <section class="section scroll-fade" style="background: #ffffff; padding: 60px 20px; text-align: center;">
-    <h2 style="font-size: 2em; color: #0f0c48; margin-bottom: 40px;">What Store Owners Are Saying</h2>
-    <div style="max-width: 700px; margin: auto; background: #f8f8ff; border-radius: 16px; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-align: left;">
-      <p style="font-size: 1.1em; font-style: italic; color: #333;">“I used to dread adding new products. It felt like a punishment. Now I can launch 10 at a time in under 10 minutes. Quick Add turned WooCommerce from a chore into a tool I actually like using.”</p>
-      <p style="font-weight: bold; margin-top: 20px;">— Lisa</p>
-    </div>
-  </section>
-
-  <section class="section scroll-fade" class="section video-demo" style="text-align: center; background: #6139F5;">
-    <h2 style="color: white; font-size: 2em; margin-bottom: 20px;">See QuickWoo in Action</h2>
-    <p style="color: white; margin-bottom: 30px;">Watch how QuickWoo apps streamline your workflow in real time.</p>
-    <video controls style="max-width: 400px; border-radius: 12px;">
-      <source src="/assets/videos/0430.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </section>
-
-  <section class="section scroll-fade" style="padding: 80px 20px; background: #ffffff; max-width: 800px; margin: auto;">
-    <h2 style="font-size: 2em; color: #0f0c48; margin-bottom: 30px;">How to Install Quick Add</h2>
-    <ol style="font-size: 1.1em; color: #333; line-height: 1.7; padding-left: 20px;">
-      <li style="margin-bottom: 15px;">Download the Quick Add plugin ZIP file from your QuickWoo account dashboard.</li>
-      <li style="margin-bottom: 15px;">In your WordPress admin, go to <strong>Plugins → Add New</strong>, then click <strong>Upload Plugin</strong>.</li>
-      <li style="margin-bottom: 15px;">Choose the ZIP file, upload it, and click <strong>Activate</strong>.</li>
-      <li style="margin-bottom: 15px;">You’ll now see a new “Quick Add” menu item under <strong>Products</strong>.</li>
-      <li style="margin-bottom: 15px;">Click it and start adding products instantly — no setup required.</li>
-    </ol>
-  </section>
-
-  <section class="section scroll-fade" style="padding: 80px 20px; background: #ffffff; max-width: 800px; margin: auto;">
-    <h2 style="text-align: center; font-size: 2em; color: #0f0c48; margin-bottom: 40px;">Quick Add: Frequently Asked Questions</h2>
+    <section style="padding: 80px 20px; background: var(--black); max-width: 800px; margin: auto;">
+      <h2 style="font-size: 2em; color: #ffffff; margin-bottom: 30px;">How to Install Quick Add</h2>
+      <ol style="font-size: 1.1em; color: #ffffff; line-height: 1.7; padding-left: 20px;">
+        <li style="margin-bottom: 15px;">Download the Quick Add plugin ZIP file from your QuickWoo account dashboard.</li>
+        <li style="margin-bottom: 15px;">In your WordPress admin, go to <strong>Plugins → Add New</strong>, then click <strong>Upload Plugin</strong>.</li>
+        <li style="margin-bottom: 15px;">Choose the ZIP file, upload it, and click <strong>Activate</strong>.</li>
+        <li style="margin-bottom: 15px;">You’ll now see a new “Quick Add” menu item under <strong>Products</strong>.</li>
+        <li style="margin-bottom: 15px;">Click it and start adding products instantly — no setup required.</li>
+      </ol>
+    </section>
   
-    <details style="margin-bottom: 20px;">
-      <summary style="font-weight: bold; font-size: 1.1em; cursor: pointer;">Does Quick Add support variable or downloadable products?</summary>
-      <p style="margin-top: 10px;">Yes. You can choose Simple, Variable, Grouped, External, or Downloadable product types on a per-row basis before submitting. Downloadable products also let you specify the file name and URL directly.</p>
-    </details>
+    <section class="section scroll-fade" style="padding: 80px 20px; background: var(--black);; max-width: 800px; margin: auto;">
+      <h2 style="text-align: center; font-size: 2em; color: #00ffc8; margin-bottom: 40px;">Quick Add: Frequently Asked Questions</h2>
+    
+      <details style="margin-bottom: 20px;">
+        <summary style="color: white;font-weight: bold; font-size: 1.1em; cursor: pointer;">Does Quick Add support variable or downloadable products?</summary>
+        <p style="color:#00ffcb; margin-top: 10px;">Yes. You can choose Simple, Variable, Grouped, External, or Downloadable product types on a per-row basis before submitting. Downloadable products also let you specify the file name and URL directly.</p>
+      </details>
+    
+      <details style="margin-bottom: 20px;">
+        <summary style="color: white;font-weight: bold; font-size: 1.1em; cursor: pointer;">Can I upload images when creating new products?</summary>
+        <p style="color:#00ffcb; margin-top: 10px;">Yes. Each row includes a field for the main image URL. Just paste in a direct link (from your media library or elsewhere) and it will be applied as the featured image when the product is created.</p>
+      </details>
+    
+      <details style="margin-bottom: 20px;">
+        <summary style="color: white;font-weight: bold; font-size: 1.1em; cursor: pointer;">Does this plugin create products instantly?</summary>
+        <p style="color:#00ffcb; margin-top: 10px;">Yes. When you click “Add All Products,” the system runs an AJAX process in the background. There’s no page reload, and all successful products are live in your WooCommerce catalog immediately.</p>
+      </details>
+    
+      <details style="margin-bottom: 20px;">
+        <summary style="color: white;font-weight: bold; font-size: 1.1em; cursor: pointer;">Is there a limit to how many products I can create at once?</summary>
+        <p style="color:#00ffcb; margin-top: 10px;">There’s no hardcoded limit. Most users create 10–50 products per batch comfortably. If you’re adding 100+ at once, just give the AJAX engine a few extra seconds to process.</p>
+      </details>
+    
+      <details style="margin-bottom: 20px;">
+        <summary style="color: white;font-weight: bold; font-size: 1.1em; cursor: pointer;">Will this work with my custom product fields?</summary>
+        <p style="color:#00ffcb; margin-top: 10px;">Quick Add includes basic WooCommerce product fields out of the box. If you’ve registered custom fields or ACF fields, the Pro version lets you map those too.</p>
+      </details>
+    
+      <details style="margin-bottom: 20px;">
+        <summary style="color: white;font-weight: bold; font-size: 1.1em; cursor: pointer;">Can I use this plugin with other product import tools?</summary>
+        <p style="color:#00ffcb; margin-top: 10px;">Absolutely. Quick Add doesn’t interfere with WP All Import, native WooCommerce imports, or product syncing plugins. It’s a fast alternative—not a replacement—for when you need speed and control without file prep.</p>
+      </details>
+    
+      <details style="margin-bottom: 20px;">
+        <summary style="color: white;font-weight: bold; font-size: 1.1em; cursor: pointer;">Is there a refund policy?</summary>
+        <p style="color:#00ffcb; margin-top: 10px;">Yes. You’re protected by our 14-day no-questions-asked money-back guarantee. If Quick Add doesn’t save you time, you get your money back. Period.</p>
+      </details>
+    </section>
+    
   
-    <details style="margin-bottom: 20px;">
-      <summary style="font-weight: bold; font-size: 1.1em; cursor: pointer;">Can I upload images when creating new products?</summary>
-      <p style="margin-top: 10px;">Yes. Each row includes a field for the main image URL. Just paste in a direct link (from your media library or elsewhere) and it will be applied as the featured image when the product is created.</p>
-    </details>
+    <section class="section scroll-fade" style="  background: linear-gradient(200deg, var(--blue), var(--blue1), var(--blue2), var(--blue3), var(--blue3), var(--blue2), var(--blue1), var(--blue));
+  ; color: white; padding: 80px 20px; text-align: center;">
+      <h2 style="font-size: 2.2em; margin-bottom: 20px;">Stop Wasting Time in the Default Editor</h2>
+      <p style="max-width: 700px; margin: auto; font-size: 1.1em; line-height: 1.6; margin-bottom: 30px;">
+        Quick Add was built for WooCommerce store owners who are sick of clicking through slow pages and importing CSVs. Start adding products 10x faster—without code, without stress.
+      </p>
+      <a href="/checkout/?product=quick-add" style="background: #0f0c48; color: #fff; padding: 16px 32px; font-weight: bold; border-radius: 12px; text-decoration: none; font-size: 1.1em;">Buy Quick Add</a>
+    </section>
+    
   
-    <details style="margin-bottom: 20px;">
-      <summary style="font-weight: bold; font-size: 1.1em; cursor: pointer;">Does this plugin create products instantly?</summary>
-      <p style="margin-top: 10px;">Yes. When you click “Add All Products,” the system runs an AJAX process in the background. There’s no page reload, and all successful products are live in your WooCommerce catalog immediately.</p>
-    </details>
+   <div id="footer"></div>
   
-    <details style="margin-bottom: 20px;">
-      <summary style="font-weight: bold; font-size: 1.1em; cursor: pointer;">Is there a limit to how many products I can create at once?</summary>
-      <p style="margin-top: 10px;">There’s no hardcoded limit. Most users create 10–50 products per batch comfortably. If you’re adding 100+ at once, just give the AJAX engine a few extra seconds to process.</p>
-    </details>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.getElementById("menu-toggle");
+        const nav = document.getElementById("main-nav");
   
-    <details style="margin-bottom: 20px;">
-      <summary style="font-weight: bold; font-size: 1.1em; cursor: pointer;">Will this work with my custom product fields?</summary>
-      <p style="margin-top: 10px;">Quick Add includes basic WooCommerce product fields out of the box. If you’ve registered custom fields or ACF fields, the Pro version lets you map those too.</p>
-    </details>
-  
-    <details style="margin-bottom: 20px;">
-      <summary style="font-weight: bold; font-size: 1.1em; cursor: pointer;">Can I use this plugin with other product import tools?</summary>
-      <p style="margin-top: 10px;">Absolutely. Quick Add doesn’t interfere with WP All Import, native WooCommerce imports, or product syncing plugins. It’s a fast alternative—not a replacement—for when you need speed and control without file prep.</p>
-    </details>
-  
-    <details style="margin-bottom: 20px;">
-      <summary style="font-weight: bold; font-size: 1.1em; cursor: pointer;">Is there a refund policy?</summary>
-      <p style="margin-top: 10px;">Yes. You’re protected by our 14-day no-questions-asked money-back guarantee. If Quick Add doesn’t save you time, you get your money back. Period.</p>
-    </details>
-  </section>
-  
-
-  <section class="section scroll-fade" style="background: linear-gradient(to right, #6139F5, #FFB900); color: white; padding: 80px 20px; text-align: center;">
-    <h2 style="font-size: 2.2em; margin-bottom: 20px;">Stop Wasting Time in the Default Editor</h2>
-    <p style="max-width: 700px; margin: auto; font-size: 1.1em; line-height: 1.6; margin-bottom: 30px;">
-      Quick Add was built for WooCommerce store owners who are sick of clicking through slow pages and importing CSVs. Start adding products 10x faster—without code, without stress.
-    </p>
-    <a href="/checkout/?product=quick-add" style="background: #0f0c48; color: #fff; padding: 16px 32px; font-weight: bold; border-radius: 12px; text-decoration: none; font-size: 1.1em;">Buy Quick Add</a>
-  </section>
-  
-
- 
-
-  <footer>
-    <p>© 2025 QuickWoo Bundle. Built with 💜 by <strong>Robert Calvin</strong></p>
-    <p><a href="/terms/" style="color:#0f0c48; margin-right: 10px;">Terms</a> | <a href="/privacy/"
-        style="color:#0f0c48;">Privacy</a></p>
-  </footer>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const toggle = document.getElementById("menu-toggle");
-      const nav = document.getElementById("main-nav");
-
-      toggle.addEventListener("click", () => {
-        nav.classList.toggle("active");
+        toggle.addEventListener("click", () => {
+          nav.classList.toggle("active");
+        });
       });
-    });
-  </script>
-
-<div style="display:none;">
-  <h2>Quick Add for WooCommerce: Bulk Product Creation Plugin</h2>
-  <p>Quick Add is a WooCommerce plugin that lets you create multiple products quickly from a single form. Add product titles, prices, SKUs, categories, images, and download links without using CSVs or the default product editor. Supports all major WooCommerce product types including simple, variable, external, grouped, and downloadable products. Ideal for sellers who need a fast way to populate their store catalog without wasting time on repetitive entry or imports.</p>
-  <ul>
-    <li>woocommerce bulk add product plugin</li>
-    <li>quick product creation in woocommerce</li>
-    <li>fastest way to add products to wordpress store</li>
-    <li>woocommerce product uploader alternative</li>
-    <li>skip woocommerce import and add products manually</li>
-    <li>bulk add products with images in woocommerce</li>
-    <li>woocommerce simple product creator</li>
-    <li>plugin to generate woocommerce products quickly</li>
-    <li>best tool for creating products in woocommerce fast</li>
-    <li>wordpress plugin to add products without csv</li>
-  </ul>
-</div>
-
-
-</body>
+    </script>
+  
+  <div style="display:none;">
+    <h2>Quick Add for WooCommerce: Bulk Product Creation Plugin</h2>
+    <p>Quick Add is a WooCommerce plugin that lets you create multiple products quickly from a single form. Add product titles, prices, SKUs, categories, images, and download links without using CSVs or the default product editor. Supports all major WooCommerce product types including simple, variable, external, grouped, and downloadable products. Ideal for sellers who need a fast way to populate their store catalog without wasting time on repetitive entry or imports.</p>
+    <ul>
+      <li>woocommerce bulk add product plugin</li>
+      <li>quick product creation in woocommerce</li>
+      <li>fastest way to add products to wordpress store</li>
+      <li>woocommerce product uploader alternative</li>
+      <li>skip woocommerce import and add products manually</li>
+      <li>bulk add products with images in woocommerce</li>
+      <li>woocommerce simple product creator</li>
+      <li>plugin to generate woocommerce products quickly</li>
+      <li>best tool for creating products in woocommerce fast</li>
+      <li>wordpress plugin to add products without csv</li>
+    </ul>
+  </div>
+  
+  <script src="/assets/js/scripts.js"></script>
+  </body>
 
 </html>

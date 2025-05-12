@@ -39,7 +39,7 @@
  justify-content: space-between;
  flex: 1 1 250px;
  min-width: 250px;
- max-width: 300px;}
+ max-width: 400px;}
  .app-card:hover {
  transform: translateY(-6px);
  box-shadow: 0 10px 35px rgb(204, 222, 255);}
@@ -493,5 +493,11 @@ border: 1px solid rgba(255, 255, 255, 0.15);
    position: sticky;
    top: 0;
    z-index: 999;
-   padding: 30px 20px;}}
+   padding: 30px 20px;}
+  
+  .app-card {
+    width: 85%;
+  }
+
+}
 

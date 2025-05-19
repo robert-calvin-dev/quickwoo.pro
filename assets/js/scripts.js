@@ -81,10 +81,10 @@ function insertAppCards() {
 function insertBlogCards() {
  const blogCardHTML = `
 <section class="section">
-  <h2 style="color: white; text-align:center; margin-bottom: 40px;">Latest Blog Posts</h2>
+  <h2 style="color: var(--white); text-align:center; margin-bottom: 40px;">Latest Blog Posts</h2>
   <div class="blog-grid" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
 
-    <div class="blog-card" style="background: white; border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
+    <div class="blog-card" style="background: var(--white); border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
       <img src="/assets/images/seasonalseo.png" alt="SEO Checklist" style="display: block; margin: 20px auto 0; width: 90%; height: auto;">
       <div class="content" style="padding: 20px;">
         <h3>The WooCommerce SEO Checklist for 2025</h3>
@@ -94,7 +94,7 @@ function insertBlogCards() {
       </div>
     </div>
 
-    <div class="blog-card" style="background: white; border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
+    <div class="blog-card" style="background: var(--white); border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
       <img src="/assets/images/sitespeed.png" alt="Store Speed" style="display: block; margin: 20px auto 0; width: 90%; height: auto;">
       <div class="content" style="padding: 20px;">
         <h3>Improve Store Speed with QuickWoo</h3>
@@ -104,7 +104,7 @@ function insertBlogCards() {
       </div>
     </div>
 
-    <div class="blog-card" style="background: white; border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
+    <div class="blog-card" style="background: var(--white); border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
       <img src="/assets/images/blogtools.png" alt="Blog Tools" style="display: block; margin: 20px auto 0; width: 90%; height: auto;">
       <div class="content" style="padding: 20px;">
         <h3>Writing Product Blogs with Quick Blog</h3>
@@ -114,7 +114,7 @@ function insertBlogCards() {
       </div>
     </div>
 
-    <div class="blog-card" style="background: white; border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
+    <div class="blog-card" style="background: var(--white); border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
       <img src="/assets/images/seasonalseo.png" alt="Seasonal Strategy" style="display: block; margin: 20px auto 0; width: 90%; height: auto;">
       <div class="content" style="padding: 20px;">
         <h3>Seasonal SEO & Pricing Strategies</h3>
@@ -124,7 +124,7 @@ function insertBlogCards() {
       </div>
     </div>
 
-    <div class="blog-card" style="background: white; border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
+    <div class="blog-card" style="background: var(--white); border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
   <img src="/assets/images/webdesign-color-theory.png" alt="Web Design Color Theory" style="display: block; margin: 20px auto 0; width: 90%; height: auto;">
   <div class="content" style="padding: 20px;">
     <h3>Web Design Color Theory</h3>
@@ -134,7 +134,7 @@ function insertBlogCards() {
   </div>
 </div>
 
-<div class="blog-card" style="background: white; border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
+<div class="blog-card" style="background: var(--white); border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
   <img src="/assets/images/glitterqueen-spotlight.png" alt="GlitterQueenCreative Spotlight" style="display: block; margin: 20px auto 0; width: 90%; height: auto;">
   <div class="content" style="padding: 20px;">
     <h3>Store Spotlight: GlitterQueenCreative.ca</h3>
@@ -145,7 +145,7 @@ function insertBlogCards() {
 </div>
 
 
-<div class="blog-card" style="background: white; border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
+<div class="blog-card" style="background: var(--white); border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
   <img src="/assets/images/seo-mistakes.png" alt="SEO Mistakes" style="display: block; margin: 20px auto 0; width: 90%; height: auto;">
   <div class="content" style="padding: 20px;">
     <h3>Ten Easy Mistakes to Make with SEO</h3>
@@ -156,7 +156,7 @@ function insertBlogCards() {
 </div>
 
 
-<div class="blog-card" style="background: white; border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
+<div class="blog-card" style="background: var(--white); border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
   <img src="/assets/images/github.png" alt="GitHub Pages Guide" style="display: block; margin: 20px auto 0; width: 90%; height: auto;">
   <div class="content" style="padding: 20px;">
     <h3>Using Git and GitHub Pages</h3>
@@ -167,7 +167,7 @@ function insertBlogCards() {
 </div>
 
 
-<div class="blog-card" style="background: white; border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
+<div class="blog-card" style="background: var(--white); border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
   <img src="/assets/images/css-shimmer.png" alt="CSS Shimmer" style="display: block; margin: 20px auto 0; width: 90%; height: auto;">
   <div class="content" style="padding: 20px;">
     <h3>CSS: Shimmer</h3>
@@ -178,7 +178,7 @@ function insertBlogCards() {
 </div>
 
 
-<div class="blog-card" style="background: white; border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
+<div class="blog-card" style="background: var(--white); border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
   <img src="/assets/images/2468gradient.png" alt="CSS Gradients" style="display: block; margin: 20px auto 0; width: 90%; height: auto;">
   <div class="content" style="padding: 20px;">
     <h3>2, 4, 6, 8: Gradients to Appreciate!</h3>
@@ -200,8 +200,8 @@ function insertDemo() {
  const demoHTML = `
   <section class="section scroll-fade" class="section video-demo" style="text-align: center;   backdrop-filter: blur(12px); border-top: 1px solid rgba(255, 255, 255, 0.15); background: linear-gradient(200deg, var(--blue), var(--blue1), var(--blue2), var(--blue3), var(--blue3), var(--blue2), var(--blue1), var(--blue));
 ;">
-    <h2 style="color: white; font-size: 2em; margin-bottom: 20px;">See QuickWoo in Action</h2>
-    <p style="color: white; margin-bottom: 30px;">Watch how QuickWoo apps streamline your workflow in real time.</p>
+    <h2 style="color: var(--white); font-size: 2em; margin-bottom: 20px;">See QuickWoo in Action</h2>
+    <p style="color: var(--white); margin-bottom: 30px;">Watch how QuickWoo apps streamline your workflow in real time.</p>
     <video controls style="width: 50%; border-radius: 12px;">
       <source src="assets/videos/0430.mp4" type="video/mp4">
       Your browser does not support the video tag.
@@ -215,8 +215,8 @@ function insertDemo() {
   const demoHTML = `
    <section class="section scroll-fade" class="section video-demo" style="text-align: center;   backdrop-filter: blur(12px); border-top: 1px solid rgba(255, 255, 255, 0.15); background: linear-gradient(200deg, var(--blue), var(--blue1), var(--blue2), var(--blue3), var(--blue3), var(--blue2), var(--blue1), var(--blue));
  ;">
-     <h2 style="color: white; font-size: 2em; margin-bottom: 20px;">See QuickWoo in Action</h2>
-     <p style="color: white; margin-bottom: 30px;">Watch how QuickWoo apps streamline your workflow in real time.</p>
+     <h2 style="color: var(--white); font-size: 2em; margin-bottom: 20px;">See QuickWoo in Action</h2>
+     <p style="color: var(--white); margin-bottom: 30px;">Watch how QuickWoo apps streamline your workflow in real time.</p>
      <video controls style="width: 50%; border-radius: 12px;">
        <source src="/assets/videos/0430.mp4" type="video/mp4">
        Your browser does not support the video tag.
@@ -229,8 +229,8 @@ function insertDemo() {
 function insertForm() {
  const formHTML = `
   <section class="section scroll-fade newsletter" style="background: var(--black); backdrop-filter: blur(12px); border-top: 1px solid rgba(255, 255, 255, 0.15); text-align: center; padding: 60px 20px;">
-    <h2 style="color:  white; font-size: 2em; margin-bottom: 20px;">Get Our Free Guide</h2>
-    <p style="color:  white; font-size: 1.1em; margin-bottom: 30px;">Not ready to buy? Grab our 10-Point Guide to WooCommerce Growth.
+    <h2 style="color:  var(--white); font-size: 2em; margin-bottom: 20px;">Get Our Free Guide</h2>
+    <p style="color:  var(--white); font-size: 1.1em; margin-bottom: 30px;">Not ready to buy? Grab our 10-Point Guide to WooCommerce Growth.
     </p>
 
     <form action="https://formspree.io/f/xldbljjp" method="POST" onsubmit="return sendGuideAlert(event)">
@@ -238,7 +238,7 @@ function insertForm() {
         style="border: 2px solid rgb(57, 70, 245); padding: 12px 18px; font-size: 1em; border-radius: 8px; width: 280px;">
 
       <button type="submit"
-        style="margin-top: 20px; padding: 12px 24px; background-color:rgb(6, 0, 175); color: white; font-weight: bold; border: none; border-radius: 8px; margin-left: 10px;">
+        style="margin-top: 20px; padding: 12px 24px; background-color:rgb(6, 0, 175); color: var(--white); font-weight: bold; border: none; border-radius: 8px; margin-left: 10px;">
         Send Guide
       </button>
     </form>
@@ -250,8 +250,8 @@ function insertForm() {
 function insertFooter() {
  const footerHTML = `
    <section class="section social-proof" style="background: var(--black); backdrop-filter: blur(12px); border-top: 1px solid rgba(255, 255, 255, 0.15); padding: 40px 20px; text-align: center;">
-    <h2 style="color:  white; font-size: 1.8em; margin-bottom: 20px;">Loved by Woo Users</h2>
-    <p style="color:  white; max-width: 700px; margin: 0 auto 30px;">Join all the stores who trust QuickWoo to save hours, boost
+    <h2 style="color:  var(--white); font-size: 1.8em; margin-bottom: 20px;">Loved by Woo Users</h2>
+    <p style="color:  var(--white); max-width: 700px; margin: 0 auto 30px;">Join all the stores who trust QuickWoo to save hours, boost
       performance, and simplify their workflow.</p>
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; font-weight: bold;">
       <span style="color: var(--blue1); background:rgb(255, 255, 255); padding: 10px 20px; border-radius: 20px;">@PluginHut</span>
@@ -264,7 +264,7 @@ function insertFooter() {
 
 
   <section class="section whats-new" style=" backdrop-filter: blur(12px); border-top: 1px solid rgba(255, 255, 255, 0.15);  background: linear-gradient(200deg, var(--blue), var(--blue1), var(--blue2), var(--blue3), var(--blue3), var(--blue2), var(--blue1), var(--blue));
- color: white; padding: 30px 20px; text-align: center;">
+ color: var(--white); padding: 30px 20px; text-align: center;">
     <p style="font-size: 1.1em;">✨ Now with Woo 8.x support, new SEO insights module, and lightning-fast batch editing.
     </p>
   </section>
@@ -272,9 +272,9 @@ function insertFooter() {
 
   <footer
     style="backdrop-filter: blur(12px); background: var(--black); border-top: 1px solid rgba(255, 255, 255, 0.2); text-align: center; padding: 30px 20px; font-size: 0.95em; color: #0f0c48;">
-    <p style="color:  white; ">© 2025 QuickWoo Bundle. Built with 💜 by <strong>Robert Calvin</strong></p>
-    <p style="color:  white; " ><a href="/terms/" style="color:  white;  margin-right: 10px;">Terms</a> | <a href="/privacy/"
-        style="color:  white; ">Privacy</a></p>
+    <p style="color:  var(--white); ">© 2025 QuickWoo Bundle. Built with 💜 by <strong>Robert Calvin</strong></p>
+    <p style="color:  var(--white); " ><a href="/terms/" style="color:  var(--white);  margin-right: 10px;">Terms</a> | <a href="/privacy/"
+        style="color:  var(--white); ">Privacy</a></p>
   </footer>
  `;
  document.addEventListener('DOMContentLoaded', function() {

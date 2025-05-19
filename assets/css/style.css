@@ -13,9 +13,12 @@
  padding: 0;
  box-sizing: border-box;}
  html {
-  background: #000000;
+  background: var(--black);
   width: 100%;
   overflow-x: hidden;}
+  h1 {
+    font-size: 3rem;
+  }
  a {
  text-decoration: none;}
  .app-grid {
@@ -55,10 +58,10 @@
  padding: 6px;
  border-radius: 8px;
  margin: 5px 0;
- color: #000000;}
+ color: var(--black);}
  .app-card img {
  max-width: 250px;
- border: 1px solid white;
+ border: 1px solid var(--white);
  border-radius: 8px;}
  .blog-grid {
   display: grid;
@@ -69,7 +72,7 @@
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  background: white;}
+  background: var(--white);}
  .blog-card img {
   width: 100%;
   height: auto;
@@ -94,7 +97,7 @@
   .blogtop {
     background: linear-gradient(200deg, var(--blue), var(--blue1), var(--blue2), var(--blue3), var(--blue3), var(--blue2), var(--blue1), var(--blue));
 padding: 60px;
-    color:white;
+    color:var(--white);
     text-align:center;
     backdrop-filter: blur(12px);
     border-top: 1px solid rgba(255, 255, 255, 0.15);
@@ -104,7 +107,7 @@ padding: 60px;
  body {
  font-family: 'Poppins', sans-serif;
  background: var(--black);
- color: #000000;
+ color: var(--black);
  margin: auto;
  backdrop-filter: blur(12px);
 border: 1px solid rgba(255, 255, 255, 0.15);
@@ -113,7 +116,7 @@ border: 1px solid rgba(255, 255, 255, 0.15);
  line-height: 1.5;}
  .bundle-promo {
   background: linear-gradient(200deg, var(--blue), var(--blue1), var(--blue2), var(--blue3), var(--blue3), var(--blue2), var(--blue1), var(--blue));
-  color: white;
+  color: var(--white);
   font-size: 1.5rem;
  text-align: center;
  backdrop-filter: blur(12px);
@@ -129,7 +132,7 @@ border: 1px solid rgba(255, 255, 255, 0.15);
  .checkout-container {
  max-width: 600px;
  margin: 60px auto;
- background: #ffffff;
+ background: var(--white);
  padding: 40px;
  border-radius: 12px;
  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);}
@@ -148,7 +151,7 @@ border: 1px solid rgba(255, 255, 255, 0.15);
  font-weight: bold;
  font-size: 1.1em;
  background-color: #6139F5;
- color: white;
+ color: var(--white);
  padding: 14px;
  border-radius: 10px;
  text-decoration: none;}
@@ -156,7 +159,7 @@ border: 1px solid rgba(255, 255, 255, 0.15);
  .cta {
   background: linear-gradient(200deg, var(--blue), var(--blue1), var(--blue2), var(--blue3), var(--blue3), var(--blue2), var(--blue1), var(--blue));
 
-  color: white;
+  color: var(--white);
   padding: 50px 20px;
   text-align: center;}
  .cta a {
@@ -168,7 +171,7 @@ border: 1px solid rgba(255, 255, 255, 0.15);
   text-decoration: none;
   font-size: 1.2em;}
   #explore {
-   color:  white; 
+   color:  var(--white); 
   }
   #features {
     font-size: 1.4 rem;
@@ -209,7 +212,7 @@ border: 1px solid rgba(255, 255, 255, 0.15);
   font-size: 0.95em;
   color: #0f0c48;}
  header {
-  background: #000000;
+  background: var(--black);
   padding: 14px 20px;
   color: rgb(0, 179, 255);
   display: flex;
@@ -235,7 +238,7 @@ border: 1px solid rgba(255, 255, 255, 0.15);
   font-size: 1.2em;}
   img {
    max-width: 200px;
-   border: 1px solid black;
+   border: 1px solid var(--black);
    border-radius: 4px;
    margin-bottom: 10px;}
  .imagetag {
@@ -244,7 +247,7 @@ border: 1px solid rgba(255, 255, 255, 0.15);
   flex-direction: column;}
  .imagetag img {
   max-width: 350px;
-  border: 1px solid black;
+  border: 1px solid var(--black);
   border-radius: 8px;
   margin: auto;
  margin-bottom: 15px;}
@@ -311,7 +314,7 @@ border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 0 20px;
   text-align: center;}
  .lite-card {
-  background: #ffffff;
+  background: var(--white);
   border: 1px solid #ddd;
   border-radius: 12px;
   padding: 30px 20px;
@@ -341,7 +344,7 @@ border: 1px solid rgba(255, 255, 255, 0.15);
  gap: 5px;}
  .menu-toggle span {
  height: 3px;
- background: white;
+ background: var(--white);
  width: 100%;
  border-radius: 2px;}
  nav {
@@ -386,7 +389,7 @@ border: 1px solid rgba(255, 255, 255, 0.15);
  .plan p {
   font-size: 1.1em;}
   .post {
-  background: white;
+  background: var(--white);
   max-width: 800px;
   margin: auto;
   border-radius: 8px;

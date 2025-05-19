@@ -1,7 +1,7 @@
 function insertHeader() {
  const headerHTML = `
    <header>
-    <div class="logo">QuickWoo</div>
+    <div class="logo"><a href="https://quickwoo.pro"><img src="/assets/images/logolite.png"></a></div>
     <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
     <label for="nav-toggle" class="menu-toggle">
       <span></span>

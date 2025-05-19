@@ -13,7 +13,7 @@
  padding: 0;
  box-sizing: border-box;}
  html {
-  background: var(--black);
+  background: var(--white);
   width: 100%;
   overflow-x: hidden;}
   h1 {

@@ -1,10 +1,10 @@
 :root {
- --blue: #00093d;
- --blue1: #001ec7;
- --blue2: #005eff;
- --blue3: #008cff;
- --blue4: #00d9ff;
- --blue5: #7be8fb;
+ --blue: #758996;
+ --blue1: #5aa1b9;
+ --blue2: #80b8cc;
+ --blue3: #b6e0e5;
+ --blue4: #8c9fa2;
+ --blue5: #e5e5e5;
  --blue6: #dbfaff;
  --black: #171717;
  --white: #ffffff;}
@@ -13,7 +13,7 @@
  padding: 0;
  box-sizing: border-box;}
  html {
-  background: var(--white);
+  background: #f6f6f6;
   width: 100%;
   overflow-x: hidden;}
   h1 {
@@ -33,7 +33,7 @@
  border: 2px solid rgba(255, 255, 255, 0.576);
  border-radius: 20px;
  padding: 20px;
- color: var(--white);
+ color: black;
  font-weight: bold;
  box-shadow: 0 6px 18px rgba(2, 95, 255, 0.498);
  transition: all 0.3s ease-in-out;
@@ -97,7 +97,7 @@
   .blogtop {
     background: linear-gradient(200deg, var(--blue), var(--blue1), var(--blue2), var(--blue3), var(--blue3), var(--blue2), var(--blue1), var(--blue));
 padding: 60px;
-    color:var(--white);
+    color:black;
     text-align:center;
     backdrop-filter: blur(12px);
     border-top: 1px solid rgba(255, 255, 255, 0.15);
@@ -106,9 +106,9 @@ padding: 60px;
   }
  body {
  font-family: 'Poppins', sans-serif;
- background: var(--black);
  color: var(--black);
  margin: auto;
+ background: rgba(255, 255, 255, 0.898);
  backdrop-filter: blur(12px);
 border: 1px solid rgba(255, 255, 255, 0.15);
  max-width: 1600px;
@@ -116,7 +116,7 @@ border: 1px solid rgba(255, 255, 255, 0.15);
  line-height: 1.5;}
  .bundle-promo {
   background: linear-gradient(200deg, var(--blue), var(--blue1), var(--blue2), var(--blue3), var(--blue3), var(--blue2), var(--blue1), var(--blue));
-  color: var(--white);
+  color: black;
   font-size: 1.5rem;
  text-align: center;
  backdrop-filter: blur(12px);
@@ -171,7 +171,7 @@ border: 1px solid rgba(255, 255, 255, 0.15);
   text-decoration: none;
   font-size: 1.2em;}
   #explore {
-   color:  var(--white); 
+   color:  black; 
   }
   #features {
     font-size: 1.4 rem;
@@ -212,9 +212,9 @@ border: 1px solid rgba(255, 255, 255, 0.15);
   font-size: 0.95em;
   color: #0f0c48;}
  header {
-  background: var(--black);
+  background: rgba(255, 255, 255, 0.898);
   padding: 14px 20px;
-  color: rgb(0, 179, 255);
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -228,16 +228,17 @@ border: 1px solid rgba(255, 255, 255, 0.15);
   background: var(--blue);
   background-size: 600% 600%;
   animation: gradientShift 12s ease infinite;
-  color: var(--white);
   padding: 60px 20px;
-  text-align: center;}
+  text-align: center;
+
+}
  .hero h1 {
   font-size: 2.8em;
   margin-bottom: 10px;}
  .hero p {
   font-size: 1.2em;}
   img {
-   max-width: 200px;
+   
    border: 1px solid var(--black);
    border-radius: 4px;
    margin-bottom: 10px;}
@@ -256,8 +257,8 @@ border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 80px;
   backdrop-filter: blur(12px);
   border-top: 1px solid rgba(255, 255, 255, 0.15);
-  background-color: var(--deep-blue);
-  color: var(--white);}
+  background-color:rgba(255, 255, 255, 0.898);
+  color: black;}
  #includes h2 {
   font-size: 2em;
   margin-bottom: 70px;}
@@ -389,7 +390,7 @@ border: 1px solid rgba(255, 255, 255, 0.15);
  .plan p {
   font-size: 1.1em;}
   .post {
-  background: var(--white);
+  background: black;
   max-width: 800px;
   margin: auto;
   border-radius: 8px;

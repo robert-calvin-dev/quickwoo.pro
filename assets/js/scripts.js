@@ -1,24 +1,30 @@
 function insertHeader() {
  const headerHTML = `
-   <header>
-    <div class="logo"><a href="https://quickwoo.pro"><img src="/assets/images/logolite.png"></a></div>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
-    <label for="nav-toggle" class="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/blog/">Woo Blog</a>
-      <a href="/bundle/">Bundle</a>
-      <a href="/quick-add/">Quick Add</a>
-      <a href="/quick-edit/">Quick Edit</a>
-      <a href="/quick-seo/">Quick SEO</a>
-      <a href="/quick-blog/">Quick Blog</a>
-      <a href="/lite/">Lite</a>
-    </nav>
-  </header>
+<header>
+ <img style="border: none; width:100%;"  src="/assets/images/logodark.png">
+ <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+ <label for="nav-toggle" class="menu-toggle">
+   <span></span>
+   <span></span>
+   <span></span>
+ </label>
+ <nav>
+  
+<!--
+
+   <a href="/">Home</a>
+   <a href="/bundle/">Bundle</a>
+   <a href="/quick-add/">Quick Add</a>
+   <a href="/quick-edit/">Quick Edit</a>
+   <a href="/quick-seo/">Quick SEO</a>
+   <a href="/quick-blog/">Quick Blog</a>
+   <a href="/lite/">Lite</a>
+
+ -->
+ </nav>
+
+
+</header>
  
  `;
  document.addEventListener('DOMContentLoaded', function() {
@@ -27,50 +33,31 @@ function insertHeader() {
 function insertAppCards() {
  const appCardHTML = `
 <section id="includes">
-  <h2>Includes</h2>
+  <br><br>
+
   <div class="app-grid">
 
-    <!-- Quick Add -->
-    <a href="/quick-add/">
-      <div class="app-card">
-        <img src="assets/images/quickadd.png" style="width: 80%; margin: 0 auto 20px; display: block;">
-        <h3>Quick Add</h3>
-        <p>Quick Add lets you create WooCommerce products in bulk with unmatched speed and precision. Add simple, variable, grouped, or downloadable products in seconds. Customize every field—including title, pricing, inventory, attributes, and product images—all from one streamlined interface. No imports, no spreadsheets. Just instant creation inside WordPress.</p>
-        <div style="margin-top: 20px; font-size: 0.95em; font-weight: bold; color:rgb(0, 229, 255);">$59/year or $99 lifetime</div>
-      </div>
-    </a>
-
-    <!-- Quick Edit -->
-    <a href="/quick-edit/">
-      <div class="app-card">
-        <img src="assets/images/quickedit.png" style="width: 80%; margin: 0 auto 20px; display: block;">
-        <h3>Quick Edit</h3>
-        <p>Quick Edit turns your WooCommerce catalog into a live spreadsheet. Update prices, stock, categories, tags, sale dates, and more—inline, without reloading the page. Perfect for stores with frequent inventory changes or seasonal pricing. Make hundreds of edits in minutes and schedule mass sales events with one click.</p>
-        <div style="margin-top: 20px; font-size: 0.95em; font-weight: bold; color:rgb(0, 234, 255);">$59/year or $99 lifetime</div>
-      </div>
-    </a>
-
     <!-- Quick SEO -->
-    <a href="/quick-seo/">
-      <div class="app-card">
-        <img src="assets/images/quickseo.png" style="width: 80%; margin: 0 auto 20px; display: block;">
-        <h3>Quick SEO</h3>
-        <p>Quick SEO gives you total control over your product metadata. Bulk edit SEO titles, meta descriptions, focus keywords, and schema in one clean dashboard. Push all fields directly to the page <code>&lt;head&gt;</code>, integrate OG data for social sharing, and rank faster with multiple keyword support. SEO doesn’t get easier than this.</p>
-        <div style="margin-top: 20px; font-size: 0.95em; font-weight: bold; color:rgb(0, 242, 255);">$59/year or $99 lifetime</div>
-      </div>
-    </a>
+    <div class="app-card">
+      <img src="assets/images/quickseo.png" style="width: 80%; margin: 0 auto 20px; display: block;">
+      <h3>Quick SEO</h3>
+      <p>
+        Take full control of your WordPress and WooCommerce SEO with Quick SEO—your all-in-one spreadsheet-style editor for metadata, schema, OG tags, and keyword targeting. 
+        Edit SEO titles, meta descriptions, focus + secondary keywords, Twitter cards, and longtail phrases in bulk, across pages, posts, products, categories, and tags. 
+        Choose schema types like WebPage, Product, Offer, Person and inject them instantly.
+        <br><br>
+        Every field is pushed directly into the page <code>&lt;head&gt;</code> for maximum crawlability—and longtail keywords are invisibly embedded into the page body for ranking edge. 
+        No fluff, no dependencies. Just real SEO results made fast, simple, and scalable.
+      </p>
 
-    <!-- Quick Blog -->
-    <a href="/quick-blog/">
-      <div class="app-card">
-        <img src="assets/images/quickblog.png" style="width: 80%; margin: 0 auto 20px; display: block;">
-        <h3>Quick Blog</h3>
-        <p>Quick Blog is the easiest way to bulk-publish content to your WooCommerce blog. Add multiple posts at once, each with their own SEO data, featured images, and categories. It’s perfect for product roundups, seasonal campaigns, or SEO-optimized content at scale. <strong>Available exclusively in the QuickWoo Bundle.</strong></p>
-        <div style="margin-top: 20px; font-size: 0.95em; font-weight: bold; color:rgb(0, 242, 255);">Included with Bundle only</div>
+      <div style="margin-top: 30px; padding: 14px 24px; background: var(--blood-orange); color: var(--white); border-radius: 8px; font-size: 1.1em; font-weight: bold; display: inline-block; transition: background 0.3s;">
+        🔥 Download for Free — Limited Time Only!
       </div>
-    </a>
+    </div>
 
   </div>
+  <br><br>
+
 </section>
 
  
@@ -81,7 +68,7 @@ function insertAppCards() {
 function insertBlogCards() {
  const blogCardHTML = `
 <section class="section">
-  <h2 style="color: var(--white); text-align:center; margin-bottom: 40px;">Latest Blog Posts</h2>
+  <h2 style="color: black; font-size: 3rem; text-align:center; margin-bottom: 40px;">Latest Blog Posts</h2>
   <div class="blog-grid" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
 
     <div class="blog-card" style="background: var(--white); border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
@@ -200,12 +187,52 @@ function insertDemo() {
  const demoHTML = `
   <section class="section scroll-fade" class="section video-demo" style="text-align: center;   backdrop-filter: blur(12px); border-top: 1px solid rgba(255, 255, 255, 0.15); background: linear-gradient(200deg, var(--blue), var(--blue1), var(--blue2), var(--blue3), var(--blue3), var(--blue2), var(--blue1), var(--blue));
 ;">
-    <h2 style="color: var(--white); font-size: 2em; margin-bottom: 20px;">See QuickWoo in Action</h2>
-    <p style="color: var(--white); margin-bottom: 30px;">Watch how QuickWoo apps streamline your workflow in real time.</p>
+
+  <br><br>
+
+    <h2 style="color: black; font-size: 3em; margin-bottom: 20px;">See QuickWoo in Action</h2>
+    <p style="color: black; margin-bottom: 30px; font-size: 2rem;">Watch how QuickWoo apps streamline your workflow in real time.</p>
     <video controls style="width: 50%; border-radius: 12px;">
       <source src="assets/videos/0430.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
+  <br><br>
+
+
+    <br><br><br>
+    <br>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; max-width: 1200px; margin: auto;">
+
+  <!-- Step 1: Launch -->
+  <div style="flex: 1 1 250px; background: var(--white); border-radius: 16px; padding: 30px; box-shadow: 0 6px 16px rgba(0,0,0,0.1);">
+    <h3 style="color: var(--black); font-size: 1.4em; margin-bottom: 10px;">Open Quick SEO</h3>
+    <p style="color: #333;">From your WordPress dashboard, click “Quick SEO” in the sidebar to access the full toolkit: Pages, Posts, Products, Tags, Categories, and more.</p>
+  </div>
+
+  <!-- Step 2: Edit -->
+  <div style="flex: 1 1 250px; background: var(--white); border-radius: 16px; padding: 30px; box-shadow: 0 6px 16px rgba(0,0,0,0.1);">
+    <h3 style="color: var(--black); font-size: 1.4em; margin-bottom: 10px;">Edit in Spreadsheet Mode</h3>
+    <p style="color: #333;">Choose a section like Products or Pages. Then edit titles, keywords, metadata, schema, and more—all from a fast spreadsheet-style interface.</p>
+  </div>
+
+  <!-- Step 3: Inject -->
+  <div style="flex: 1 1 250px; background: var(--white); border-radius: 16px; padding: 30px; box-shadow: 0 6px 16px rgba(0,0,0,0.1);">
+    <h3 style="color: var(--black); font-size: 1.4em; margin-bottom: 10px;">Schema & Keywords Injected</h3>
+    <p style="color: #333;">Once saved, all SEO data is injected into your site’s <code>&lt;head&gt;</code>—with longtail keywords placed invisibly at the bottom of the page.</p>
+  </div>
+
+  <!-- Step 4: Rank -->
+  <div style="flex: 1 1 250px; background: var(--white); border-radius: 16px; padding: 30px; box-shadow: 0 6px 16px rgba(0,0,0,0.1);">
+    <h3 style="color: var(--black); font-size: 1.4em; margin-bottom: 10px;">Track Results & Optimize</h3>
+    <p style="color: #333;">Use the built-in SEO score, broken link scanner, and keyword insights to monitor performance and make continuous improvements.</p>
+  </div>
+
+</div>
+
+  <br><br>
+
+
   </section>
  `;
  document.addEventListener('DOMContentLoaded', function() {
@@ -228,9 +255,9 @@ function insertDemo() {
   })};
 function insertForm() {
  const formHTML = `
-  <section class="section scroll-fade newsletter" style="background: var(--black); backdrop-filter: blur(12px); border-top: 1px solid rgba(255, 255, 255, 0.15); text-align: center; padding: 60px 20px;">
-    <h2 style="color:  var(--white); font-size: 2em; margin-bottom: 20px;">Get Our Free Guide</h2>
-    <p style="color:  var(--white); font-size: 1.1em; margin-bottom: 30px;">Not ready to buy? Grab our 10-Point Guide to WooCommerce Growth.
+  <section class="section scroll-fade newsletter" style="background: rgba(255, 255, 255, 0.898); backdrop-filter: blur(12px); border-top: 1px solid rgba(255, 255, 255, 0.15); text-align: center; padding: 60px 20px;">
+    <h2 style="color:  black; font-size: 3em; margin-bottom: 20px;">Get Our Free Guide</h2>
+    <p style="color:  black; font-size:2em; margin-bottom: 30px;">Not ready to buy? Grab our 10-Point Guide to WooCommerce Growth.
     </p>
 
     <form action="https://formspree.io/f/xldbljjp" method="POST" onsubmit="return sendGuideAlert(event)">
@@ -249,32 +276,32 @@ function insertForm() {
  })};
 function insertFooter() {
  const footerHTML = `
-   <section class="section social-proof" style="background: var(--black); backdrop-filter: blur(12px); border-top: 1px solid rgba(255, 255, 255, 0.15); padding: 40px 20px; text-align: center;">
-    <h2 style="color:  var(--white); font-size: 1.8em; margin-bottom: 20px;">Loved by Woo Users</h2>
-    <p style="color:  var(--white); max-width: 700px; margin: 0 auto 30px;">Join all the stores who trust QuickWoo to save hours, boost
+   <section class="section social-proof" style="background: rgba(255, 255, 255, 0.898); backdrop-filter: blur(12px); border-top: 1px solid rgba(255, 255, 255, 0.15); padding: 40px 20px; text-align: center;">
+    <h2 style="color:  black; font-size: 1.8em; margin-bottom: 20px;">Loved by Woo Users</h2>
+    <p style="color: black; max-width: 700px; margin: 0 auto 30px;">Join all the stores who trust QuickWoo to save hours, boost
       performance, and simplify their workflow.</p>
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; font-weight: bold;">
-      <span style="color: var(--blue1); background:rgb(255, 255, 255); padding: 10px 20px; border-radius: 20px;">@PluginHut</span>
-      <span style="color: var(--blue1); background:rgb(255, 255, 255); padding: 10px 20px; border-radius: 20px;">@MegaGoods</span>
-      <span style="color: var(--blue1); background:rgb(255, 255, 255); padding: 10px 20px; border-radius: 20px;">@DevStacks</span>
-      <span style="color: var(--blue1); background:rgb(255, 255, 255); padding: 10px 20px; border-radius: 20px;">@Elementora</span>
-      <span style="color: var(--blue1); background:rgb(255, 255, 255); padding: 10px 20px; border-radius: 20px;">@StoreFlow</span>
+      <span style="color: white; background: #000000; padding: 10px 20px; border-radius: 20px;">@PluginHut</span>
+      <span style="color: white; background: #000000; padding: 10px 20px; border-radius: 20px;">@MegaGoods</span>
+      <span style="color: white; background: #000000; padding: 10px 20px; border-radius: 20px;">@DevStacks</span>
+      <span style="color: white; background: #000000; padding: 10px 20px; border-radius: 20px;">@Elementora</span>
+      <span style="color: white; background: #000000; padding: 10px 20px; border-radius: 20px;">@StoreFlow</span>
     </div>
   </section>
 
 
   <section class="section whats-new" style=" backdrop-filter: blur(12px); border-top: 1px solid rgba(255, 255, 255, 0.15);  background: linear-gradient(200deg, var(--blue), var(--blue1), var(--blue2), var(--blue3), var(--blue3), var(--blue2), var(--blue1), var(--blue));
- color: var(--white); padding: 30px 20px; text-align: center;">
+ color: black; padding: 30px 20px; text-align: center;">
     <p style="font-size: 1.1em;">✨ Now with Woo 8.x support, new SEO insights module, and lightning-fast batch editing.
     </p>
   </section>
 
 
   <footer
-    style="backdrop-filter: blur(12px); background: var(--black); border-top: 1px solid rgba(255, 255, 255, 0.2); text-align: center; padding: 30px 20px; font-size: 0.95em; color: #0f0c48;">
-    <p style="color:  var(--white); ">© 2025 QuickWoo Bundle. Built with 💜 by <strong>Robert Calvin</strong></p>
-    <p style="color:  var(--white); " ><a href="/terms/" style="color:  var(--white);  margin-right: 10px;">Terms</a> | <a href="/privacy/"
-        style="color:  var(--white); ">Privacy</a></p>
+    style="backdrop-filter: blur(12px); background: rgba(255, 255, 255, 0.898); border-top: 1px solid rgba(255, 255, 255, 0.2); text-align: center; padding: 30px 20px; font-size: 0.95em; color: #0f0c48;">
+    <p style="color:  black; ">© 2025 QuickWoo Bundle. Built with 💜 by <strong>Robert Calvin</strong></p>
+    <p style="color:  black; " ><a href="/terms/" style="color:  var(--white);  margin-right: 10px;">Terms</a> | <a href="/privacy/"
+        style="color:  black; ">Privacy</a></p>
   </footer>
  `;
  document.addEventListener('DOMContentLoaded', function() {

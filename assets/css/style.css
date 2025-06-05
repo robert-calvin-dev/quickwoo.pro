@@ -390,7 +390,7 @@ border: 1px solid rgba(255, 255, 255, 0.15);
  .plan p {
   font-size: 1.1em;}
   .post {
-  background: black;
+  background: rgb(255, 255, 255);
   max-width: 800px;
   margin: auto;
   border-radius: 8px;

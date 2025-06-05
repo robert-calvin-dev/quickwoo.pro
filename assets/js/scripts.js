@@ -1,7 +1,8 @@
 function insertHeader() {
  const headerHTML = `
 <header>
- <img style="border: none; width:100%;"  src="/assets/images/logodark.png">
+
+<a href="/"> <img style="border: none; width:100%;"  src="/assets/images/logodark.png"></a>
  <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
  <label for="nav-toggle" class="menu-toggle">
    <span></span>
@@ -38,22 +39,23 @@ function insertAppCards() {
   <div class="app-grid">
 
     <!-- Quick SEO -->
-    <div class="app-card">
-      <img src="assets/images/quickseo.png" style="width: 80%; margin: 0 auto 20px; display: block;">
-      <h3>Quick SEO</h3>
-      <p>
-        Take full control of your WordPress and WooCommerce SEO with Quick SEO—your all-in-one spreadsheet-style editor for metadata, schema, OG tags, and keyword targeting. 
-        Edit SEO titles, meta descriptions, focus + secondary keywords, Twitter cards, and longtail phrases in bulk, across pages, posts, products, categories, and tags. 
-        Choose schema types like WebPage, Product, Offer, Person and inject them instantly.
-        <br><br>
-        Every field is pushed directly into the page <code>&lt;head&gt;</code> for maximum crawlability—and longtail keywords are invisibly embedded into the page body for ranking edge. 
-        No fluff, no dependencies. Just real SEO results made fast, simple, and scalable.
-      </p>
+<div class="app-card">
+  <img src="assets/images/quickseo.png" style="width: 80%; margin: 0 auto 20px; display: block;">
+  <h3>Quick SEO</h3>
+  <p>
+    Quick SEO 3.0.0 puts you in control of real WordPress and WooCommerce SEO—no bloat, no paywalls. Inject SEO titles, meta descriptions, Open Graph data, Twitter cards, and JSON-LD schema directly into the page <code>&lt;head&gt;</code>. 
+    Add longtail keywords to the page body invisibly for better keyword reach without cluttering your content.
+    <br><br>
+    Manage your site’s robots.txt, generate a clean XML sitemap, and define global or custom canonical rules. 
+    Use the built-in schema builder to create and save templates for WebPage, Product, Offer, Person, and Service—and inject them instantly.
+    <br><br>
+    Spreadsheet-style bulk editing is coming July 2025. Early users will get full access before Quick SEO becomes a paid plugin in August.
+  </p>
 
-      <div style="margin-top: 30px; padding: 14px 24px; background: var(--blood-orange); color: var(--white); border-radius: 8px; font-size: 1.1em; font-weight: bold; display: inline-block; transition: background 0.3s;">
-        🔥 Download for Free — Limited Time Only!
-      </div>
-    </div>
+  <div style="margin-top: 30px; padding: 14px 24px; background: var(--blood-orange); color: var(--white); border-radius: 8px; font-size: 1.1em; font-weight: bold; display: inline-block; transition: background 0.3s;">
+    🔥 Download for Free — Limited Time Only!
+  </div>
+</div>
 
   </div>
   <br><br>
@@ -91,7 +93,7 @@ function insertBlogCards() {
       </div>
     </div>
 
-    <div class="blog-card" style="background: var(--white); border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
+   <!-- <div class="blog-card" style="background: var(--white); border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
       <img src="/assets/images/blogtools.png" alt="Blog Tools" style="display: block; margin: 20px auto 0; width: 90%; height: auto;">
       <div class="content" style="padding: 20px;">
         <h3>Writing Product Blogs with Quick Blog</h3>
@@ -99,7 +101,7 @@ function insertBlogCards() {
         <p>If content drives traffic, Quick Blog is your engine. Create, optimize, and publish in bulk.</p>
         <a href="/blog/quick-blog/">Read More →</a>
       </div>
-    </div>
+    </div> -->
 
     <div class="blog-card" style="background: var(--white); border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.08); max-width: 300px; overflow: hidden; text-align: left;">
       <img src="/assets/images/seasonalseo.png" alt="Seasonal Strategy" style="display: block; margin: 20px auto 0; width: 90%; height: auto;">
@@ -310,9 +312,9 @@ function insertFooter() {
  insertHeader();
  insertAppCards();
  insertBlogCards();
- insertDemo();
+
  insertDemo2();
- insertForm();
+
  insertFooter();
  function sendGuideAlert(event) {
   alert("Thank You! Your guide will arrive in your e-mail within the next 2 business days.");

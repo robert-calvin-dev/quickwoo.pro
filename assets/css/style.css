@@ -22,7 +22,7 @@
 
 html {
   font-size: clamp(18px, 1.2vw, 18px);
-  background-image: url(/assets/images/backgroundtile.png);
+  background-image: url(/assets/images/backgroundtile.webp);
   background-size:contain;
   background-repeat:repeat;
   width: 100%;

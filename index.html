@@ -7,776 +7,884 @@
   <title>QuickSEO | E-Commerce Plugin by QuickWoo</title>
   <meta name="description"
     content="Boost your WooCommerce store's performance with QuickWoo's suite of tools: Quick Add, Quick Edit, Quick SEO, and Quick Blog. Save time, enhance SEO, and streamline content management.">
-  <meta name="keywords"
-    content="WooCommerce, QuickWoo, WooCommerce plugins, SEO optimization, content management, Quick Add, Quick Edit, Quick SEO, Quick Blog, eCommerce tools">
   <meta name="author" content="Robert Calvin">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/quickwoofavicon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/quickwoofavicon.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/quickwoofavicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/quickwoofavicon.webp">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/quickwoofavicon.webp">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/quickwoofavicon.webp">
   <meta name="theme-color" content="#6139F5">
   <meta property="og:title" content="QuickWoo – WooCommerce Speed, SEO & Content Optimization Suite">
   <meta property="og:description"
     content="Boost your WooCommerce store's performance with QuickWoo's suite of tools: Quick Add, Quick Edit, Quick SEO, and Quick Blog.">
   <meta property="og:url" content="https://www.quickwoo.pro/">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://www.quickwoo.pro/assets/images/quickwooog.png">
+  <meta property="og:image" content="https://www.quickwoo.pro/assets/images/quickwooog.webp">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="QuickWoo – WooCommerce Speed, SEO & Content Optimization Suite">
   <meta name="twitter:description"
     content="Boost your WooCommerce store's performance with QuickWoo's suite of tools: Quick Add, Quick Edit, Quick SEO, and Quick Blog.">
-  <meta name="twitter:image" content="https://www.quickwoo.pro/assets/images/quickwooog.png">
+  <meta name="twitter:image" content="https://www.quickwoo.pro/assets/images/quickwooog.webp">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="https://quickwoo.pro/sitemap.xml" />
-  <script
-    type="application/ld+json">{ "@context": "https://schema.org", "@type": "SoftwareApplication", "name": "QuickWoo", "url": "https://www.quickwoo.pro/", "description": "QuickWoo offers a suite of tools to enhance WooCommerce store performance, including Quick Add, Quick Edit, Quick SEO, and Quick Blog.", "applicationCategory": "BusinessApplication", "operatingSystem": "All"}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "QuickWoo",
+      "inLanguage": "en-CA",
+      "url": "https://www.quickwoo.pro/",
+      "description": "QuickWoo offers a suite of tools to enhance WooCommerce store performance, including Quick Add, Quick Edit, Quick SEO, and Quick Blog.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "All"
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "en-CA",
+      "@id": "https://www.quickwoo.pro/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does Quick SEO actually do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It gives you direct editorial power over your site’s SEO—across every post, page, product, category, and tag—without middlemen, guesswork, or UI bloat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work with WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. It was built around WooCommerce needs first—supporting granular SEO for products, categories, and tags."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I control schema and OG fields?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You can inject structured data types like Product, Offer, LocalBusiness, Event, WebPage, and more—plus OG and Twitter card metadata."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where does the SEO data get inserted?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metadata is inserted into the <head> of your pages. Longtail keywords are injected invisibly in the <body> for indexability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a developer to set this up?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Quick SEO is fully beginner-friendly with a spreadsheet-style interface. No coding needed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use Quick SEO with other SEO plugins?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We advise against it. Quick SEO replaces the need for plugins like Yoast, RankMath, or AIO to avoid duplicate metadata."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.quickwoo.pro/#quick-seo",
+      "name": "Quick SEO WordPress Plugin",
+      "inLanguage": "en-CA",
+      "description": "Full-stack SEO control plugin for WordPress and WooCommerce with spreadsheet bulk editing, metadata injection, and schema management.",
+      "brand": {
+        "@type": "Organization",
+        "name": "Quick Woo"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Emily" },
+          "reviewBody": "I replaced three separate plugins with Quick SEO. I can manage all product meta from a single screen now—and never look back."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Yannick" },
+          "reviewBody": "Metadata cleanup used to take me hours. Now it’s 10 minutes per product batch. My WooCommerce SEO finally has legs."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Lena" },
+          "reviewBody": "One plugin. Every tag. Every schema. Every override. All in one place. I can’t believe this wasn’t the standard before."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Kurtis" },
+          "reviewBody": "Redirects, canonicals, robots.txt—I cleaned up every crawl issue I had without touching code. Even my dev was impressed."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Kim" },
+          "reviewBody": "Schema templates are fire. I injected JSON-LD across 300 products in a day and started showing rich results the same week."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Charlie" },
+          "reviewBody": "I’ve never seen a robots.txt editor this clean. It’s like Quick SEO was built for power users who hate fluff."
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "6"
+      }
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Quick SEO Demo Video",
+      "inLanguage": "en-CA",
+      "description": "A walkthrough of Quick SEO’s interface, schema builder, metadata injection, and bulk spreadsheet editor.",
+      "thumbnailUrl": "https://www.quickwoo.pro/assets/images/schemascreenshot.webp",
+      "uploadDate": "2025-07-05",
+      "contentUrl": "https://www.quickwoo.pro/assets/videos/quickSEOdemo.mp4",
+      "embedUrl": "https://www.quickwoo.pro/assets/videos/quickSEOdemo.mp4"
+    },
+    {
+      "@type": "ItemList",
+      "name": "SEO Plugin Comparison",
+      "inLanguage": "en-CA",
+      "description": "Feature-by-feature comparison between Quick SEO, Yoast, AIO SEO, and Rank Math.",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Bulk Metadata Editing",
+          "description": "Quick SEO ✅ | Yoast ❌ | AIO ❌ | Rank Math ✅"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Multiple Focus Keywords",
+          "description": "Quick SEO ✅ | Yoast ⚠️ | AIO ⚠️ | Rank Math ✅"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "WooCommerce Schema Injection",
+          "description": "Quick SEO ✅ | Yoast ⚠️ | AIO ❌ | Rank Math ✅"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Edit Pages, Posts & Products",
+          "description": "Quick SEO ✅ | Yoast ❌ | AIO ❌ | Rank Math ❌"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Custom OG + Twitter Metadata",
+          "description": "Quick SEO ✅ | Yoast ✅ | AIO ⚠️ | Rank Math ✅"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Schema Templates & Saving",
+          "description": "Quick SEO ✅ | Yoast ❌ | AIO ❌ | Rank Math ❌"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Invisible Longtail Injection",
+          "description": "Quick SEO ✅ | Yoast ❌ | AIO ❌ | Rank Math ❌"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "Canonical & Robots Controls",
+          "description": "Quick SEO ✅ | Yoast ⚠️ | AIO ❌ | Rank Math ✅"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "Sitemap & Indexing Rules",
+          "description": "Quick SEO ✅ | Yoast ✅ | AIO ✅ | Rank Math ✅"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "Built for WooCommerce",
+          "description": "Quick SEO ✅ | Yoast ❌ | AIO ❌ | Rank Math ⚠️"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
   <link rel="stylesheet" href="/assets/css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="/assets/images/seo-mistakes.webp" type="image/webp">
+<link rel="preload" as="image" href="/assets/images/seasonalseo.webp" type="image/webp">
+<link rel="preload" as="image" href="/assets/images/seo2025.webp" type="image/webp">
+<link rel="preload" as="image" href="/assets/images/uploadpluginscreenshot.webp" type="image/webp">
+<link rel="preload" as="image" href="/assets/images/activatepluginscreenshot.webp" type="image/webp">
+<link rel="preload" as="image" href="/assets/images/metatitledescriptionscreenshot.webp" type="image/webp">
+<link rel="preload" as="image" href="/assets/images/ogtwitterscreenshot.webp" type="image/webp">
+<link rel="preload" as="image" href="/assets/images/canonicalurlscreenshot.webp" type="image/webp">
+<link rel="preload" as="image" href="/assets/images/robotstxtscreenshot.webp" type="image/webp">
+<link rel="preload" as="image" href="/assets/images/schematemplatesscreenshot.webp" type="image/webp">
+<link rel="preload" as="image" href="/assets/images/longtailscreenshot.webp" type="image/webp">
+<link rel="preload" as="image" href="/assets/images/multipleseoeditorsscreenshot.webp" type="image/webp">
+<link rel="preload" as="image" href="/assets/images/sitemapgeneratorscreenshot.webp" type="image/webp">
+<link rel="preload" as="image" href="/assets/images/headtagscreenshot.webp" type="image/webp">
+<link rel="preload" as="image" href="/assets/images/metaboxscreenshot.webp" type="image/webp">
+<link rel="preload" as="image" href="/assets/images/brokenlinkscreenshot.webp" type="image/webp">
+<link rel="preload" as="image" href="/assets/images/spreadsheetstylescreenshot.webp" type="image/webp">
+
 </head>
 
 <body>
-  <header>
-<section class="topbar">
-  <a class="logo" href="/"><img src="/assets/images/logolite.png" alt="QuickWoo Logo"></a>
-</section>
-    <section class="intro">
-      <h1>Quick SEO</h1>
-      <h2>Take Control of your visibility.</h2>
+<header>
+  <section class="topbar">
+    <a class="logo" href="/"><img loading="lazy" src="/assets/images/logolite.webp" alt="QuickWoo Logo"></a>
+  </section>
 
-    </section>
-  </header>
+  <section class="intro">
+    <h1>Quick SEO 3.0 for WooCommerce</h1>
+    <h2>You're Leaking Rankings. This Fixes It.</h2>
+    <p style="max-width: 700px; margin: 20px auto; font-size: 1.2rem;">
+      Most WordPress SEO plugins are bloated, distracting, and inconsistent. You think they're helping—but behind the scenes,
+      they inject conflicting metadata, guess at schema, and fight with your theme. 
+    </p>
+    <p style="max-width: 700px; margin: 20px auto; font-size: 1.2rem;">
+      <strong>Quick SEO</strong> is different. It gives you complete visibility and control over everything: titles, schema, OG tags, Twitter cards, canonicals, robots directives, and even invisible longtail keywords.
+    </p>
+    <a href="/assets/downloads/quick-seo.zip" download class="downloadbtn" style="margin-top: 20px;">Free Download</a>
+  </section>
+</header>
+
   <section class="hero">
-    <div class="appicon"><img src="assets/images/quickseo.png" style="width: 100%; border: 1px solid black;">
-      <h2>⚡ Quick SEO 3.0</h2>
-      <h3>Wordpress WooCommerce Quick SEO Plugin</h3>
-      <h4>Developer: Quick Woo</h4>
-      <a href="/assets/downloads/quick-seo.zip" download class="downloadbtn">Free Download</a>
-      <p>✔️ Take control of your websites SEO- quickly with the Quick SEO plugin by Quick Woo.</p><br>
-      <p>✔️ Inject SEO Titles, meta descriptions, Open graph and Twitter data.</p><br>
-      <p>✔️ Dynamic Schema Injection with templates built in our schema builder.</p><br>
-      <p>✔️ Spreadsheet SEO Bulk Editing:</p><br>
-      <ul>
-        <li>Pages</li>
-        <li>Posts</li>
-        <li>Products</li>
-        <li>Product Tags</li>
-        <li>Product Categories</li>
-        <li>Post Tags</li>
-        <li>Post Categories</li>
-      </ul><br>
-      <p><b>Fields Supported:</b>SEO Title, Meta Description, Focus Keyword, Secondary Keyword, OG Title, OG
-        Description, OG Type, OG Image, Twitter Title, Twitter Description, Twitter Image, Schema, Canonical Override,
-        Robots, Sitemap, Longtail Keywords</p><br><br>
-      <h3>Frequently Asked Questions</h3><br><br>
-      <details open style="margin-bottom: 20px;">
-        <summary style="font-weight: bold; font-size: 1.1em; cursor: pointer;">What does Quick SEO actually do?
-        </summary>
-        <p style="margin-top: 10px;">Quick SEO lets you bulk edit meta titles, descriptions, keywords, schema, and OG
-          data for all your WordPress content—including pages, posts, products, categories, and tags.</p>
-      </details>
-      <details open style="margin-bottom: 20px;">
-        <summary style="font-weight: bold; font-size: 1.1em; cursor: pointer;">Does it work with WooCommerce?</summary>
-        <p style="margin-top: 10px;">Yes. Quick SEO was designed with WooCommerce in mind and supports products, product
-          categories, and product tags—plus all standard WordPress content types.</p>
-      </details>
-      <details open style="margin-bottom: 20px;">
-        <summary style="font-weight: bold; font-size: 1.1em; cursor: pointer;">Can I control schema and OG fields?
-        </summary>
-        <p style="margin-top: 10px;">Absolutely. You can define and inject schema types like WebPage, Product, Offer,
-          Person, and more—plus OG and Twitter card metadata for better social sharing.</p>
-      </details>
-      <details open style="margin-bottom: 20px;">
-        <summary style="font-weight: bold; font-size: 1.1em; cursor: pointer;">Where does the SEO data get inserted?
-        </summary>
-        <p style="margin-top: 10px;">All metadata is automatically injected into the <code>&lt;head&gt;</code>of your
-          pages. Longtail keywords are placed invisibly at the bottom of each page for relevance boosts.</p>
-      </details>
-      <details open style="margin-bottom: 20px;">
-        <summary style="font-weight: bold; font-size: 1.1em; cursor: pointer;">Do I need a developer to set this up?
-        </summary>
-        <p style="margin-top: 10px;">Nope. Quick SEO is fully beginner-friendly with a spreadsheet-like UI. No coding or
-          technical setup is required.</p>
-      </details>
-      <details open style="margin-bottom: 20px;">
-        <summary style="font-weight: bold; font-size: 1.1em; cursor: pointer;">Can I use Quick SEO with other SEO
-          plugins?</summary>
-        <p style="margin-top: 10px;">We recommend using Quick SEO as your primary SEO tool. Some overlapping features
-          with Yoast, Rank Math, or All in One SEO may cause duplicate meta output if used together.</p>
-      </details>
-      <div class="reviewsection">
-        <h3>How Real Stores Use Quick SEO</h3><br><br>
-        <div class="reviews">
-          <div class="reviewcard">
-                      <img src="/assets/images/goldstars.png" class="rating" alt="5 star rating review">
+<div class="appicon">
+  <img loading="lazy" src="assets/images/quickseo.webp" style="width: 100%; border: 1px solid black;">
+  <h2>⚡ Quick SEO 3.0</h2>
+  <h3>The No-BS SEO Plugin for WordPress + WooCommerce</h3>
+  <h4>Developed by Quick Woo — Built for Control Freaks, Not Checkbox Clickers</h4>
 
-            
-            <p>"Quick SEO’s custom meta box gave me full control over every product’s SEO without needing extra plugins.
-              Titles, OG data, Twitter cards—I can manage it all right inside the edit screen."</p>
-          <h3 class="customer">Emily</h3>
-            </div>
+  <a href="/assets/downloads/quick-seo.zip" download class="downloadbtn">Free Download</a>
 
-          <div class="reviewcard">
-                      <img src="/assets/images/goldstars.png" class="rating" alt="5 star rating review">
+  <p>✔️ Take total command of your site's SEO in minutes—not hours—without relying on bloated all-in-one plugins.</p>
+  <p>✔️ Inject custom SEO Titles, Meta Descriptions, OG and Twitter Card data—because guesswork doesn’t rank.</p>
+  <p>✔️ Deploy fully dynamic Schema using visual templates that actually make sense—no AI, no magic, just logic.</p>
 
-         
-            <p>"After updating my metadata with Quick SEO, my product pages started ranking higher in search. It’s
-              clean, simple, and works directly with WooCommerce."</p>
-                 <h3 class="customer">Yannick</h3>
-          </div>
+  <p>✔️ <strong>Spreadsheet SEO Bulk Editing</strong> means you're optimizing dozens of entries with the same keystrokes you'd use in Excel:</p>
+  <ul>
+    <li>Pages — Update static SEO assets sitewide without clicking "Edit" a hundred times.</li>
+    <li>Posts — Keep your blog metadata fresh with one scroll, not 37 tabs.</li>
+    <li>Products — Instantly optimize WooCommerce titles, descriptions, and schema at scale.</li>
+    <li>Product Tags — Shape tag SEO and prevent duplicate content across your catalog.</li>
+    <li>Product Categories — Reinforce internal linking structure and crawlability where it counts.</li>
+    <li>Post Tags — Clean up keyword mapping to match your semantic strategy.</li>
+    <li>Post Categories — Give Google clean silos without touching a single template file.</li>
+  </ul>
 
-          <div class="reviewcard">
-                      <img src="/assets/images/goldstars.png" class="rating" alt="5 star rating review">
+  <p><b>Fields Supported:</b> Every serious SEO control you should’ve had years ago:</p>
+  <p>SEO Title, Meta Description, Focus Keyword, Secondary Keyword, OG Title, OG Description, OG Type, OG Image, Twitter Title, Twitter Description, Twitter Image, Schema, Canonical Override, Robots, Sitemap, Longtail Keywords.</p>
 
-            
-            <p>"I use Quick SEO on every blog post now. It lets me add schema, social meta, and longtail keywords from
-              one box. No clutter, just what I need to optimize fast."</p>
-              <h3 class="customer">Lena</h3>
-          </div>
+  <h3>❓ Frequently Asked Questions</h3>
 
-          <div class="reviewcard">
-                      <img src="/assets/images/goldstars.png" class="rating" alt="5 star rating review">
+  <details open>
+    <summary><strong>What does Quick SEO actually do?</strong></summary>
+    <p>It gives you direct editorial power over your site’s SEO—across every post, page, product, category, and tag—without middlemen, guesswork, or UI bloat. Think spreadsheet + schema + sniper rifle.</p>
+  </details>
 
-            
-            <p>"Quick SEO helped me fix all my canonical links and redirects in one place. No coding, no .htaccess
-              stress. My crawl issues disappeared in a week."</p>
-              <h3 class="customer">Kurtis</h3>
-          </div>
+  <details open>
+    <summary><strong>Does it work with WooCommerce?</strong></summary>
+    <p>Yes. In fact, it was built around WooCommerce needs first—supporting granular SEO for products, categories, and tags. No more patching Woo gaps with a Frankenstein plugin stack.</p>
+  </details>
 
-          <div class="reviewcard">
-                      <img src="/assets/images/goldstars.png" class="rating" alt="5 star rating review">
+  <details open>
+    <summary><strong>Can I control schema and OG fields?</strong></summary>
+    <p>Absolutely. You get structured data templates that inject exactly what you define—Product, Offer, LocalBusiness, Event, WebPage, Person, and more. OG and Twitter tags follow your command, not some preset template.</p>
+  </details>
 
-            
-            <p>"The schema editor is killer. I was able to clean up all my product JSON in one panel and inject it live.
-              Google picked it up fast."</p>
-              <h3 class="customer">Kim</h3>
-          </div>
+  <details open>
+    <summary><strong>Where does the SEO data get inserted?</strong></summary>
+    <p>Right where Google and social crawlers expect it—into the <code>&lt;head&gt;</code>. Longtail keywords? Cleanly injected at the bottom of the <code>&lt;body&gt;</code>, invisibly, but ready for indexing.</p>
+  </details>
 
-          <div class="reviewcard">
-                      <img src="/assets/images/goldstars.png" class="rating" alt="5 star rating review">
+  <details open>
+    <summary><strong>Do I need a developer to set this up?</strong></summary>
+    <p>Nope. If you can use Google Sheets, you can use Quick SEO. It’s made for the non-technical with high standards—and the technical who don’t want to waste time.</p>
+  </details>
 
-            
-            <p>"What sold me was the robots.txt editor. I’ve never had that kind of access without FTP or extra plugins.
-              Now I block, crawl, and guide bots exactly how I want."</p>
-              <h3 class="customer">Charlie</h3>
-          </div>
-        </div>
-        <section class="inspiration">
-          <h2>Inspiration Behind Quick SEO</h2>
-          <p>Quick SEO was born out of necessity—not novelty. It is the product of repeated friction with existing SEO
-            plugins that prioritize feature bloat, proprietary integration, and non-transparent abstractions over direct
-            control. Most mainstream SEO tools in the WordPress ecosystem either: </p>
-          <ul>
-            <li>Hide essential SEO fields behind multi-layered interfaces</li>
-            <li>Lock core features behind upsells or licensing schemes</li>
-            <li>Abstract schema generation into wizard-style flows with minimal logic transparency</li>
-            <li>Depend on cloud-based APIs and trackers that compromise ownership</li>
-            <li>Interfere with front-end rendering by outputting redundant or conflicting metadata</li>
-          </ul>
-          <p>The development of Quick SEO was inspired by the simple desire to reassert total editorial and technical
-            control over the search-facing representation of a WordPress site. Rather than conform to the patterns set
-            by commercial SEO plugins, Quick SEO adheres to three core values: </p>
-          <ol>
-            <li><strong>Transparency</strong>– All metadata is visible, inspectable, and rendered as deterministic HTML
-              output with no hidden logic or proprietary encoding.</li>
-            <li><strong>Ownership</strong>– All data is stored locally via WordPress APIs, with zero reliance on cloud
-              services, licenses, or sync engines. You own every bit of it.</li>
-            <li><strong>Precision</strong>– Every piece of metadata—titles, descriptions, canonical tags, robots
-              directives, schemas—is explicitly controlled and never autogenerated without fallback logic you can
-              override.</li>
-          </ol>
-          <p>Quick SEO was not designed to appeal to the average blogger or the beginner website owner. It was designed
-            for site owners, developers, and technical SEO professionals who: </p>
-          <ul>
-            <li>Understand how metadata is parsed and evaluated by crawlers</li>
-            <li>Care about the structural integrity of their DOM and head tags</li>
-            <li>Require full compatibility with static HTML output, headless WordPress builds, or theme frameworks</li>
-            <li>Want to inspect and edit SEO configurations as fast as they can tab through a spreadsheet</li>
-          </ul>
-          <p>In short, Quick SEO exists because every other plugin either did too much, or not enough. This one does
-            exactly what it should—no more, no less—and lets you see and control every line of it. </p>
-        </section>
+  <details open>
+    <summary><strong>Can I use it alongside other SEO plugins?</strong></summary>
+    <p>You could—but we don’t recommend it. Quick SEO replaces everything bloated tools try to do, without conflicts. If you’re using RankMath, Yoast, or AIO, it’s time to commit or risk duplicate metadata.</p>
+  </details>
+
+  <div class="reviewsection">
+    <h3>💬 How Real Users Use Quick SEO</h3>
+
+    <div class="reviews">
+      <div class="reviewcard">
+        <img loading="lazy" src="/assets/images/goldstars.webp" class="rating" alt="5 star rating review">
+        <p>"I replaced three separate plugins with Quick SEO. I can manage all product meta from a single screen now—and never look back."</p>
+        <h3 class="customer">Emily</h3>
+      </div>
+
+      <div class="reviewcard">
+        <img loading="lazy" src="/assets/images/goldstars.webp" class="rating" alt="5 star rating review">
+        <p>"Metadata cleanup used to take me hours. Now it’s 10 minutes per product batch. My WooCommerce SEO finally has legs."</p>
+        <h3 class="customer">Yannick</h3>
+      </div>
+
+      <div class="reviewcard">
+        <img loading="lazy" src="/assets/images/goldstars.webp" class="rating" alt="5 star rating review">
+        <p>"One plugin. Every tag. Every schema. Every override. All in one place. I can’t believe this wasn’t the standard before."</p>
+        <h3 class="customer">Lena</h3>
+      </div>
+
+      <div class="reviewcard">
+        <img loading="lazy" src="/assets/images/goldstars.webp" class="rating" alt="5 star rating review">
+        <p>"Redirects, canonicals, robots.txt—I cleaned up every crawl issue I had without touching code. Even my dev was impressed."</p>
+        <h3 class="customer">Kurtis</h3>
+      </div>
+
+      <div class="reviewcard">
+        <img loading="lazy" src="/assets/images/goldstars.webp" class="rating" alt="5 star rating review">
+        <p>"Schema templates are fire. I injected JSON-LD across 300 products in a day and started showing rich results the same week."</p>
+        <h3 class="customer">Kim</h3>
+      </div>
+
+      <div class="reviewcard">
+        <img loading="lazy" src="/assets/images/goldstars.webp" class="rating" alt="5 star rating review">
+        <p>"I’ve never seen a robots.txt editor this clean. It’s like Quick SEO was built for power users who hate fluff."</p>
+        <h3 class="customer">Charlie</h3>
       </div>
     </div>
-    <div class="appcontent">
-      <div class="copy">
-        <h2>⚡ Quick SEO 3.0</h2>
-        <h2>Wordpress WooCommerce Plugin by QuickWoo</h2>
-        <p>Quick SEO gives you full-stack SEO control for WordPress and WooCommerce—no paywalls, no gimmicks. Inject
-          custom SEO titles, meta descriptions, Open Graph tags, Twitter cards, and structured JSON-LD schema directly
-          into the
 
-          <head>of every post, page, product, or taxonomy—automatically.
-        </p><br>
-        <h3>🚀 New in Quick SEO 3.0</h3>
-        <ul>
-          <li><b>Spreadsheet-style SEO editors</b>for pages, posts, products, categories and tags.</li>
-          <li><b>Bulk-edit every field</b>-including new robots and sitemap flags-without ever opening the post editor.
-          </li>
-          <li><b>Add and edit robots directives</b>(e.g., index, nofollow) per post.</li>
-          <li><b>Toggle sitemap inclusion</b>with a simple checkbox.</li>
-          <li><b>Canonical URLs</b>intelligently follow global or per post rules.</li>
-          <li><b>Custom schema builder</b>with reusable templates.</li>
-          <li><b>Schema injection now supports</b>dynamic JSON-LD via the built-in schema builder.</li>
-          <li><b>Outputs all metadata</b>into head section of every webpage for all your pages, posts, products and
-            taxonomy pages.</li>
-        </ul><br>
-        <h3>🧠 Core Features</h3>
-        <ul>
-          <li><b>Meta Descriptions & Keywords:</b>Add precise control of descriptions and <strong>multiple focus
-              keywords</strong></li>
-          <li><b>SEO Title Override:</b>Replace WordPress's default title tag with your own, stripped from any
-            duplicates and positioned to load first</li>
-          <li><b>Open Graph (OG) Tags:</b>Define title, description, type and image for Facebook sharing</li>
-          <li><b>Twitter Card Tags:</b>Customize Twitter title, description, image and card type </li>
-          <li><b>Canonical URL Logic:</b>Global mode (default, clean or disabled) plus per-post overrides</li>
-          <li><b>Schema Injection:</b>Auto-inject structed JSON-LD schema via multiple saved templates (WebPage,
-            Article, Product, LocalBusiness, Person, BlogPosting, Event, Offer, HowTo and more)</li>
-          <li><b>Longtail Keywords:</b>Add an invisible block of long-tail keywords at the end of your body texts to
-            promote SEO search rankings.</li>
-          <li><b>Global Redirects:</b>Auto-redirect legacy URLs with custom mapping via admin</li>
-          <li><b>Broken Link Scanner:</b>Instantly find and log broken outbound links across all your content</li>
-          <li><b>Sitemap generator:</b>Have your XML sitemap file instantly created and placed within your projects
-            roots, ready for viewing and indexing.</li>
-        </ul><br>
-        <h3>🔥 Download for Free — Limited Time Only!</h3><br><br>
-      </div>
-      <div class="screenshotblock">
-        <img class="screenshots" src="/assets/images/dashboardscreenshot.png" alt="Quick SEO Feature Dashboard Screenshot">
-        <img class="screenshots" src="/assets/images/schemascreenshot.png" alt="Schema Builder and Meta Tag Inserter Screenshot">
-        <img class="screenshots" src="/assets/images/spreadsheetscreenshot.png" alt="Spreadsheet Style Bulk SEO Editor Screenshot">
-        <br><br><br><br></div>
-      <div class="versustable">
-        <h3>Quick SEO VS the competition</h3>
-        <p>How does Quick SEO stack up against other WordPress SEO tools? Here’s why WooCommerce users are switching to
-          a plugin that actually focuses on Woo SEO—and why spreadsheet editing will push it even further in July 2025.
-        </p><br>
-        <table style="width: 100%; max-width: 100vw; border-collapse: collapse; font-size: 1em;">
-          <thead>
-            <tr
-              style=" background: linear-gradient(200deg, var(--blue), var(--blue1), var(--blue2), var(--blue3), var(--blue3), var(--blue2), var(--blue1), var(--blue)); color: white;">
-              <th style="padding: 16px; border: 1px solid #ddd;">Feature</th>
-              <th style="padding: 16px; border: 1px solid #ddd;">Quick SEO</th>
-              <th style="padding: 16px; border: 1px solid #ddd;">Yoast</th>
-              <th style="padding: 16px; border: 1px solid #ddd;">AIO SEO</th>
-              <th style="padding: 16px; border: 1px solid #ddd;">Rank Math</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style="background-color: var(--white); padding: 14px; border: 1px solid #ddd;">Bulk Metadata Editing
-              </td>
-              <td>✅</td>
-              <td>❌</td>
-              <td>❌</td>
-              <td>✅</td>
-            </tr>
-            <tr>
-              <td style="background-color: var(--blue5); padding: 14px; border: 1px solid #ddd;">Multiple Focus Keywords
-              </td>
-              <td>✅</td>
-              <td>⚠️</td>
-              <td>⚠️</td>
-              <td>✅</td>
-            </tr>
-            <tr>
-              <td style="background-color: var(--white); padding: 14px; border: 1px solid #ddd;">WooCommerce Schema
-                Injection</td>
-              <td>✅</td>
-              <td>⚠️</td>
-              <td>❌</td>
-              <td>✅</td>
-            </tr>
-            <tr>
-              <td style="background-color: var(--blue5); padding: 14px; border: 1px solid #ddd;">Edit Pages, Posts &
-                Products</td>
-              <td>✅</td>
-              <td>❌</td>
-              <td>❌</td>
-              <td>❌</td>
-            </tr>
-            <tr>
-              <td style="background-color: var(--white); padding: 14px; border: 1px solid #ddd;">Custom OG + Twitter
-                Metadata</td>
-              <td>✅</td>
-              <td>✅</td>
-              <td>⚠️</td>
-              <td>✅</td>
-            </tr>
-            <tr>
-              <td style="background-color: var(--blue5); padding: 14px; border: 1px solid #ddd;">Schema Templates &
-                Saving</td>
-              <td>✅</td>
-              <td>❌</td>
-              <td>❌</td>
-              <td>❌</td>
-            </tr>
-            <tr>
-              <td style="background-color: var(--white); padding: 14px; border: 1px solid #ddd;">Invisible Longtail
-                Injection</td>
-              <td>✅</td>
-              <td>❌</td>
-              <td>❌</td>
-              <td>❌</td>
-            </tr>
-            <tr>
-              <td style="background-color: var(--blue5); padding: 14px; border: 1px solid #ddd;">Canonical & Robots
-                Controls</td>
-              <td>✅</td>
-              <td>⚠️</td>
-              <td>❌</td>
-              <td>✅</td>
-            </tr>
-            <tr>
-              <td style="background-color: var(--white); padding: 14px; border: 1px solid #ddd;">Sitemap & Indexing
-                Rules</td>
-              <td>✅</td>
-              <td>✅</td>
-              <td>✅</td>
-              <td>✅</td>
-            </tr>
-            <tr>
-              <td style="background-color: var(--blue5); padding: 14px; border: 1px solid #ddd;">Built for WooCommerce
-              </td>
-              <td>✅</td>
-              <td>❌</td>
-              <td>❌</td>
-              <td>⚠️</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <section class="demo">
-        <h3>Watch the Quick SEO Demo Video</h3>
-        <video class="demovideo" src="/assets/videos/quickSEOdemo.mp4" controls></video>
-      </section>
-      <section class="full">
-        <h2>Quick SEO: A Comprehensive Breakdown of Features and Functional Architecture</h2>
-        <p><strong>Quick SEO</strong>is a modular, WordPress-native plugin designed to provide granular control over SEO
-          fields for WordPress and WooCommerce websites. It prioritizes transparency, local control, and
-          developer-friendly operations with zero dependency on cloud services or third-party APIs.</p>
-        <section>
-          <h2>1. SEO Metadata Injection</h2>
-          <p>Quick SEO supports injection of <code>&lt;title&gt;</code>, <code>meta description</code>, and
-            <code>meta keywords</code>into the head of each post, page, product, or taxonomy archive. These values can
-            be edited manually or via spreadsheet, and are saved via WordPress’s <code>post_meta</code>or
-            <code>term_meta</code>APIs.</p>
-        </section>
-        <section>
-          <h2>2. Open Graph and Twitter Card Support</h2>
-          <p>Includes support for OG tags like <code>og:title</code>, <code>og:description</code>,
-            <code>og:image</code>, and Twitter card tags such as <code>twitter:title</code>and
-            <code>twitter:image</code>. Defaults cascade from primary SEO fields unless explicitly overridden.</p>
-        </section>
-        <section>
-          <h2>3. Canonical URL Controls</h2>
-          <p>Canonical URLs can be set per page or via global logic. If no override is present, the plugin falls back to
-            WordPress's permalink structure. Canonical values are injected via
-            <code>&lt;link rel="canonical"&gt;</code>using <code>wp_head</code>output buffering.</p>
-        </section>
-        <section>
-          <h2>4. Robots Meta Tag and Robots.txt Editor</h2>
-          <p>Per-object robots directives can be toggled using dropdown fields. Additionally, a GUI editor allows direct
-            editing of the <code>robots.txt</code>file with save fallback for servers without write permissions.</p>
-        </section>
-        <section>
-          <h2>5. JSON-LD Schema Builder</h2>
-          <p>The schema system includes a builder interface for injecting JSON-LD schema types like
-            <code>WebPage</code>, <code>Article</code>, <code>Product</code>, <code>Organization</code>, and more.
-            Templates can be saved and reused across posts and taxonomies. Output is injected as
-            <code>&lt;script type="application/ld+json"&gt;</code>.</p>
-        </section>
-        <section>
-          <h2>6. Longtail Keyword Injection</h2>
-          <p>Invisible longtail blocks are injected using <code>display: none</code>containers in the body. These
-            keywords are randomized per load (if multiple defined), stored in a custom field, and used to expand search
-            coverage without cluttering content.</p>
-        </section>
-        <section>
-          <h2>7. Spreadsheet-Style Bulk Editing</h2>
-          <p>Each major object type (posts, pages, products, taxonomies) includes a spreadsheet interface for SEO data.
-            Editable columns include:</p>
-          <ul>
-            <li>Title</li>
-            <li>Description</li>
-            <li>Keywords</li>
-            <li>OG and Twitter Tags</li>
-            <li>Robots Directive</li>
-            <li>Canonical URL</li>
-            <li>Schema Template</li>
-          </ul>
-          <p>Changes are saved via AJAX in batch mode to reduce load times.</p>
-        </section>
-        <section>
-          <h2>8. Sitemap Generator</h2>
-          <p>The plugin automatically generates a compliant <code>sitemap.xml</code>file including pages, posts,
-            products, and taxonomy archives. It supports modified timestamps, priority rules, and change frequency
-            configuration.</p>
-        </section>
-        <section>
-          <h2>9. Conflict and Duplication Prevention</h2>
-          <p>Quick SEO removes native WordPress or conflicting plugin outputs (e.g. Yoast) to prevent duplicate tags.
-            Canonical conflicts are logged, and output is wrapped in visual comments for inspection.</p>
-        </section>
-        <section>
-          <h2>10. SEO Meta Box</h2>
-          <p>An SEO metabox is present on all relevant edit screens, including live character counts, OG/Twitter image
-            upload, schema selection, and field validation indicators. Data is autosaved with the post.</p>
-        </section>
-        <section>
-          <h2>11. Schema Fallback Logic</h2>
-          <p>If no schema is defined, Quick SEO automatically falls back to a default per post type, then to a global
-            fallback. A basic <code>WebPage</code>schema is always included if all else fails.</p>
-        </section>
-        <section>
-          <h2>12. Structured Comments</h2>
-          <p>When enabled, a <code>&lt;!-- QUICK SEO START --&gt;</code>block will be output in the document head
-            showing all injected field values, schema type, and source attribution. This aids in debugging.</p>
-        </section>
-        <section>
-          <h2>13. Local-Only Philosophy</h2>
-          <p>Quick SEO does not rely on cloud services. All settings, fields, schema, and files remain local. There are
-            no external API calls, tracking scripts, or upsells. Export and import options use JSON files for full
-            transparency.</p>
-        </section>
-        <section>
-          <h2>14. Developer Focused Design</h2>
-          <p>The plugin includes proper filters, actions, and hooks throughout. JS and CSS are only loaded where
-            necessary. All logic follows WP Coding Standards. AJAX endpoints are secured and modularized under
-            <code>includes/</code>.</p>
-        </section>
-        <section>
-          <h2>Conclusion</h2>
-          <p>Quick SEO is not an SEO wizard, gamified assistant, or cloud-powered “AI” system. It is a deterministic
-            metadata control layer built for people who understand the mechanics of search engine behavior and want
-            precise control over it. It does not make guesses. It renders facts. It provides interfaces to override
-            them. It runs fast, stays local, and gets out of the way. For developers, agencies, and power users, it is a
-            pure utility. Nothing more. Nothing less.</p>
-        </section>
-      </section>
+    <section class="inspiration">
+      <h2>Why We Built Quick SEO (and Who We Built It For)</h2>
+      <p>Quick SEO was created after years of wrestling with bloated, upsell-ridden SEO plugins that cared more about monetization than metadata. We were sick of:</p>
+      <ul>
+        <li>Schema generators that hide logic behind dropdowns and “AI suggestions”</li>
+        <li>Title tags overwritten by theme conflicts, plugin clashes, and "helpers"</li>
+        <li>Robots.txt files you couldn't touch without FTP access</li>
+        <li>Cloud-based black-box schema platforms with no export options</li>
+        <li>Meta boxes that look pretty but give you no real power</li>
+      </ul>
 
+      <p>So we built Quick SEO around three uncompromising principles:</p>
+      <ol>
+        <li><strong>Transparency:</strong> Every injected tag is inspectable, readable, and never hidden behind a wizard.</li>
+        <li><strong>Ownership:</strong> All data stays local—no APIs, no trackers, no calls home.</li>
+        <li><strong>Precision:</strong> Every directive is explicitly set or deliberately overridden by you.</li>
+      </ol>
+
+      <p>This isn’t an SEO plugin for people chasing green dots. It’s for people who want to <strong>control how they appear in search—completely, cleanly, and permanently</strong>.</p>
+    </section>
+  </div>
+</div>
+
+<div class="appcontent">
+  <div class="copy">
+    <h2>⚡ Quick SEO 3.0</h2>
+    <h2>WordPress + WooCommerce SEO Plugin by QuickWoo</h2>
+
+    <p><strong>Quick SEO</strong> gives you complete editorial power over how your WooCommerce site appears in search, social, and structured data—without page builders, third-party APIs, or bloated interface gimmicks.</p>
+    <p>Every title, description, schema, and open graph tag is injected cleanly into the <code>&lt;head&gt;</code> of your pages. Every field you care about is editable in seconds—at scale. No more waiting for “indexing luck.” You decide what Google sees, and when.</p>
+
+    <h3>🚀 What’s New in Version 3.0</h3>
+    <ul>
+      <li><strong>Spreadsheet-style SEO editors</strong> for pages, posts, products, categories, and tags — bulk optimize with the efficiency of Excel, without ever touching a post editor.</li>
+      <li><strong>Robots & Sitemap Controls</strong> — add, remove, or toggle directives like <code>noindex</code>, <code>nofollow</code>, and sitemap inclusion with a single click.</li>
+      <li><strong>Canonical URL Intelligence</strong> — global logic with per-object overrides keeps your content clean and consolidated in search.</li>
+      <li><strong>Reusable Schema Templates</strong> — inject dynamic JSON-LD into any page using visual schema builder presets (Product, Event, Article, LocalBusiness, etc).</li>
+      <li><strong>Fully Local Metadata Output</strong> — all SEO, OG, and Twitter fields are rendered directly into your HTML, with no JS dependencies or cloud injections.</li>
+    </ul>
+
+    <h3>🧠 Core Features</h3>
+    <ul>
+      <li><strong>SEO Titles & Descriptions:</strong> Replace WordPress defaults with structured, index-first metadata designed to control SERP display and maximize click-through.</li>
+      <li><strong>Multiple Keyword Support:</strong> Target both focus and secondary keywords per object, and store them in clean meta fields for enhanced NLP matching.</li>
+      <li><strong>OG & Twitter Cards:</strong> Define exactly how your content appears when shared. Set title, type, image, and description with surgical precision.</li>
+      <li><strong>Canonical URL Logic:</strong> Eliminate duplicate content issues with clean, enforced canonical links on every page, post, product, and taxonomy.</li>
+      <li><strong>Dynamic Schema Injection:</strong> Use pre-built templates to assign rich JSON-LD to any content type, then override it per-post with custom rules.</li>
+      <li><strong>Longtail Keyword Injection:</strong> Append a semantically relevant keyword block (invisibly) to the end of your page content to boost index breadth without cluttering the UI.</li>
+      <li><strong>Global Redirect Mapping:</strong> Set permanent 301 redirects using an admin-based mapper. Perfect for URL migrations or eComm cleanup.</li>
+      <li><strong>Broken Link Scanner:</strong> Crawl every link on your site and get real-time reporting on 404s, timeouts, or redirected assets.</li>
+      <li><strong>Sitemap Generator:</strong> Generate a perfectly formatted, index-ready <code>sitemap.xml</code> file with smart priority rules and update timestamps.</li>
+    </ul>
+
+    <h3>🎯 Why This Isn’t Just Another Plugin</h3>
+    <p>Quick SEO isn’t here to gamify SEO. It’s not a scorecard, a tutorial, or an AI whisperer. It’s a blunt-force metadata weapon for people who know exactly what they need to rank—and are tired of fighting their plugins to do it.</p>
+    <p>Where others abstract, we expose. Where others limit, we expand. And where others gatekeep behind upsells, we let you download, edit, and ship—on your terms.</p>
+
+    <h3>🔥 Download Free — Limited Time Only</h3>
+  </div>
+
+  <div class="screenshotblock">
+    <img loading="lazy" class="screenshots" src="/assets/images/dashboardscreenshot.webp" alt="Quick SEO Feature Dashboard Screenshot">
+    <img loading="lazy" class="screenshots" src="/assets/images/schemascreenshot.webp" alt="Schema Builder and Meta Tag Inserter Screenshot">
+    <img loading="lazy" class="screenshots" src="/assets/images/spreadsheetscreenshot.webp" alt="Spreadsheet Style Bulk SEO Editor Screenshot">
+  </div>
+
+  <div class="versustable">
+    <h3>Quick SEO vs. Everyone Else</h3>
+    <p>Here's how Quick SEO stacks up against the bloated, over-promised SEO plugins you're probably using now:</p>
+    <table style="width: 100%; max-width: 100vw; border-collapse: collapse; font-size: 1em;">
+      <thead>
+        <tr style="background: linear-gradient(200deg, var(--blue), var(--blue2), var(--blue3), var(--blue)); color: white;">
+          <th style="padding: 16px; border: 1px solid #ddd;">Feature</th>
+          <th style="padding: 16px; border: 1px solid #ddd;">Quick SEO</th>
+          <th style="padding: 16px; border: 1px solid #ddd;">Yoast</th>
+          <th style="padding: 16px; border: 1px solid #ddd;">AIO SEO</th>
+          <th style="padding: 16px; border: 1px solid #ddd;">Rank Math</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Bulk Metadata Editing</td><td>✅</td><td>❌</td><td>❌</td><td>✅</td></tr>
+        <tr><td>Multiple Focus Keywords</td><td>✅</td><td>⚠️</td><td>⚠️</td><td>✅</td></tr>
+        <tr><td>WooCommerce Schema Injection</td><td>✅</td><td>⚠️</td><td>❌</td><td>✅</td></tr>
+        <tr><td>Edit Pages, Posts & Products</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td></tr>
+        <tr><td>Custom OG + Twitter Metadata</td><td>✅</td><td>✅</td><td>⚠️</td><td>✅</td></tr>
+        <tr><td>Schema Templates & Saving</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td></tr>
+        <tr><td>Invisible Longtail Injection</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td></tr>
+        <tr><td>Canonical & Robots Controls</td><td>✅</td><td>⚠️</td><td>❌</td><td>✅</td></tr>
+        <tr><td>Sitemap & Indexing Rules</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td>Built for WooCommerce</td><td>✅</td><td>❌</td><td>❌</td><td>⚠️</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <section class="demo">
+    <h3>🎬 Watch Quick SEO in Action</h3>
+    <video class="demovideo" src="/assets/videos/quickSEOdemo.mp4" controls></video>
+  </section>
+
+  <section class="full">
+    <h2>🔍 Technical Breakdown: What Actually Happens Under the Hood</h2>
+
+    <section>
+      <h2>1. Metadata Injection</h2>
+      <p>All SEO tags—including `title`, meta descriptions, and meta keywords—are injected directly into the `head` using `wp_head` output buffering. No JavaScript. No hacks.</p>
+    </section>
+
+    <section>
+      <h2>2. OG + Twitter Cards</h2>
+      <p>Share-friendly metadata is fully customizable for every object type. Defaults inherit from SEO fields, unless explicitly set.</p>
+    </section>
+
+    <section>
+      <h2>3. Canonical URL Control</h2>
+      <p>Use global logic or override per object. All canonical tags are rendered cleanly into the DOM with no duplication.</p>
+    </section>
+
+    <section>
+      <h2>4. Robots & robots.txt</h2>
+      <p>Meta robots tags are assigned per object using a dropdown. robots.txt editing is GUI-driven, with safe fallbacks if your server blocks file writes.</p>
+    </section>
+
+    <section>
+      <h2>5. Schema Templates</h2>
+      <p>Inject structured data like WebPage, Product, BlogPosting, Event, LocalBusiness, and more. Save and reuse templates across your site.</p>
+    </section>
+
+    <section>
+      <h2>6. Longtail Keyword Blocks</h2>
+      <p>Hidden <code>display:none</code> containers are appended to your page for longtail keyword boosts—randomized and injected per post.</p>
+    </section>
+
+    <section>
+      <h2>7. Spreadsheet-Style Editing</h2>
+      <p>Edit every object type using a spreadsheet grid: title, description, OG fields, robots, canonical, schema, keywords. AJAX saves in real time.</p>
+    </section>
+
+    <section>
+      <h2>8. Sitemap Engine</h2>
+      <p>Quick SEO builds a complete `sitemap.xml` covering every major content type, with rules for update frequency, priority, and exclusion.</p>
+    </section>
+
+    <section>
+      <h2>9. Conflict Prevention</h2>
+      <p>Conflicting outputs from Yoast, RankMath, or others are removed. Canonicals are deduplicated and enclosed in visual HTML comments for debugging.</p>
+    </section>
+
+    <section>
+      <h2>10. SEO Meta Box</h2>
+      <p>Every edit screen has a powerful SEO box with OG image uploads, field validation, and live counters. No fluff—just fields.</p>
+    </section>
+
+    <section>
+      <h2>11. Schema Fallbacks</h2>
+      <p>If no schema is set, Quick SEO injects a default per content type, or falls back to WebPage as a last resort. Nothing is left empty.</p>
+    </section>
+
+    <section>
+      <h2>12. Structured Debug Comments</h2>
+      <p>Enable developer-mode comments like `<!-- QUICK SEO START -->` to visually inspect every tag's source and fallback path.</p>
+    </section>
+
+    <section>
+      <h2>13. Local-Only Philosophy</h2>
+      <p>Zero cloud dependencies. All data is local. All settings are exportable. All edits belong to you. No licenses. No traps.</p>
+    </section>
+
+    <section>
+      <h2>14. Developer DNA</h2>
+      <p>Hooks, filters, actions, clean code. Assets are modular. Endpoints are secure. Every decision respects the WordPress Coding Standards.</p>
+    </section>
+
+    <section>
+      <h2>⚖️ Conclusion</h2>
+      <p><strong>Quick SEO</strong> is not a wizard, assistant, or “AI” system. It is a deterministic SEO layer for people who know what they’re doing—and want to do it faster, cleaner, and better. Period.</p>
+    </section>
+  </section>
+</div>
+
+  </section>
+<section class="guide">
+  <div class="setup">
+    <h2>Quick SEO: Complete User Guide</h2>
+    <p>This guide outlines the full operational structure of the Quick SEO plugin. It assumes you’re optimizing for full semantic fidelity, index control, schema traceability, and DOM stability—without reliance on external scripts, cloud APIs, or bundled front-end interference.</p>
+  </div>
+  <div class="setupscreen">
+    <img loading="lazy" class="screenshots" src="/assets/images/uploadpluginscreenshot.webp" alt="Uploading Quick SEO plugin screenshot">
+  </div>
+
+  <section>
+    <div class="setup">
+      <h2>I. Plugin Initialization</h2>
+      <ul>
+        <li>Place the plugin in <code>/wp-content/plugins/quick-seo/</code>.</li>
+        <li>Activate under <code>Plugins → Installed Plugins</code>.</li>
+        <li>Navigate to <code>Quick SEO → Settings</code> to set global configuration for default schema, canonical strategy, and comment injection policy.</li>
+      </ul>
+      <p>Initial setup requires no database migration. All settings are stored in native WordPress options and exposed via predictable keys.</p>
+    </div>
+    <div class="setupscreen">
+      <img loading="lazy" class="screenshots" src="/assets/images/activatepluginscreenshot.webp" alt="Activating Quick SEO plugin screenshot">
     </div>
   </section>
-        <section class="guide">
-          <div class="setup">
-        <h2>Quick SEO: Complete User Guide</h2>
-        <p>This guide explains in complete, excruciating detail how to use every feature of the Quick SEO plugin for
-          WordPress and WooCommerce. It assumes you want total control over your metadata, schema, indexing rules,
-          sitemaps, and more—without relying on cloud services or bloated third-party plugins.</p>
-          </div>
-                    <div class="setupscreen">
-<img class="screenshots" src="/assets/images/uploadpluginscreenshot.png" alt="Uploading Quick SEO plugin screenshot">
-            </div>
-        <section>
-          <div class="setup">
-          <h2>I. Plugin Setup</h2>
-          <ul>
-            <li>Upload the plugin folder to <code>/wp-content/plugins/quick-seo/</code></li>
-            <li>Activate via WP Admin → Plugins</li>
-            <li>Access main settings at <strong>Quick SEO → Settings</strong></li>
-          </ul>
-          <p>Here you can define global defaults for schema, robots, canonical rules, and whether to display structured
-            HTML comments in page source.</p>
-            </div>
-            <div class="setupscreen">
-<img class="screenshots" src="/assets/images/activatepluginscreenshot.png" alt="Activating Quick SEO plugin screenshot">
 
-            </div>
-        </section>
   <section>
-  <div class="setup">
-    <h2>II. SEO Metadata</h2>
-    <h3>Title, Description, Keywords</h3>
-    <p>Set per-post via the Quick SEO metabox or globally via spreadsheets. Character counters guide proper length:</p>
-    <ul>
-      <li><strong>Title</strong> (~60 chars)</li>
-      <li><strong>Description</strong> (~155 chars)</li>
-      <li><strong>Keywords</strong> (optional, comma-separated)</li>
-    </ul>
-  </div>
-  <div class="setupscreen">
-    <img class="screenshots" src="/assets/images/metatitledescriptionscreenshot.png" alt="Editing Meta Title & Description Screenshot">
+    <div class="setup">
+      <h2>II. SEO Metadata Layer</h2>
+      <p>All title, meta description, and optional keyword fields are stored per object via <code>post_meta</code> or <code>term_meta</code>, depending on context.</p>
+      <ul>
+        <li><strong>Title:</strong> Injected into the <code>&lt;title&gt;</code> tag via output buffering.</li>
+        <li><strong>Description:</strong> Encoded as <code>meta name="description"</code>.</li>
+        <li><strong>Keywords:</strong> Optional field. Not used for ranking, but included for legacy crawler support.</li>
+      </ul>
+      <p>Character count guidance is enforced in the UI, but no hard truncation occurs—developers can override limits freely.</p>
+    </div>
+    <div class="setupscreen">
+      <img loading="lazy" class="screenshots" src="/assets/images/metatitledescriptionscreenshot.webp" alt="Editing Meta Title & Description Screenshot">
+    </div>
+  </section>
 
-  </div>
+  <section>
+    <div class="setup">
+      <h2>III. Open Graph + Twitter Cards</h2>
+      <p>Quick SEO supports both fallback and override behavior. If OG or Twitter fields are left empty, values will cascade from SEO title/description unless strict override is enforced via settings.</p>
+      <ul>
+        <li>OG: <code>og:title</code>, <code>og:description</code>, <code>og:image</code></li>
+        <li>Twitter: <code>twitter:title</code>, <code>twitter:card</code>, <code>twitter:image</code></li>
+      </ul>
+      <p>OG/Twitter images support both absolute URLs and WordPress media uploads. Alt text is not required but may be included manually via filter hook.</p>
+    </div>
+    <div class="setupscreen">
+      <img loading="lazy" class="screenshots" src="/assets/images/ogtwitterscreenshot.webp" alt="Editing OG & Twitter Tags Screenshot">
+    </div>
+  </section>
+
+  <section>
+    <div class="setup">
+      <h2>IV. Canonical URL Management</h2>
+      <p>Canonical URLs follow a hierarchical fallback strategy:</p>
+      <ol>
+        <li>Explicit per-post value (via metabox)</li>
+        <li>Global setting (clean, trailing slash, or disabled)</li>
+        <li>Default WordPress permalink</li>
+      </ol>
+      <p>Canonical logic uses <code>rel="canonical"</code> with full URL precision. No relative URLs are allowed. Output is deduplicated and wrapped in visual HTML comments when developer mode is enabled.</p>
+    </div>
+    <div class="setupscreen">
+      <img loading="lazy" class="screenshots" src="/assets/images/canonicalurlscreenshot.webp" alt="Configuring Canonical URLs Screenshots">
+    </div>
+  </section>
+
+  <section>
+    <div class="setup">
+      <h2>V. Robots Meta and robots.txt</h2>
+      <p>Meta directives are applied per object via dropdown. Valid values include combinations of <code>index/noindex</code> and <code>follow/nofollow</code>.</p>
+      <p><code>robots.txt</code> is editable via GUI. On servers without file write access, a virtual version is rendered and accessible at the standard endpoint.</p>
+    </div>
+    <div class="setupscreen">
+      <img loading="lazy" class="screenshots" src="/assets/images/robotstxtscreenshot.webp" alt="Editing Robots.txt Screenshot">
+    </div>
+  </section>
+
+  <section>
+    <div class="setup">
+      <h2>VI. Schema Builder</h2>
+      <p>JSON-LD schema is managed via saved templates. All schema blocks are injected using <code>&lt;script type="application/ld+json"&gt;</code> in <code>wp_head</code>.</p>
+      <ul>
+        <li>Templates are created under <code>Quick SEO → Schema</code>.</li>
+        <li>Assignable via metabox dropdown or spreadsheet column.</li>
+        <li>Supports <code>Product</code>, <code>Organization</code>, <code>Event</code>, <code>WebPage</code>, etc.</li>
+      </ul>
+      <p>If no schema is assigned, Quick SEO injects a fallback template matching the object type. WebPage is used only when no match exists.</p>
+    </div>
+    <div class="setupscreen">
+      <img loading="lazy" class="screenshots" src="/assets/images/schematemplatesscreenshot.webp" alt="Schema Template Builder Screenshot">
+    </div>
+  </section>
+
+  <section>
+    <div class="setup">
+      <h2>VII. Longtail Keyword Injection</h2>
+      <p>Longtail blocks are injected using <code>div[style*="display:none"]</code>. Each is drawn from a comma-separated list stored in post meta.</p>
+      <ul>
+        <li>One keyword block is randomly selected per page load.</li>
+        <li>Injection occurs after all visible content, just before closing <code>&lt;/body&gt;</code>.</li>
+      </ul>
+      <p>Blocks are semantically neutral and not included in visible DOM flow. Optional class hooks allow additional CSS obfuscation or behavior tracing.</p>
+    </div>
+    <div class="setupscreen">
+      <img loading="lazy" class="screenshots" src="/assets/images/longtailscreenshot.webp" alt="Invisibly Longtail Keyword Injection Screenshot">
+    </div>
+  </section>
+
+  <section>
+    <div class="setup">
+      <h2>VIII. Spreadsheet Interfaces</h2>
+      <p>Each object type includes a dedicated admin page with spreadsheet-like inline editing and AJAX-based autosave.</p>
+      <ul>
+        <li>Data tables are rendered using native WP list table class extensions for compatibility.</li>
+        <li>Fields supported: Title, Description, Keywords, OG, Twitter, Canonical, Robots, Schema.</li>
+        <li>Each save triggers a batched `update_post_meta()` or `update_term_meta()` depending on type.</li>
+      </ul>
+      <p>Taxonomy terms and WooCommerce objects use their own loaders with separate DB queries to preserve taxonomy-specific SEO states.</p>
+    </div>
+    <div class="setupscreen">
+      <img loading="lazy" class="screenshots" src="/assets/images/multipleseoeditorsscreenshot.webp" alt="Quick SEO Dashboard Screenshot showing multiple different spreadsheet editors">
+    </div>
+  </section>
+
+  <section>
+    <div class="setup">
+      <h2>IX. Sitemap Generation</h2>
+      <p>Sitemap is auto-generated at <code>/sitemap.xml</code>. Output includes:</p>
+      <ul>
+        <li>Published URLs for posts, pages, products, categories, tags.</li>
+        <li><code>lastmod</code> from <code>post_modified_gmt</code></li>
+        <li><code>priority</code> and <code>changefreq</code> from global defaults or per-object override.</li>
+      </ul>
+      <p>Sitemap structure is fully static, updated via cron or manual regeneration trigger. No real-time overhead is introduced.</p>
+    </div>
+    <div class="setupscreen">
+      <img loading="lazy" class="screenshots" src="/assets/images/sitemapgeneratorscreenshot.webp" alt="Sitemap Generator Screenshot">
+    </div>
+  </section>
+
+  <section>
+    <div class="setup">
+      <h2>X. Conflict Mitigation</h2>
+      <p>Quick SEO inspects <code>wp_head</code> output buffer for duplicate <code>&lt;title&gt;</code>, <code>meta</code>, and <code>link rel=canonical</code> tags.</p>
+      <ul>
+        <li>Common offenders (Yoast, RankMath) are stripped via regex before flush.</li>
+        <li>Optional developer-mode wraps each injected block with traceable HTML comments.</li>
+      </ul>
+      <p>This prevents tag collisions and preserves semantic integrity for crawlers.</p>
+    </div>
+    <div class="setupscreen">
+      <img loading="lazy" class="screenshots" src="/assets/images/headtagscreenshot.webp" alt="HTML head tag screenshot of Quick SEO inserted data">
+    </div>
+  </section>
+
+  <section>
+    <div class="setup">
+      <h2>XI. SEO Metabox Behavior</h2>
+      <ul>
+        <li>Character count logic is live but not enforced. Validation is visual only.</li>
+        <li>Schema dropdown is populated dynamically based on saved templates.</li>
+        <li>OG/Twitter image preview supports WordPress attachment IDs and fallback URLs.</li>
+      </ul>
+      <p>All fields autosave with the post via native WP autosave hooks—no additional UI required.</p>
+    </div>
+    <div class="setupscreen">
+      <img loading="lazy" class="screenshots" src="/assets/images/metaboxscreenshot.webp" alt="Quick SEO Meta Box screenshot from posts edit page">
+    </div>
+  </section>
+
+  <section>
+    <div class="setup">
+      <h2>XII. Local-Only System Architecture</h2>
+      <ul>
+        <li>No data is sent to third-party servers. No cloud sync or telemetry.</li>
+        <li>All plugin logic is contained in local PHP and JavaScript modules.</li>
+        <li>Settings and schema templates export to JSON files for backup or migration.</li>
+      </ul>
+      <p>No CDN usage, no remote licensing, no frontend polling. Quick SEO operates entirely within WordPress’s local execution context.</p>
+    </div>
+    <div class="setupscreen">
+      <img loading="lazy" class="screenshots" src="/assets/images/brokenlinkscreenshot.webp" alt="Broken Link Scanner Screenshot">
+    </div>
+  </section>
+
+  <section>
+    <div class="setup">
+      <h2>XIII. Developer Considerations</h2>
+      <ul>
+        <li>All major operations use filterable hooks. Actions are documented in the inline codebase.</li>
+        <li>All options, meta keys, and post types use a unique prefix to avoid global collision (<code>quickseo_*</code>).</li>
+        <li>AJAX handlers use nonces and referer checks for CSRF protection.</li>
+        <li>Codebase adheres to PSR-2 and WordPress coding standards (spacing, naming, logic encapsulation).</li>
+      </ul>
+      <p>Extension points include schema render filters, spreadsheet column hooks, and admin page injection slots.</p>
+    </div>
+    <div class="setupscreen">
+      <img loading="lazy" class="screenshots" src="/assets/images/spreadsheetstylescreenshot.webp" alt="Spreadsheet Style Editor Screenshot">
+    </div>
+  </section>
+
+  <section>
+    <div class="setup">
+      <h2>Conclusion</h2>
+      <p>Quick SEO is not a suggestion engine. It is a direct metadata control system built for developers and SEO professionals who prefer deterministic output and transparent configuration. It minimizes ambiguity, reduces surface conflict, and exposes logic at every point of execution.</p>
+    </div>
+    <div class="setupscreen"></div>
+  </section>
 </section>
 
-<section>
-  <div class="setup">
-    <h2>III. Open Graph and Twitter Tags</h2>
-    <p>Manually set values or inherit from SEO title/description:</p>
-    <ul>
-      <li><code>og:title</code>, <code>og:description</code>, <code>og:image</code></li>
-      <li><code>twitter:title</code>, <code>twitter:card</code>, etc.</li>
-    </ul>
-    <p>OG image fields accept URL or upload. Twitter card type supports <code>summary</code> and <code>summary_large_image</code>.</p>
-  </div>
-  <div class="setupscreen">
-    <img class="screenshots" src="/assets/images/ogtwitterscreenshot.png" alt="Editing OG & Twitter Tags Screenshot">
-
-  </div>
-</section>
-
-<section>
-  <div class="setup">
-    <h2>IV. Canonical URLs</h2>
-    <p>Set manually per page or fallback to permalink. Override logic set under <strong>Settings → Canonical</strong> to enforce trailing slash policy.</p>
-  </div>
-  <div class="setupscreen">
-    <img class="screenshots" src="/assets/images/canonicalurlscreenshot.png" alt="Configuring Canonical URLs Screenshots">
-
-  </div>
-</section>
-
-<section>
-  <div class="setup">
-    <h2>V. Robots Meta and robots.txt</h2>
-    <p>Each post/page/product can use:</p>
-   
-    <p>Edit <code>robots.txt</code> via GUI or download for manual placement.</p>
-  </div>
-  <div class="setupscreen">
-    <img class="screenshots" src="/assets/images/robotstxtscreenshot.png" alt="Editing Robots.txt Screenshot">
-
-  </div>
-</section>
-
-<section>
-  <div class="setup">
-    <h2>VI. Schema Builder</h2>
-    <ul>
-      <li>Go to <strong>Quick SEO → Schema</strong></li>
-      <li>Create a schema template (e.g. <code>Product</code>, <code>Organization</code>)</li>
-      <li>Assign via metabox dropdown or spreadsheet</li>
-    </ul>
-    <p>Injection is handled using valid JSON-LD in a script tag. If none is selected, fallback schema (WebPage) is applied.</p>
-  </div>
-  <div class="setupscreen">
-    <img class="screenshots" src="/assets/images//schematemplatesscreenshot.png" alt="Schema Template Builder Screenshot">
-
-  </div>
-</section>
-
-<section>
-  <div class="setup">
-    <h2>VII. Longtail Keyword Blocks</h2>
-    <p>Insert hidden semantic keyword phrases:</p>
-    <ul>
-      <li>Each block is wrapped in <code>&lt;div style="display:none"&gt;</code></li>
-      <li>Rotates randomly if multiple are set</li>
-    </ul>
-  </div>
-  <div class="setupscreen">
-    <img class="screenshots" src="/assets/images/longtailscreenshot.png" alt="Invisibly Longtail Keyword Injection Screenshot">
-
-  </div>
-</section>
-
-<section>
-  <div class="setup">
-    <h2>VIII. Spreadsheet Editors</h2>
-    <p>Available under:</p>
-    <ul>
-      <li><strong>Quick SEO → Pages</strong></li>
-      <li><strong>Quick SEO → Posts</strong></li>
-      <li><strong>Quick SEO → Products</strong></li>
-      <li><strong>Quick SEO → Categories / Tags / Product Tags</strong></li>
-    </ul>
-    <p>Supports inline editing and autosave. Columns include:</p>
-    <ul>
-      <li>Title, Description, Keywords</li>
-      <li>Canonical, Robots, Schema</li>
-      <li>Open Graph and Twitter fields</li>
-    </ul>
-  </div>
-  <div class="setupscreen">
-    <img class="screenshots" src="/assets/images/multipleseoeditorsscreenshot.png" alt="Quick SEO Dashboard Screenshot showing multiple different spreadsheet editors">
-
-  </div>
-</section>
-
-<section>
-  <div class="setup">
-    <h2>IX. Sitemap Generator</h2>
-    <p>Auto-generates <code>/sitemap.xml</code> with:</p>
-    <ul>
-      <li>Post, Page, Product, Taxonomy URLs</li>
-      <li><code>lastmod</code> and <code>priority</code> fields</li>
-    </ul>
-    <p>Accessible at <strong>Quick SEO → Sitemaps</strong>. Options for changefreq, priority, and image extension inclusion.</p>
-  </div>
-  <div class="setupscreen">
-    <img class="screenshots" src="/assets/images/sitemapgeneratorscreenshot.png" alt="Sitemap Generator Screenshot">
-
-  </div>
-</section>
-
-<section>
-  <div class="setup">
-    <h2>X. Conflict Prevention</h2>
-    <p>Quick SEO prevents duplication of:</p>
-    <ul>
-      <li><code>&lt;title&gt;</code> tags from themes/plugins</li>
-      <li>Yoast/AIOSEO injected metadata (if detected)</li>
-      <li>Multiple canonicals</li>
-    </ul>
-    <p>Uses output buffering to maintain clean head output.</p>
-  </div>
-  <div class="setupscreen">
-    <img class="screenshots" src="/assets/images/headtagscreenshot.png" alt="HTML head tag screenshot of Quivk SEO inserted data">
-
-  </div>
-</section>
-
-<section>
-  <div class="setup">
-    <h2>XI. Metabox Features</h2>
-    <ul>
-      <li>Live preview and character counts</li>
-      <li>Schema dropdown populated with saved templates</li>
-      <li>Image preview for OG and Twitter fields</li>
-    </ul>
-  </div>
-  <div class="setupscreen">
-    <img class="screenshots" src="/assets/images/metaboxscreenshot.png" alt="Quick SEO Meta Box screenshot from posts edit page">
-
-  </div>
-</section>
-
-<section>
-  <div class="setup">
-    <h2>XII. Local-Only Architecture</h2>
-    <ul>
-      <li>No cloud sync</li>
-      <li>No telemetry</li>
-      <li>All logic is local PHP/JS</li>
-      <li>Settings exportable via JSON</li>
-    </ul>
-  </div>
-  <div class="setupscreen">
-    <img class="screenshots" src="/assets/images/brokenlinkscreenshot.png" alt="Broken Link Scanner Screenshot">
-
-  </div>
-</section>
-
-<section>
-  <div class="setup">
-    <h2>XIII. Developer Considerations</h2>
-    <ul>
-      <li>Hooks and filters for extensibility</li>
-      <li>Strict adherence to WP coding standards</li>
-      <li>Non-conflicting namespace and file structure</li>
-      <li>AJAX handlers secured via nonces</li>
-    </ul>
-  </div>
-  <div class="setupscreen">
-    <img class="screenshots" src="/assets/images/spreadsheetstylescreenshot.png" alt="Spreadsheet Style Editor Screenshot">
-
-  </div>
-</section>
-
-        <section>
-          <div class="setup">
-          <h2>Conclusion</h2>
-          <p>Quick SEO is a technical SEO plugin for WordPress developers and power users. It doesn’t assume you want
-            help—it assumes you want control. From custom schema to canonical precision, it gives you structured,
-            editable, and inspectable metadata at every level of the site. No cloud, no paywall, no nonsense.</p>
-            </div>
-                      <div class="setupscreen">
-
-            </div>
-        </section>
-      </section>
       <section class="intro">
   <h2 style="font-size: 2.5rem; text-align: center; color: rgb(255, 255, 255); margin: 50px;">Quick SEO Blog</h2>
   </section>
-  <section class="blogtop">
-    <div class="blogimage"><img src="/assets/images/seo-mistakes.png" alt="SEO Mistakes"
-        style="width: 100%; border-radius: 8px;">
-      <p>Published: April 21, 2025</p>
-      <h3>Get Quick SEO</h3><a href="/assets/downloads/quick-seo.zip" download class="downloadbtn">Free Download</a>
-    </div>
-    <div class="blogtitle">
-      <h1>Ten Easy Mistakes to Make with SEO</h1>
-      <div>
-        <p>SEO is often made to sound complicated—but a lot of what hurts your rankings is surprisingly simple. Below
-          are ten common SEO mistakes we see in WooCommerce stores, along with quick ways to fix each one.</p>
-        <h2>Top 10 SEO Mistakes to Avoid</h2>
-        <ul style="margin: 30px 0;">
-          <li>❌ Reusing the same meta title across multiple products</li>
-          <li>❌ Leaving meta descriptions blank (or letting Google guess them)</li>
-          <li>❌ Forgetting to set alt tags for product images</li>
-          <li>❌ Having no structured data (schema) on product pages</li>
-          <li>❌ Using "Uncategorized" as your default category</li>
-          <li>❌ Keyword stuffing in titles or descriptions</li>
-          <li>❌ Broken internal links from old product pages</li>
-          <li>❌ Not including Open Graph metadata for social sharing</li>
-          <li>❌ Blocking crawlers with a misconfigured robots.txt</li>
-          <li>❌ Relying solely on general-purpose SEO plugins</li>
-        </ul>
-        <h2>How to Fix Them</h2>
-        <p>Start by auditing your store’s product pages. Use a plugin like Quick SEO to make bulk edits quickly.
-          Customize every title. Write human-friendly meta descriptions. Add schema for each product type. And use OG
-          data so your links preview properly on social media.</p>
-      </div>
-    </div>
-  </section><br><br>
-  <section class="blogtop">
-    <div class="blogimage"><img src="/assets/images/seasonalseo.png" alt="Seasonal Strategy"
-        style="width: 100%; border-radius: 8px;">
-      <p>Published: March 19, 2025</p>
-      <h3>Try the Quick SEO Plugin</h3><a href="/assets/downloads/quick-seo.zip" download class="downloadbtn">Free
-        Download</a>
-    </div>
-    <div class="blogtitle">
-      <h1>Seasonal SEO & Pricing Strategies</h1>
-      <div>
-        <p>Seasonal traffic surges can drive major revenue—but only if you’re optimized in advance. Here’s how Quick
-          Edit + Quick SEO work together to prep your store.</p>
-        <h2>Smart Moves for Seasonal Prep:</h2>
-        <ul style="margin: 30px 0;">
-          <li>📆 Schedule product sales by tag or category</li>
-          <li>📄 Bulk update meta descriptions for holidays</li>
-          <li>💡 Swap SEO titles based on keyword demand</li>
-          <li>📈 Use OG fields to match promo creatives</li>
-          <li>🧠 Leverage schema for rich snippet events</li>
-        </ul>
-        <p>With just a few clicks, Quick Edit lets you assign prices and sale windows in bulk—while Quick SEO ensures
-          your visibility is seasonally relevant and technically flawless.</p>
-        <p><strong>Holiday reminder:</strong>Start your Black Friday edits by September!</p>
-      </div>
-    </div>
-  </section><br><br>
-  <section class="blogtop">
-    <div class="blogimage"><img src="/assets/images/seo2025.png" alt="WooCommerce SEO"
-        style="width: 100%; border-radius: 8px;">
-      <p>Published: April 15, 2025</p>
-      <h3>Start Ranking Faster with Quick SEO</h3><a href="/assets/downloads/quick-seo.zip" download
-        class="downloadbtn">Free Download</a>
-    </div>
-    <div class="blogtitle">
-      <h1>The WooCommerce SEO Checklist for 2025</h1>
-      <div>
-        <p>WooCommerce site owners, 2025 is your year to dominate search rankings. With Google's evolving algorithm now
-          prioritizing structured content, page speed, and mobile-first UX, it’s critical to have a proactive SEO
-          strategy that doesn't leave your store in the dust.</p>
-        <h2>Here’s your 2025 SEO checklist:</h2>
-        <ul style="margin: 30px 0;">
-          <li>✅ Optimize SEO Titles & Meta Descriptions per product</li>
-          <li>✅ Use Open Graph tags for social media visibility</li>
-          <li>✅ Inject WooCommerce product schema</li>
-          <li>✅ Analyze keyword density & variation</li>
-          <li>✅ Enable canonical URLs to prevent duplicate content</li>
-          <li>✅ Update sitemap.xml and robots.txt</li>
-          <li>✅ Speed-optimize all image assets</li>
-        </ul>
-        <p>Quick SEO automates almost all of these. Our plugin handles meta field editing in bulk, pushes OG data to the
-          front end, and ensures all your WooCommerce products are search-engine ready.</p>
-        <p><strong>Pro Tip:</strong>Use the built-in Google Search Console integration to monitor performance and fix
-          crawling errors directly from your WordPress dashboard.</p>
-      </div>
-    </div>
-  </section>
+<section class="blogtop">
+  <div class="blogimage">
+    <img loading="lazy" src="/assets/images/seo-mistakes.webp" alt="SEO Mistakes" style="width: 100%; border-radius: 8px;">
+    <p>Published: April 21, 2025</p>
+    <h3>Get Quick SEO</h3>
+    <a href="/assets/downloads/quick-seo.zip" download class="downloadbtn">Free Download</a>
+  </div>
+  <div class="blogtitle">
+    <h1>Ten Easy Mistakes to Make with SEO</h1>
+    <p>Most WooCommerce SEO failures don’t happen from complexity—they happen from oversight. Simple misconfigurations, neglected fields, or reliance on theme defaults can tank a perfectly good product page. Below are ten foundational SEO flaws we see repeatedly across eCommerce sites—and how to eliminate them.</p>
+
+    <h2>🚫 Top 10 SEO Pitfalls That Cost You Rankings</h2>
+    <ul>
+      <li>❌ Using the same meta title across variations (e.g. different colors or SKUs)</li>
+      <li>❌ Letting auto-generated descriptions pull from the first sentence of the page</li>
+      <li>❌ Failing to define image alt attributes for product thumbnails and gallery images</li>
+      <li>❌ Publishing pages without any structured data schema</li>
+      <li>❌ Keeping "Uncategorized" as the fallback taxonomy for new listings</li>
+      <li>❌ Repeating target keywords without adding semantic modifiers or context</li>
+      <li>❌ Linking to outdated or deleted product pages without redirect mappings</li>
+      <li>❌ Not configuring Open Graph previews, resulting in generic link shares</li>
+      <li>❌ Blocking <code>/wp-content/</code> in robots.txt, which prevents image indexing</li>
+      <li>❌ Assuming generalist SEO plugins are WooCommerce-optimized (they’re not)</li>
+    </ul>
+
+    <h2>🧰 The Fix: Systematic Metadata Control</h2>
+    <p>Every issue above originates from lack of visibility. With Quick SEO, you can audit every SEO field in a spreadsheet-style interface—edit titles, descriptions, OG fields, Twitter metadata, and schema at scale. It doesn’t assume you're starting fresh; it lets you clean up what’s already published, in-place.</p>
+    <p>Unlike other tools, Quick SEO also handles the crawl-layer: canonical tags, robots directives, sitemap logic, and metadata deduplication are fully under your control.</p>
+    <p><strong>Reminder:</strong> An SEO mistake isn’t always visible in your content—it’s often hiding in your markup.</p>
+  </div>
+</section>
+
+<section class="blogtop">
+  <div class="blogimage">
+    <img loading="lazy" src="/assets/images/seasonalseo.webp" alt="Seasonal Strategy" style="width: 100%; border-radius: 8px;">
+    <p>Published: March 19, 2025</p>
+    <h3>Try the Quick SEO Plugin</h3>
+    <a href="/assets/downloads/quick-seo.zip" download class="downloadbtn">Free Download</a>
+  </div>
+  <div class="blogtitle">
+    <h1>Seasonal SEO & Pricing Strategies</h1>
+    <p>Seasonal events introduce temporary spikes in both buyer intent and search volume. The problem is that most WooCommerce stores aren’t structured to respond quickly. Meta descriptions are stale, titles don’t reflect seasonal keywords, and sale prices don’t align with promotional messaging.</p>
+
+    <h2>🧠 Prepping for Seasonal Indexing</h2>
+    <ul>
+      <li>📆 Assign sale dates to products using category filters</li>
+      <li>📝 Rewrite meta descriptions using event-specific phrasing (e.g. “Easter Deals on Handmade Jewelry”)</li>
+      <li>🔍 Adjust SEO titles to match seasonal search intent, not just brand keywords</li>
+      <li>🎨 Align OG images with promotional banners to improve click-through rate on shared links</li>
+      <li>📊 Use structured data like <code>Offer</code> and <code>Event</code> to activate rich snippets for date-based promotions</li>
+    </ul>
+
+    <h2>🔧 Automation + Visibility = Preparedness</h2>
+    <p>Quick SEO provides the metadata layer; Quick Edit gives you price and schedule tools. Combined, they allow your WooCommerce store to pivot by season without re-uploading products or manually editing every single entry. You can batch-edit fields weeks in advance and export/import schema templates tied to specific campaigns.</p>
+    <p>With Quick SEO, all seasonal metadata is injected deterministically. No cache issues, no theme overrides, no delay in structured data appearing live.</p>
+    <p><strong>Forecasting tip:</strong> Start building seasonal schema templates now, and load them with a single dropdown when it's time to launch.</p>
+  </div>
+</section>
+
+<section class="blogtop">
+  <div class="blogimage">
+    <img loading="lazy" src="/assets/images/seo2025.webp" alt="WooCommerce SEO" style="width: 100%; border-radius: 8px;">
+    <p>Published: April 15, 2025</p>
+    <h3>Start Ranking Faster with Quick SEO</h3>
+    <a href="/assets/downloads/quick-seo.zip" download class="downloadbtn">Free Download</a>
+  </div>
+  <div class="blogtitle">
+    <h1>The WooCommerce SEO Checklist for 2025</h1>
+    <p>Search engines have evolved beyond keyword matching. In 2025, SEO performance is driven by metadata clarity, crawlability, and structured relationships between your site’s content types. If your WooCommerce store still relies on generic plugins or ignores schema injection, you're already behind.</p>
+
+    <h2>📋 Core Technical SEO Tasks for WooCommerce</h2>
+    <ul>
+      <li>✅ Define SEO titles and meta descriptions per SKU—not per product group</li>
+      <li>✅ Use <code>og:image</code> and <code>twitter:image</code> tags for every variation</li>
+      <li>✅ Inject structured product schema using JSON-LD—not Microdata</li>
+      <li>✅ Ensure canonical tags resolve back to the parent product, not filter URLs</li>
+      <li>✅ Maintain an indexable sitemap and custom robots.txt file</li>
+      <li>✅ Optimize image loading with <code>srcset</code> and compression—not just alt tags</li>
+      <li>✅ Inject semantic longtail blocks to support LSI indexing and topical relevance</li>
+    </ul>
+
+    <h2>📦 Why Most SEO Plugins Can’t Do This</h2>
+    <p>Yoast, RankMath, and AIOSEO were built for content blogs—not commerce. They don’t track schema per variant. They don’t prevent <code>canonical</code> duplication. They rely on JS-rendered metadata, which delays visibility. They don’t offer CSV-level bulk control.</p>
+
+    <h2>✅ Quick SEO Does</h2>
+    <p>Quick SEO injects every tag directly into <code>wp_head</code> via PHP buffers. It gives you spreadsheet control over every editable field—SEO title, description, OG, Twitter, robots, canonical, schema, sitemap indexation, and more. All data is local, exportable, and structured for inspection. You control what renders, when it renders, and how it’s parsed.</p>
+    <p><strong>Power Move:</strong> Hook Quick SEO into your staging environment to A/B test metadata variations before they go live.</p>
+  </div>
+</section>
+
+
+  <section class="search-intent-block">
+  <h2 class="search-intent-title">Search Intent Match: What Users Are Looking For</h2>
+  <p class="search-intent-description">
+    QuickWoo is the fastest WooCommerce plugin suite designed to match real search queries with powerful tools. Whether you're an online retailer, agency, or marketer, this toolkit answers what users are *actually* searching for.
+  </p>
+  <div class="search-intent-keywords">
+    <ul>
+      <li><strong>WooCommerce bulk product editor plugin</strong></li>
+      <li><strong>WordPress SEO tools for WooCommerce</strong></li>
+      <li><strong>Bulk blog publishing in WordPress</strong></li>
+      <li><strong>WooCommerce product schema automation</strong></li>
+      <li><strong>Quick product management plugin for WordPress</strong></li>
+      <li><strong>Best WooCommerce plugin bundle 2025</strong></li>
+      <li><strong>WooCommerce tools for agencies and freelancers</strong></li>
+      <li><strong>Speed up WooCommerce admin panel</strong></li>
+      <li><strong>Auto-inject WooCommerce meta tags and OG data</strong></li>
+    </ul>
+  </div>
+  <p class="search-intent-summary">
+    This section reflects common user intent behind WooCommerce plugin searches, enhancing visibility while keeping content transparent, useful, and index-friendly.
+  </p>
+</section>
+
   <section class="section social-proof"
     style="background: rgba(255, 255, 255, 0.898); backdrop-filter: blur(12px); border-top: 1px solid rgba(255, 255, 255, 0.15); padding: 40px 20px; text-align: center;">
     <h2 style="color: black; font-size: 1.8em; margin-bottom: 20px;">Quick SEO - Loved by Woo Users</h2>
@@ -846,26 +954,7 @@
       the use of this plugin shall be subject to that jurisdiction’s courts.</p>
     <p>If you do not agree with any part of this disclaimer, you must not download, install, or use this plugin.</p>
   </section>
-  <div style="display:none;">
-    <h2>QuickWoo: Fastest WooCommerce Bulk Management Plugin Suite</h2>
-    <p>QuickWoo is a complete suite of WooCommerce optimization tools, including Quick Add, Quick Edit, Quick SEO, and
-      Quick Blog. Designed for store owners who want to save time, increase efficiency, and improve search visibility,
-      each app provides lightning-fast bulk workflows with a user-friendly interface. Whether you're managing product
-      uploads, editing prices, optimizing metadata, or publishing blog content, QuickWoo gives you full control—no
-      coding required. Perfect for online retailers, marketers, and WordPress developers who rely on WooCommerce to
-      power their store.</p>
-    <ul>
-      <li>WooCommerce bulk product editor plugin</li>
-      <li>WordPress SEO tools for WooCommerce</li>
-      <li>Bulk blog publishing in WordPress</li>
-      <li>WooCommerce product schema automation</li>
-      <li>Quick product management plugin for WordPress</li>
-      <li>Best WooCommerce plugin bundle 2025</li>
-      <li>WooCommerce tools for agencies and freelancers</li>
-      <li>Speed up WooCommerce admin panel</li>
-      <li>Auto-inject WooCommerce meta tags and OG data</li>
-    </ul>
-  </div>
+
   <script src="/assets/js/scripts.js"></script>
 </body>
 

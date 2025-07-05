@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quick SEO Python Tools for Technical SEO</title>
+<meta name="description" content="Run powerful command-line SEO tools that map internal links, log missing meta tags, and build structured data. Built for speed, clarity, and total local control. No dashboards. No bloat. Just results.">
+
+  <meta name="author" content="Robert Calvin">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/quickwoofavicon.webp">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/quickwoofavicon.webp">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/quickwoofavicon.webp">
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/quickwoofavicon.webp">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/quickwoofavicon.webp">
+  <meta name="theme-color" content="#6139F5">
+  <meta property="og:title" content="Quick SEO Python Tools for Technical SEO">
+  <meta property="og:description" content="Run powerful command-line SEO tools that map internal links, log missing meta tags, and build structured data. Built for speed, clarity, and total local control. No dashboards. No bloat. Just results.">
+  <meta property="og:url" content="https://www.quickwoo.pro/quick-seo-python-tools">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.quickwoo.pro/assets/images/quickwooog.webp">
+  <meta property="og:image:alt" content="Quick SEO Plugin by Quick Woo for WooCommerce SEO Control">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://quickwoo.pro/quick-seo-python-tools" />
+<meta name="robots" content="index, follow">
+
+  <meta name="twitter:title" content="Quick SEO Python Tools for Technical SEO">
+  <meta name="twitter:description" content="Run powerful command-line SEO tools that map internal links, log missing meta tags, and build structured data. Built for speed, clarity, and total local control. No dashboards. No bloat. Just results.">
+  <meta name="twitter:image" content="https://www.quickwoo.pro/assets/images/quickwooog.webp">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://quickwoo.pro/sitemap.xml" />
+ <script type="application/ld+json">{ "@context": "https://schema.org", "@type": "WebPage", "name": "Quick SEO Python Tools for Technical SEO", "url": "https://quickwoo.pro/tools/", "description": "Run powerful command-line SEO tools that map internal links, log missing meta tags, and build structured data. Built for speed, clarity, and total local control. No dashboards. No bloat. Just results.", "inLanguage": "en-CA", "datePublished": "2025-07-05", "dateModified": "2025-07-05", "publisher":{ "@type": "Organization", "name": "QuickWoo", "url": "https://quickwoo.pro", "logo":{ "@type": "ImageObject", "url": "https://quickwoo.pro/assets/images/logolite.webp", "width": 512, "height": 512}}, "mainEntity":{ "@type": "WebPageElement", "name": "Quick SEO Internal Link Map, Meta Log, and Schema Builder CLI Tools", "url": "https://quickwoo.pro/tools/"}, "breadcrumb":{ "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://quickwoo.pro/"}, { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://quickwoo.pro/tools/"} ]}}</script>
+ <script type="application/ld+json">{ "@context": "https://schema.org/", "@type": "SoftwareApplication", "name": "Quick SEO Meta Log", "operatingSystem": "Windows, macOS, Linux", "applicationCategory": "DeveloperApplication", "offers":{ "@type": "Offer", "price": "0.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock"}, "description": "Quick SEO Meta Log is a Python-based CLI tool that crawls every internal link of a website and exports all meta titles and descriptions to a CSV. It includes support for JavaScript-rendered pages using Selenium.", "author":{ "@type": "Person", "name": "Robert Calvin"}, "publisher":{ "@type": "Organization", "name": "Quick Woo"}, "downloadUrl": "https://quickwoo.pro/assets/downloads/quick-seo-meta-log.zip", "softwareVersion": "1.0.0", "license": "https://opensource.org/licenses/MIT"}</script>
+<script type="application/ld+json">{ "@context": "https://schema.org/", "@type": "FAQPage", "mainEntity": [ { "@type": "Question", "name": "What does Quick SEO Meta Log actually do?", "acceptedAnswer":{ "@type": "Answer", "text": "It crawls your entire site—every internal link—and logs the title + meta description tags into a downloadable CSV. Use it to spot weak metadata, missing tags, or duplicate issues in seconds."}}, { "@type": "Question", "name": "Does it work with JavaScript-heavy websites?", "acceptedAnswer":{ "@type": "Answer", "text": "Yes. It includes a scraper-js.py version powered by Selenium + ChromeDriver. That version renders full JavaScript pages before scraping."}}, { "@type": "Question", "name": "Can I run it without knowing Python?", "acceptedAnswer":{ "@type": "Answer", "text": "Yes. Run install.bat (Windows) or install.sh (Mac/Linux) and follow the on-screen prompts. If you can use Google Sheets, you can use this tool."}}, { "@type": "Question", "name": "Where does the output go?", "acceptedAnswer":{ "@type": "Answer", "text": "Into a clean CSV file like output.csv right inside the same folder. Ready to open in Excel, Sheets, or upload to Notion or Looker Studio."}}, { "@type": "Question", "name": "Is it safe to use on client websites?", "acceptedAnswer":{ "@type": "Answer", "text": "Yes. It respects robots.txt by default, doesn’t run in the background, and only requests public pages. You can disable robots filtering if it’s your own site."}}, { "@type": "Question", "name": "How is this different from Screaming Frog?", "acceptedAnswer":{ "@type": "Answer", "text": "Screaming Frog is powerful—but heavy, GUI-based, and sometimes overkill. This is a surgical CLI tool focused on meta only—no fluff, no delay, no Java dependencies."}} ]}</script>
+<script type="application/ld+json">{ "@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Quick SEO Internal Link Map", "alternateName": "Quick Woo Internal Link Mapper", "operatingSystem": "Windows, macOS, Linux", "applicationCategory": "DeveloperApplication", "description": "Quick SEO Internal Link Map is a free Python CLI tool that crawls your entire website and outputs a graph of internal links in CSV, DOT, and interactive HTML formats. Built for SEOs, developers, and audit professionals who need full visibility into site structure, orphan pages, and silo links.", "softwareVersion": "1.0", "license": "https://opensource.org/licenses/MIT", "offers":{ "@type": "Offer", "price": "0", "priceCurrency": "USD", "category": "Free", "url": "https://quickwoo.pro/assets/downloads/quick-seo-internal-link-map.zip"}, "downloadUrl": "https://quickwoo.pro/assets/downloads/quick-seo-internal-link-map.zip", "creator":{ "@type": "Organization", "name": "Quick Woo", "url": "https://quickwoo.pro/quick-seo-python-tools"}}</script>
+<script type="application/ld+json">{ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [ { "@type": "Question", "name": "What does Quick SEO Internal Link Map actually do?", "acceptedAnswer":{ "@type": "Answer", "text": "It crawls your entire site and logs every internal link into a structured graph. Outputs include CSV, DOT, and an interactive HTML map to analyze structure, discover orphans, and visualize everything."}}, { "@type": "Question", "name": "Does it work with JavaScript-heavy websites?", "acceptedAnswer":{ "@type": "Answer", "text": "No. This version does not render JavaScript. It parses HTML only. For JS-heavy sites, a headless browser version is planned."}}, { "@type": "Question", "name": "Can I run it without knowing Python?", "acceptedAnswer":{ "@type": "Answer", "text": "Yes. Just run install.bat or install.sh, then launch it from the terminal. No Python knowledge required."}}, { "@type": "Question", "name": "Where does the output go?", "acceptedAnswer":{ "@type": "Answer", "text": "All results are saved into a folder called /output. This includes links.csv, graph.dot, graph.html, and orphans.txt."}}, { "@type": "Question", "name": "Is it safe to use on client websites?", "acceptedAnswer":{ "@type": "Answer", "text": "Yes. It makes only GET requests, never stores or posts anything. By default, it skips robots.txt checks for full visibility."}}, { "@type": "Question", "name": "How is this different from Screaming Frog?", "acceptedAnswer":{ "@type": "Answer", "text": "Quick SEO Internal Link Map is a minimal CLI tool. No GUI, no Java, no visual bloat. It focuses purely on internal links, built for fast audits and automation."}} ]}</script>
+<script type="application/ld+json">{ "@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Quick SEO Schema Builder", "operatingSystem": "Windows, macOS, Linux", "applicationCategory": "DeveloperApplication", "downloadUrl": "https://quickwoo.pro/assets/downloads/quick-seo-schema-builder.zip", "offers":{ "@type": "Offer", "price": "0.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock"}, "publisher":{ "@type": "Organization", "name": "Quick Woo", "url": "https://quickwoo.pro/quick-seo-python-tools", "logo":{ "@type": "ImageObject", "url": "https://quickwoo.pro/assets/images/quickwoofavicon.webp"}}, "description": "A Python-based CLI tool that extracts, validates, fixes, and builds structured schema markup for SEO professionals and developers. Built for speed, control, and total audit transparency—without plugin bloat.", "applicationSubCategory": "SEO Schema Generator", "softwareVersion": "1.0.0", "author":{ "@type": "Person", "name": "Robert Calvin", "url": "https://quickwoo.pro/quick-seo-python-tools"}}{ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [ { "@type": "Question", "name": "What does Quick SEO Schema Builder actually do?", "acceptedAnswer":{ "@type": "Answer", "text": "It crawls any page, extracts schema (JSON-LD and Microdata), validates it against real SEO rules, lets you repair broken fields interactively, or create new schema manually—then saves it cleanly to JSON files."}}, { "@type": "Question", "name": "Does it handle JavaScript-rendered schema?", "acceptedAnswer":{ "@type": "Answer", "text": "No. This CLI version uses static HTML only. For JS-heavy sites, use a headless browser or the Meta Log JS variant (coming soon)."}}, { "@type": "Question", "name": "Can I build schema from scratch?", "acceptedAnswer":{ "@type": "Answer", "text": "Yes. Use the builder mode to choose schema types like Product, Article, FAQPage, etc., and fill in fields manually. It saves perfect JSON-LD, ready to inject."}}, { "@type": "Question", "name": "What if the schema is incomplete?", "acceptedAnswer":{ "@type": "Answer", "text": "The fixer module walks you through each issue interactively—field by field. You enter missing values and get a repaired JSON file that passes Google validation."}}, { "@type": "Question", "name": "Do I need to know Python?", "acceptedAnswer":{ "@type": "Answer", "text": "Nope. Run install.bat or install.sh, then launch the tool with one command. If you can copy-paste a URL, you’re qualified."}}, { "@type": "Question", "name": "Is this safe for production or client use?", "acceptedAnswer":{ "@type": "Answer", "text": "Yes. It only reads public pages, never stores data, and doesn’t send anything externally. No dependencies on APIs, logins, or third parties."}}, { "@type": "Question", "name": "Why use this instead of RankMath, Yoast, or SEOPress?", "acceptedAnswer":{ "@type": "Answer", "text": "Because plugins are limited, buggy, and often wrong. This is dev-first, export-friendly, plugin-free schema for people who want it done right—not just “done.”"}} ]}</script>
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="preload" as="image" href="/assets/images/quick-seo-internal-link-map-blog.webp">
+<link rel="preload" as="image" href="/assets/images/quick-seo-meta-log-blog-webp.png">
+<link rel="preload" as="image" href="/assets/images/quick-seo-schema-builder-blog.webp">
+<link rel="preload" as="image" href="/assets/images/quick-seo-schema-builder-main-screenshot.webp">
+<link rel="preload" as="image" href="/assets/images/quick-seo-schema-builder-builder-screenshot.webp">
+<link rel="preload" as="image" href="/assets/images/quick-seo-schema-builder-validator-screenshot.webp">
+<link rel="preload" as="image" href="/assets/images/quick-seo-schema-builder-fixer-screenshot.webp">
+<link rel="preload" as="image" href="/assets/images/quick-seo-internal-link-map-screenshot.webp">
+<link rel="preload" as="image" href="/assets/images/quick-seo-internal-link-map-summary-screenshot.webp">
+<link rel="preload" as="image" href="/assets/images/quick-seo-internal-link-map-output-screenshot.webp">
+<link rel="preload" as="image" href="/assets/images/quick-seo-internal-link-map-graph-screenshot.webp">
+<link rel="preload" as="image" href="/assets/images/quick-seo-meta-log-screenshot.webp">
+<link rel="preload" as="image" href="/assets/images/quick-seo-meta-log-output-screenshot.webp">
+<link rel="preload" as="image" href="/assets/images/logolite.webp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+<section class="topbar">
+  <a class="logo" href="/">
+    <img loading="lazy" src="/assets/images/logolite.webp" alt="QuickWoo Logo">
+  </a>
+  <a class="toolnav" href="https://quickwoo.pro/quickseo-python-tools">Quick SEO Python Tools</a>
+</section>
+
+
+<section class="intro">
+  <h1>Quick SEO Python Tools</h1>
+  <h2>Powerful Command-Line Utilities for Real Technical SEO</h2>
+  <p style="max-width: 700px; margin: 20px auto; font-size: 1.2rem;">
+    Most SEO platforms are bloated, overpriced, and obsessed with pretty dashboards that forget the fundamentals. Quick SEO Tools cut through the noise—lightweight, terminal-based scripts built for precision, speed, and full local ownership of your site’s optimization.
+  </p>
+  <p style="max-width: 700px; margin: 20px auto; font-size: 1.2rem;">
+    Whether you’re logging every missing meta tag, mapping out silo structure, or hunting for orphan pages, each script here solves a real SEO problem with surgical focus. And if you’re ready to go deeper, the Schema Builder gives you full command over your structured data—extraction, validation, and generation—all from the comfort of your CLI.
+  </p>
+</section>
+
+  <section class="hero">
+<div class="appicon">
+  <img loading="lazy" src="/assets/images/quick-seo-meta-log.webp" style="width: 100%; border: 1px solid black;" alt="Quick SEO Meta Log App, a Python CLI tool to scrape your all the URLs on your website and return all meta titles and descriptions for you to review and improve! Free Download">
+  <a href="/assets/downloads/quick-seo-meta-log.zip" download class="downloadbtn">Download Tool</a>
+<h2>⚡ Quick SEO Meta Log</h2>
+<h3>The No-BS Meta Audit Tool for SEOs, Developers, and Control Freaks</h3>
+<h4>Built by Quick Woo — Designed to Spot What Plugins Miss</h4>
+<p>✔️ Instantly crawl your entire website—no login, no plugin, no crawling limits.</p>
+<p>✔️ Export a clean CSV of every internal page’s <code>&lt;title&gt;</code> and <code>&lt;meta name="description"&gt;</code>.</p>
+<p>✔️ Reveal blank, duplicate, or keyword-starved metadata in seconds—not hours.</p>
+
+<h3>🧠 Why It Exists</h3>
+<p>Most people obsess over keywords but forget the thing that shows up first: <strong>your title and description</strong>. Quick SEO Meta Log shows you exactly what Google sees—sitewide.</p>
+<p>No bloated dashboards. No fake "SEO scores." Just a CSV with hard truths.</p>
+
+<h3>🛠️ What It Scrapes</h3>
+<ul>
+  <li><strong>Page Title</strong> – What Google shows in search results</li>
+  <li><strong>Meta Description</strong> – What users see below your title</li>
+  <li>(Even if they're missing or duplicated—they’ll show up blank)</li>
+</ul>
+
+<h3>🧾 Sample Use Cases</h3>
+<ul style="margin-bottom: 40px;">
+  <li>✅ Catch and fix pages with missing meta</li>
+  <li>✅ Identify duplicates that kill CTR</li>
+  <li>✅ Use in agency audits, reports, and pitch decks</li>
+  <li>✅ Check client site migrations or template rollouts</li>
+</ul>
+
+<img loading="lazy" class="python-screenshots" src="/assets/images/quick-seo-meta-log-screenshot.webp" alt="Quick SEO Meta Log Screenshot of CLI Running and taking in an URL and producing a CSV output">
+<img loafing="lazy" class="python-screenshots" src="/assets/images/quick-seo-meta-log-output-screenshot.webp" alt="Quick SEO Meta Log Screenshot of Meta Titles and Descriptions CSV Output">
+
+
+<h3>❓ Frequently Asked Questions</h3>
+
+<details open>
+  <summary><strong>What does Quick SEO Meta Log actually do?</strong></summary>
+  <p>It crawls your entire site—every internal link—and logs the title + meta description tags into a downloadable CSV. Use it to spot weak metadata, missing tags, or duplicate issues in seconds.</p>
+</details>
+
+<details open>
+  <summary><strong>Does it work with JavaScript-heavy websites?</strong></summary>
+  <p>Yes. It includes a <code>scraper-js.py</code> version powered by Selenium + ChromeDriver. That version renders full JavaScript pages before scraping.</p>
+</details>
+
+<details open>
+  <summary><strong>Can I run it without knowing Python?</strong></summary>
+  <p>Yes. Run <code>install.bat</code> (Windows) or <code>install.sh</code> (Mac/Linux) and follow the on-screen prompts. If you can use Google Sheets, you can use this tool.</p>
+</details>
+
+<details open>
+  <summary><strong>Where does the output go?</strong></summary>
+  <p>Into a clean CSV file like <code>output.csv</code> right inside the same folder. Ready to open in Excel, Sheets, or upload to Notion or Looker Studio.</p>
+</details>
+
+<details open>
+  <summary><strong>Is it safe to use on client websites?</strong></summary>
+  <p>Yes. It respects <code>robots.txt</code> by default, doesn’t run in the background, and only requests public pages. You can disable robots filtering if it’s your own site.</p>
+</details>
+
+<details open>
+  <summary><strong>How is this different from Screaming Frog?</strong></summary>
+  <p>Screaming Frog is powerful—but heavy, GUI-based, and sometimes overkill. This is a surgical CLI tool focused on meta only—no fluff, no delay, no Java dependencies.</p>
+</details>
+
+<section class="search-intent-block" id="pythonsearch">
+  <h2 class="search-intent-title">Search Intent Match: What Users Are Looking For</h2>
+  <p class="search-intent-description">
+    Quick SEO Meta Log is built to answer one question: “What meta data is actually on my site?” Whether you're an SEO, marketer, freelancer, or dev, this tool matches real audit needs with a clean, no-fluff export.
+  </p>
+
+  <div class="search-intent-keywords">
+    <ul>
+      <li><strong>meta title and description audit tool</strong></li>
+      <li><strong>check missing SEO titles sitewide</strong></li>
+      <li><strong>export all meta data from website</strong></li>
+      <li><strong>bulk meta description checker</strong></li>
+      <li><strong>SEO meta crawler for internal pages</strong></li>
+      <li><strong>CSV export of website metadata</strong></li>
+      <li><strong>Python tool for crawling SEO tags</strong></li>
+      <li><strong>detect missing or duplicate titles</strong></li>
+      <li><strong>HTML meta tag audit for Google ranking</strong></li>
+    </ul>
+  </div>
+
+  <p class="search-intent-summary">
+    These keywords represent real-world search intent behind SEO auditing tools. Quick SEO Meta Log is built to serve that intent—fast, accurate, and index-ready.
+  </p>
+</section>
+
+</div>
+
+<div class="appicon" id="secondapp">
+  <img loading="lazy" src="/assets/images/quick-seo-internal-link-map.webp" style="width: 100%; border: 1px solid black;" alt="Quick SEO Internal Link Map, a Python CLI tool that crawls your website and maps out internal linking structure in CSV, DOT, and interactive HTML formats.">
+  <a href="/assets/downloads/quick-seo-internal-link-map.zip" download class="downloadbtn">Download Tool</a>
+
+  <h2>⚡ Quick SEO Internal Link Map</h2>
+  <h3>The No-BS Link Audit Tool for SEOs, Developers, and Site Owners</h3>
+  <h4>Built by Quick Woo — Designed for Control Freaks Who Hate Guesswork</h4>
+
+
+  <p>✔️ Instantly crawl every internal page and see how your content connects—no browser, no bloat.</p>
+  <p>✔️ Output structured files: CSV of all links, DOT for Graphviz, and an interactive HTML map.</p>
+  <p>✔️ Spot orphan pages, broken silos, and link depth issues with surgical precision.</p>
+
+  <h3>🧠 Why It Exists</h3>
+  <p>Internal links shape how Google and users understand your site. Quick SEO Internal Link Map shows the **real structure**—not what a plugin claims, but what actually exists.</p>
+  <p>No fluff. No dashboards. Just a hardwired crawl and export system that surfaces real SEO problems fast.</p>
+
+  <h3>🛠️ What It Outputs</h3>
+  <ul>
+    <li><strong>graph.dot</strong> – Visual structure for Graphviz</li>
+    <li><strong>links.csv</strong> – List of all internal link pairs</li>
+    <li><strong>orphans.txt</strong> – Pages with no inbound links</li>
+    <li><strong>graph.html</strong> – Interactive visual map with D3.js</li>
+  </ul>
+
+  <h3>🧾 Sample Use Cases</h3>
+  <ul style="margin-bottom: 40px;">
+    <li>✅ Visualize site structure during audits</li>
+    <li>✅ Spot orphan pages killing indexation</li>
+    <li>✅ Validate silo architecture or clusters</li>
+    <li>✅ Report clean link graphs to clients</li>
+  </ul>
+
+  <img loading="lazy" class="python-screenshots" src="/assets/images/quick-seo-internal-link-map-screenshot.webp" alt="Quick SEO Internal Link Map Screenshot running the CLI tool in the Terminal">
+  <img loading="lazy" class="python-screenshots" src="/assets/images/quick-seo-internal-link-map-summary-screenshot.webp" alt="Quick SEO Internal Link Map Summary Screenshot">
+  <img loading="lazy" class="python-screenshots" src="/assets/images/quick-seo-internal-link-map-output-screenshot.webp" alt="Quick SEO Internal Link Map Output CSV Screenshot">
+  <img loading="lazy" class="python-screenshots" src="/assets/images/quick-seo-internal-link-map-graph-screenshot.webp" alt="Quick SEO Internal Link Map Graph HTML Rendering Screenshot">
+
+  <h3>❓ Frequently Asked Questions</h3>
+
+  <details open>
+    <summary><strong>What does Quick SEO Internal Link Map actually do?</strong></summary>
+    <p>It crawls your entire site and logs every internal link into a structured graph. It then outputs CSV, DOT, and HTML files so you can analyze structure, discover orphans, and visualize everything.</p>
+  </details>
+
+  <details open>
+    <summary><strong>Does it work with JavaScript-heavy websites?</strong></summary>
+    <p>No. This CLI version does not render JavaScript—only static HTML. For JS-based sites, use the Meta Log JS version or integrate with a headless browser in the future.</p>
+  </details>
+
+  <details open>
+    <summary><strong>Can I run it without knowing Python?</strong></summary>
+    <p>Yes. Just run <code>install.bat</code> or <code>install.sh</code> to install everything, then launch the crawler with one command. If you can unzip files and copy-paste a URL, you’re qualified.</p>
+  </details>
+
+  <details open>
+    <summary><strong>Where does the output go?</strong></summary>
+    <p>Into the <code>/output</code> folder next to the script. You'll get all exports: DOT, CSV, orphans list, and the interactive HTML file.</p>
+  </details>
+
+  <details open>
+    <summary><strong>Is it safe to use on client websites?</strong></summary>
+    <p>Yes. It only requests public URLs and doesn't post or store anything. It ignores robots.txt so you can see everything, but it never overloads or abuses the server.</p>
+  </details>
+
+  <details open>
+    <summary><strong>How is this different from Screaming Frog?</strong></summary>
+    <p>This is CLI-native and code-first. No GUI, no Java, no bloat. It’s faster for devs, scriptable for SEOs, and easier to integrate into a technical audit workflow.</p>
+  </details>
+
+  <section class="search-intent-block" id="pythonsearch">
+  <h2 class="search-intent-title">Search Intent Match: What Users Are Looking For</h2>
+  <p class="search-intent-description">
+    Quick SEO Internal Link Map is built for SEOs, developers, and marketers who need complete visibility into how pages connect. Whether you're auditing client sites, planning silos, or fixing orphaned content, this tool answers what users are *actually* searching for.
+  </p>
+  <div class="search-intent-keywords">
+    <ul>
+      <li><strong>internal link mapping tool</strong></li>
+      <li><strong>website internal link audit</strong></li>
+      <li><strong>python internal link crawler CLI</strong></li>
+      <li><strong>detect orphan pages SEO</strong></li>
+      <li><strong>build DOT graph from website links</strong></li>
+      <li><strong>internal link visualization HTML</strong></li>
+      <li><strong>SEO link structure analyzer free</strong></li>
+      <li><strong>open source internal link audit tool</strong></li>
+      <li><strong>how to map internal links sitewide</strong></li>
+    </ul>
+  </div>
+  <p class="search-intent-summary">
+    This section aligns with technical SEO queries and link analysis tools that users frequently search for, boosting visibility and relevance in competitive search spaces.
+  </p>
+</section>
+</div>
+
+<div class="appicon">
+  <img loading="lazy" src="/assets/images/quick-seo-schema-builder.webp" style="width: 100%; border: 1px solid black;" alt="Quick SEO Schema Builder, a Python CLI tool for extracting, validating, fixing, and creating structured schema markup for SEO audits.">
+  <a href="/assets/downloads/quick-seo-schema-builder.zip" download class="downloadbtn">Download Tool</a>
+
+  <h2>⚡ Quick SEO Schema Builder</h2>
+  <h3>The No-BS Structured Data Tool for SEOs, Devs, and Data-Obsessed Control Freaks</h3>
+  <h4>Built by Quick Woo — For Sites That Refuse to Rank on Hope Alone</h4>
+
+
+  <p>✔️ Extract JSON-LD and Microdata from any URL instantly—because guessing what’s on-page is amateur.</p>
+  <p>✔️ Validate markup against Google/W3C standards with clear errors, warnings, and field-specific flags.</p>
+  <p>✔️ Fix broken or missing schema interactively, or build new templates from scratch using CLI prompts.</p>
+
+  <h3>🧠 Why It Exists</h3>
+  <p>Most plugins make schema "easy"—and wrong. Quick SEO Schema Builder shows you **what’s really there**, what’s broken, and how to fix it like a professional. No AI hallucinations. No black boxes. Just raw schema, audited and upgraded.</p>
+  <p>It's not a wizard. It's a scalpel for your structured data layer.</p>
+
+  <h3>🛠️ What It Outputs</h3>
+  <ul>
+    <li><strong>extracted-schema.json</strong> – Raw schema blocks pulled from live sites</li>
+    <li><strong>fixed-schema-*.json</strong> – CLI-repaired schema with missing fields filled</li>
+    <li><strong>built-schema-*.json</strong> – Schema templates generated from scratch</li>
+  </ul>
+
+  <h3>🧾 Sample Use Cases</h3>
+  <ul style="margin-bottom: 40px;">
+    <li>✅ Audit client pages for missing or invalid structured data</li>
+    <li>✅ Manually build schema when plugins fail to support your type</li>
+    <li>✅ Spot empty fields, bad `@id`s, or duplicate entities</li>
+    <li>✅ Export JSON-LD for direct injection or handoff</li>
+  </ul>
+
+  <img loading="lazy" class="python-screenshots" src="/assets/images/quick-seo-schema-builder-main-screenshot.webp" alt="Quick SEO Schema Builder Python CLI Main Terminal Screenshot">
+  <img loading="lazy" class="python-screenshots" src="/assets/images/quick-seo-schema-builder-builder-screenshot.webp" alt="Quick SEO Schema Builder Builder Function Screenshot">
+  <img loading="lazy" class="python-screenshots" src="/assets/images/quick-seo-schema-builder-validator-screenshot.webp" alt="Quick SEO Schema Builder Validator Function Screenshot">
+  <img loading="lazy" class="python-screenshots" src="/assets/images/quick-seo-schema-builder-fixer-screenshot.webp" alt="Quick SEO Schema Builder Fixer Function Screenshot">
+
+  <h3>❓ Frequently Asked Questions</h3>
+
+  <details open>
+    <summary><strong>What does Quick SEO Schema Builder actually do?</strong></summary>
+    <p>It crawls any page, extracts schema (JSON-LD and Microdata), validates it against real SEO rules, lets you repair broken fields interactively, or create new schema manually—then saves it cleanly to JSON files.</p>
+  </details>
+
+  <details open>
+    <summary><strong>Does it handle JavaScript-rendered schema?</strong></summary>
+    <p>No. This CLI version uses static HTML only. For JS-heavy sites, use a headless browser or the Meta Log JS variant (coming soon).</p>
+  </details>
+
+  <details open>
+    <summary><strong>Can I build schema from scratch?</strong></summary>
+    <p>Yes. Use the builder mode to choose schema types like Product, Article, FAQPage, etc., and fill in fields manually. It saves perfect JSON-LD, ready to inject.</p>
+  </details>
+
+  <details open>
+    <summary><strong>What if the schema is incomplete?</strong></summary>
+    <p>The fixer module walks you through each issue interactively—field by field. You enter missing values and get a repaired JSON file that passes Google validation.</p>
+  </details>
+
+  <details open>
+    <summary><strong>Do I need to know Python?</strong></summary>
+    <p>Nope. Run <code>install.bat</code> or <code>install.sh</code>, then launch the tool with one command. If you can copy-paste a URL, you’re qualified.</p>
+  </details>
+
+  <details open>
+    <summary><strong>Is this safe for production or client use?</strong></summary>
+    <p>Yes. It only reads public pages, never stores data, and doesn’t send anything externally. No dependencies on APIs, logins, or third parties.</p>
+  </details>
+
+  <details open>
+    <summary><strong>Why use this instead of RankMath, Yoast, or SEOPress?</strong></summary>
+    <p>Because plugins are limited, buggy, and often wrong. This is dev-first, export-friendly, plugin-free schema for people who want it done right—not just “done.”</p>
+  </details>
+
+  <section class="search-intent-block" id="pythonsearch">
+  <h2 class="search-intent-title">Search Intent Match: What Users Are Looking For</h2>
+  <p class="search-intent-description">
+    Quick SEO Schema Builder is designed to match high-intent search queries from technical SEOs, developers, and audit-focused site owners. It cuts through plugin bloat and directly answers what users actually need when dealing with structured data.
+  </p>
+  <div class="search-intent-keywords">
+    <ul>
+      <li><strong>validate schema markup CLI tool</strong></li>
+      <li><strong>json-ld extractor Python</strong></li>
+      <li><strong>build FAQPage schema manually</strong></li>
+      <li><strong>SEO schema builder open source</strong></li>
+      <li><strong>how to fix invalid schema fields</strong></li>
+      <li><strong>schema markup audit tool</strong></li>
+      <li><strong>generate local business schema without plugin</strong></li>
+      <li><strong>best SEO tools for structured data</strong></li>
+      <li><strong>extract schema from website Python</strong></li>
+    </ul>
+  </div>
+  <p class="search-intent-summary">
+    These keyword targets reflect what real users are searching when struggling with structured data. Quick SEO Schema Builder is built to rank for and satisfy this intent directly—no fluff, no filler, just raw utility and transparency.
+  </p>
+</section>
+</div>
+</section>
+
+      <section class="intro">
+  <h2 style="font-size: 2.5rem; text-align: center; color: rgb(255, 255, 255); margin: 50px;">Quick SEO Blog</h2>
+  </section>
+
+  <section class="blogtop">
+  <div class="blogimage">
+    <img loading="lazy" src="/assets/images/quick-seo-schema-builder-blog.webp" alt="Quick SEO Schema Builder Blog Post Image" style="width: 100%; border-radius: 8px;">
+    <p>Published: July 5, 2025</p>
+    <h3>Extract, Validate, and Build Schema That Actually Ranks</h3>
+    <a href="/assets/downloads/quick-seo-schema-builder.zip" download class="downloadbtn">Free Download</a>
+  </div>
+
+  <div class="blogtitle">
+    <h1>What Is Schema Markup—and Why Your SEO Depends on It</h1>
+    <p>Schema markup isn't optional in 2025—it’s the backbone of how search engines interpret and display your content. Without structured data, your pages are just HTML soup. With it, they become eligible for enhanced search features like FAQs, reviews, product info, authorship, and more. That’s not hype—it’s structured dominance. Google doesn’t rank what it doesn’t understand, and schema is how you give it a crystal-clear blueprint.</p>
+
+    <h2>📦 The Most Valuable Schema Types for SEO in 2025</h2>
+    <ul>
+      <li>✅ <strong>Article + WebPage</strong> – Define blog post content, publication date, author, and visibility</li>
+      <li>✅ <strong>Product</strong> – Display prices, reviews, and availability directly in search results</li>
+      <li>✅ <strong>LocalBusiness</strong> – Show hours, address, phone number, and accepted payments</li>
+      <li>✅ <strong>FAQPage</strong> – Inject question-answer blocks that show up under your main listing</li>
+      <li>✅ <strong>Organization / Person</strong> – Verify identity and add trust signals to your brand</li>
+      <li>✅ <strong>BreadcrumbList</strong> – Improve internal navigation and SERP breadcrumbs</li>
+      <li>✅ <strong>SoftwareApplication</strong> – Perfect for SaaS, plugins, and download pages</li>
+    </ul>
+    <p>Even small content sites benefit from schema like <code>SiteNavigationElement</code> or <code>SitelinksSearchBox</code>. The trick? You need to match schema types to your actual content, not what you wish it was.</p>
+
+    <h2>🧠 How to Add Schema the Right Way</h2>
+    <p>Always use <code>JSON-LD</code>, embedded directly in the <code>&lt;head&gt;</code> or injected server-side. Avoid Microdata—it’s bloated and fragile. Google prefers clean, structured, and clearly separated metadata. If you're editing schema manually, every mistake costs you eligibility. If you're using a plugin, assume it’s doing it wrong unless you inspect the raw output.</p>
+
+    <h2>🚨 Common Schema Mistakes That Kill Rankings</h2>
+    <ul>
+      <li>❌ Marking up content that doesn’t appear on the page (spam trigger)</li>
+      <li>❌ Using the wrong <code>@type</code> for your content (Google ignores it)</li>
+      <li>❌ Leaving required fields blank (no rich result eligibility)</li>
+      <li>❌ Relying on JS-rendered schema that bots never see in time</li>
+    </ul>
+
+    <h2>✅ Quick SEO Schema Builder Solves All of This</h2>
+    <p>The Quick SEO Schema Builder is a CLI-based power tool that extracts real schema from any page, validates it against Google’s requirements, lets you fix it field-by-field, or build it from scratch using structured templates. No GUIs. No plugin lock-in. Just clean, exportable JSON-LD under your full control.</p>
+    <p><strong>Use Case:</strong> Auditing a client site? Drop their URL into the Schema Builder, see exactly what schema they're using, and instantly identify what's broken, missing, or spammy. Then fix it and deliver it back clean.</p>
+
+    <h2>🧪 Test Before You Inject</h2>
+    <p>After building or fixing schema, always validate with <a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener">Google’s Rich Results Test</a> or the <a href="https://validator.schema.org" target="_blank" rel="noopener">Schema Markup Validator</a>. If you built it with Quick SEO Schema Builder, odds are you’ll pass the first time.</p>
+
+    <p><strong>Takeaway:</strong> Schema markup is the fastest route to rich results, better SERP visibility, and deeper topical authority. But only if you do it right—and most people aren’t. Quick SEO Schema Builder gives you the tools to win the structured data game without guessing, hoping, or plugin chaos.</p>
+  </div>
+</section>
+
+<section class="blogtop">
+  <div class="blogimage">
+    <img loading="lazy" src="/assets/images/quick-seo-meta-log-blog-webp.png" alt="Quick SEO Meta Log Blog Post Image" style="width: 100%; border-radius: 8px;">
+    <p>Published: April 15, 2025</p>
+    <h3>Audit Faster. Rank Smarter. With Meta Log.</h3>
+    <a href="/assets/downloads/quick-seo-meta-log.zip" download class="downloadbtn">Free Download</a>
+  </div>
+
+  <div class="blogtitle">
+    <h1>Why Metadata Still Matters in 2025</h1>
+    <p>Meta titles and descriptions aren’t dead—they’re the handshake before the click. In 2025, Google’s CTR-based ranking systems mean those 160 characters are more than a formality—they’re performance drivers. Quick SEO Meta Log gives you visibility into every title and description across your site, so you can control the pitch before Google rewrites it.</p>
+
+    <h2>🎯 Write Titles That Command Attention</h2>
+    <ul>
+      <li>✅ Keep titles between 50–60 characters</li>
+      <li>✅ Lead with a keyword, follow with a benefit or emotion</li>
+      <li>✅ Use pipes (|), brackets [ ], and dates for structure and urgency</li>
+      <li>✅ Avoid duplication—every page deserves its own hook</li>
+    </ul>
+    <p><strong>Example:</strong> “Best SEO Tools for WooCommerce [2025 Review]” or “Fix Duplicate Meta Tags | Quick SEO Guide.”</p>
+    <p>Meta Log surfaces duplicates instantly so you can fix them before your rankings drop—or before Google rewrites them worse than you would.</p>
+
+    <h2>🧠 Meta Descriptions That Convert</h2>
+    <p>You’ve got one shot to convince the user. Start with what the page is. Add a benefit. Use verbs like Discover, Compare, Analyze, Fix. Include the keyword up front—but don’t jam it in unnaturally. Then finish with a light CTA.</p>
+    <p><strong>Example:</strong> “Crawl every page of your site and export missing or duplicate metadata to CSV. Optimize faster, rank smarter.”</p>
+
+    <h2>📊 Why Quick SEO Meta Log Beats Manual Audits</h2>
+    <ul>
+      <li>📁 Export every title and description in a clean CSV</li>
+      <li>🔍 Detect blanks, duplicates, and keyword-stuffing at scale</li>
+      <li>📉 Spot weak pages before Google rewrites your work</li>
+      <li>⚡ Ideal for client audits, migrations, and metadata A/B testing</li>
+    </ul>
+    <p><strong>Use Case:</strong> Running a campaign? Use Meta Log to compare CTRs across two sets of title/meta combos. Refine the winners, discard the noise.</p>
+
+    <p><strong>Takeaway:</strong> Metadata won’t rank you alone—but it will get you clicked, and that gets you ranked. Quick SEO Meta Log turns metadata into strategy, not guesswork.</p>
+  </div>
+</section>
+
+<section class="blogtop">
+  <div class="blogimage">
+    <img loading="lazy" src="/assets/images/quick-seo-internal-link-map-blog.webp" alt="Quick SEO Internal Link Map Blog Post Image" style="width: 100%; border-radius: 8px;">
+    <p>Published: April 15, 2025</p>
+    <h3>Crawl Smarter. Structure Harder. With Internal Link Map.</h3>
+    <a href="/assets/downloads/quick-seo-internal-link-map.zip" download class="downloadbtn">Free Download</a>
+  </div>
+
+  <div class="blogtitle">
+    <h1>Why Internal Linking Still Runs the SEO Game</h1>
+    <p>Backlinks might get you through the door, but internal links tell Google what room to sit in. In 2025, smart internal structure doesn’t just help SEO—it defines it. Quick SEO Internal Link Map gives you a full visual of your site’s architecture so you can tighten your silos, fix orphans, and flex your topical authority like a pro.</p>
+
+    <h2>🕸️ Build Link Maps, Not Guess Maps</h2>
+    <ul>
+      <li>✅ Visualize how every page connects—or doesn’t</li>
+      <li>✅ Instantly identify orphaned content killing indexation</li>
+      <li>✅ Spot silos, breakpoints, and crawl traps in seconds</li>
+      <li>✅ Export CSV, DOT, and HTML graphs for clean reporting</li>
+    </ul>
+    <p><strong>Example:</strong> You think your “SEO Tools” category is linked well—Internal Link Map shows it’s stranded like an SEO ghost town.</p>
+
+    <h2>🧠 Structure That Boosts Rankings (and Revenue)</h2>
+    <p>Google doesn’t just crawl links—it interprets them. Your internal structure tells search engines what matters and how topics relate. A clean link graph increases crawl efficiency, indexation, and topical authority. AKA: better rankings and fewer bloated pages wasting budget.</p>
+    <p><strong>Fact:</strong> Fixing internal links often improves rankings faster than building backlinks. Why? Because Google trusts your architecture more than your outreach email.</p>
+
+    <h2>⚙️ Why Quick SEO Internal Link Map Slaps</h2>
+    <ul>
+      <li>🧾 Outputs a full CSV of internal link pairs</li>
+      <li>🧭 Finds orphan pages instantly (zero inbound links)</li>
+      <li>📊 Generates a Graphviz `.dot` file for pro diagrams</li>
+      <li>🌐 Produces a sexy HTML map you can scroll and share</li>
+    </ul>
+    <p><strong>Use Case:</strong> Doing a site audit for a client? Run the tool, export the graph, and drop that map in your deck. Instant credibility, zero fluff.</p>
+
+    <p><strong>Takeaway:</strong> Internal linking isn’t sexy—but this tool makes it feel that way. Stop guessing. Stop opening 90 tabs to trace how your blog connects to your product pages. Quick SEO Internal Link Map gives you the whole picture, instantly.</p>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+  <section class="section social-proof"
+    style="background: rgba(255, 255, 255, 0.898); backdrop-filter: blur(12px); border-top: 1px solid rgba(255, 255, 255, 0.15); padding: 40px 20px; text-align: center;">
+    <h2 style="color: black; font-size: 1.8em; margin-bottom: 20px;">Quick SEO - Loved by Woo Users</h2>
+    <p style="color: black; max-width: 700px; margin: 0 auto 30px;">Join all the stores who trust QuickSEO to save
+      hours, boost performance, and simplify their workflow.</p>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; font-weight: bold;"><span
+        style="color: white; background: #000000; padding: 10px 20px; border-radius: 20px;">@PluginHut</span><span
+        style="color: white; background: #000000; padding: 10px 20px; border-radius: 20px;">@MegaGoods</span><span
+        style="color: white; background: #000000; padding: 10px 20px; border-radius: 20px;">@DevStacks</span><span
+        style="color: white; background: #000000; padding: 10px 20px; border-radius: 20px;">@Elementora</span><span
+        style="color: white; background: #000000; padding: 10px 20px; border-radius: 20px;">@StoreFlow</span></div>
+  </section>
+  <section class="section whats-new"
+    style=" backdrop-filter: blur(12px); border-top: 1px solid rgba(255, 255, 255, 0.15); background: linear-gradient(200deg, var(--blue), var(--blue1), var(--blue2), var(--blue3), var(--blue3), var(--blue2), var(--blue1), var(--blue)); color: rgb(255, 255, 255); padding: 30px 20px; text-align: center;">
+    <p style="font-size: 1.1em;">✨ Now with Woo 8.x support, new SEO insights module, and lightning-fast batch editing.
+    </p>
+  </section>
+  <footer
+    style="backdrop-filter: blur(12px); background: rgba(255, 255, 255, 0.898); border-top: 1px solid rgba(255, 255, 255, 0.2); text-align: center; padding: 30px 20px; font-size: 0.95em; color: #0f0c48;">
+    <p style="color: black; ">© 2025 QuickSEO by QuickWoo. Built with 💜 by <strong>Robert Calvin</strong></p>
+    <p style="color: black; "><a href="/terms/" style="color: var(--white); margin-right: 10px;">Terms</a>| <a
+        href="/privacy/" style="color: black; ">Privacy</a></p>
+  </footer>
+  <section class="legal-disclaimer" style="padding: 2rem; border-top: 1px solid #ccc; font-size: 0.9rem;">
+    <h2>Legal Disclaimer & Limitation of Liability</h2>
+    <p><strong>Last updated: June 28, 2025</strong></p>
+    <p>The Quick SEO plugin is provided "as is" without warranty of any kind, either express or implied. By downloading,
+      installing, or using this plugin, you (“the user”) agree to the following terms and understand that you assume
+      full responsibility for its use.</p>
+    <h3>1. No Warranty</h3>
+    <p>The plugin is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY, without even the implied
+      warranty of MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, or NON-INFRINGEMENT. The author and all associated
+      contributors disclaim any and all liability for damages arising out of or in connection with the use or
+      performance of this software.</p>
+    <h3>2. No Guarantee of Results</h3>
+    <p>Search engine optimization (SEO) involves a variety of factors beyond the control of this plugin or its creator.
+      No claim is made or implied that using Quick SEO will result in higher rankings, increased traffic, improved
+      performance, or any specific SEO outcomes. Users are solely responsible for how they implement, configure, and
+      apply the plugin.</p>
+    <h3>3. You Are Responsible for Compliance</h3>
+    <p>You are solely responsible for ensuring that your use of this plugin complies with all applicable laws, including
+      data privacy laws, disclosure regulations, and the guidelines of third-party services (such as Google Search
+      Console, Bing Webmaster Tools, etc.). Quick SEO does not collect user data, process personal information, or
+      provide legal compliance features of any kind.</p>
+    <h3>4. No Liability for Damages</h3>
+    <p>In no event shall the author, developer, or any affiliated party be liable to you or to any third party for any
+      direct, indirect, incidental, special, exemplary, or consequential damages of any kind arising from the use or
+      misuse of this plugin, including but not limited to loss of data, SEO performance, rankings, revenue, goodwill, or
+      business interruption—even if the author has been advised of the possibility of such damages.</p>
+    <h3>5. Plugin Updates and Support</h3>
+    <p>This plugin is provided as-is with no guaranteed support, maintenance, updates, or compatibility with future
+      versions of WordPress or WooCommerce. Use at your own risk. The author reserves the right to discontinue
+      development or support at any time without notice.</p>
+    <h3>6. Third-Party Integration Disclaimer</h3>
+    <p>Any references to third-party platforms, services, or standards (e.g., Google, Twitter, schema.org, etc.) are for
+      compatibility and informational purposes only. The author is not affiliated with or endorsed by these third
+      parties, and no guarantee is made regarding continued compatibility or compliance with their changing policies.
+    </p>
+    <h3>7. By Using This Plugin, You Agree That:</h3>
+    <ul>
+      <li>You will not hold the author liable for any outcomes resulting from its use.</li>
+      <li>You are using it voluntarily and at your own discretion.</li>
+      <li>You are responsible for testing, validating, and maintaining your site’s SEO configurations.</li>
+      <li>You accept all risks associated with implementation and interpretation of the plugin's output.</li>
+    </ul>
+    <p>This disclaimer shall be governed by the laws of the author’s local jurisdiction, and any disputes arising out of
+      the use of this plugin shall be subject to that jurisdiction’s courts.</p>
+    <p>If you do not agree with any part of this disclaimer, you must not download, install, or use this plugin.</p>
+  </section>
+
+ 
+</body>
+
+</html>

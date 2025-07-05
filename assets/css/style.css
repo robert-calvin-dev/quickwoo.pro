@@ -35,7 +35,7 @@ body {
 
   color: var(--black);
   margin: auto;
-  background: rgb(255, 255, 255);
+  background: #f2f2f2;
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.15);
   width: 100%;
@@ -88,7 +88,7 @@ header {
   justify-content: space-between;
   padding: 12px 24px;
   background: white;
-  border-bottom: 3px solid blue;
+  
 }
 
 .topbar .logo img {
@@ -145,7 +145,7 @@ header {
 }
 
 .copy {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   padding: 2rem;
  
   line-height: 40px;
@@ -192,7 +192,7 @@ header {
 }
 
 .versustable {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   
   width: 100%;
   margin-right: 20px;
@@ -442,4 +442,13 @@ footer a {
   .search-intent-summary {
     font-size: 0.9rem;
   }
+}
+
+.usecase-block, .usecases {
+  padding: 2rem;
+  margin: 30px 0 30px 0;
+}
+
+div, section {
+  margin-bottom: 20px;
 }
